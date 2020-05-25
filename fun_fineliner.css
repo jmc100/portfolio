@@ -65,7 +65,6 @@ main > nav {
   top: 2rem;
   align-self: start;
 }
-
 /* 3. Selected tab*/
 .section-nav li.active > a {
   color: #000000;
@@ -267,9 +266,9 @@ section {
 }
 
 #heading {
-   padding-left: 250px;
-   font-size: 25px;
-   letter-spacing: 1px;
+  padding-left: 250px;
+  font-size: 25px;
+  letter-spacing: 1px;
 }
 
 /* carousel */
@@ -279,8 +278,8 @@ img {
 }
 .carousel {
   position: relative;
-  width: 750px;
-  height: 650px;
+  width: 675px;
+  height: 585px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
@@ -293,8 +292,8 @@ img {
   float: right;
   position: absolute;
   z-index: 1;
-  width: 750px;
-  height: 650px;
+  width: 675px;
+  height: 585px;
   background-color: #FFFFFF;
   text-align: center;
   transition: opacity 0.4s;
@@ -323,7 +322,7 @@ img {
   height: 80px;
   opacity: 0;
   text-align: left;
-  text-indent: 680px;
+  text-indent: 605px;
   line-height: 101px;
   font-size: 16px;
   color: #000000;
@@ -474,11 +473,12 @@ img {
     display:flex;
   }
   div .carousel {
-    width: 40px;
-    height: 40px;
+    width: 338px;
+    height: 293px;
   }
   div .slide {
-    width: 100%;
+    width: 338px;
+    height: 293px;
   }
   .counter {
     display: none;
