@@ -8,8 +8,7 @@
   <!-- to avoid inconsistencies between browsers -->
   <link rel="stylesheet" href="css/reset.css">
   <!-- Google font-->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
   <!-- link to "animate.css" -->
   <link rel="stylesheet" type="text/css" href="animate.css">
   <!-- put "index.css" after "reset.css" to avoid the style being reset to plain -->
@@ -69,15 +68,15 @@
       </ol>
     </nav>
 
-    <!-- Content------->
+    <!-- Content-->
     <div class ="content">
       <!-- Summary -->
       <section id="summary">
         <h2 style="margin-left: 30%; margin-top: 40px; margin-bottom: 30px; letter-spacing: 1px;">Tangram</h2>
         <img id ="cover-image" src="image/tangram-cover.png" alt="cover image">
-        <a href="#landing" class="proto-btn">landing page</a>
-        <a href="#web-protoype" class="proto-btn">web prototype</a>
-        <a href="#mobile-prototype" class="proto-btn">mobile prototype</a>
+        <a href="https://www.figma.com/proto/8L9u0qGLSBn2QLzQEj56qp/Assignment-10.18-cloud_case-study_landing?scaling=min-zoom&node-id=2166%3A2" target="_blank" class="proto-btn">landing page</a>
+        <a href="https://www.figma.com/proto/2zB7EZk7Ib4T7XFQwAFlr7/Assignment-10.18-cloud_web_case-study-_final?scaling=min-zoom&node-id=1890%3A1075" target="_blank" class="proto-btn">web prototype</a>
+        <a href="https://www.figma.com/proto/xQVbpM4Z6AcUrRk48BFaH0/Assignment-10.18-cloud_mobile_case-study_final?node-id=2122%3A5&scaling=scale-down" target="_blank" class="proto-btn">mobile prototype</a>
         <p>A cloud storage that facilitates creative expression and promotes effective collaboration.</p>
         <img id="deliverables"  src="image/deliverables.png">
       </section>
@@ -325,261 +324,257 @@
           <td id="symbol"><img src="image/tick.png"></td>
         </tr>
         <tr>
-          <th><p>Customizable organization</p</th>
+          <th><p>Customizable organization</p></th>
+          <td id="symbol"><img src="image/cross.png"></td>
+          <td><img src="image/tick-star.png" style="width: 50px; height: 50px;"></td>
+          <tr>
+            <th><p>Video-editing tool</p></th>
             <td id="symbol"><img src="image/cross.png"></td>
-            <td><img src="image/tick-star.png" style="width: 50px; height: 50px;"></td>
-            <tr>
-              <th><p>Video-editing tool</p></th>
-              <td id="symbol"><img src="image/cross.png"></td>
-              <td id="symbol"><img src="image/cross.png"></td>
-            </tr>
-            <tr>
-              <th><p>Private folders</p></th>
-              <td id="symbol"><img src="image/cross.png"></td>
-              <td id="symbol"><img src="image/cross.png"></td>
-            </tr>
+            <td id="symbol"><img src="image/cross.png"></td>
+          </tr>
+          <tr>
+            <th><p>Private folders</p></th>
+            <td id="symbol"><img src="image/cross.png"></td>
+            <td id="symbol"><img src="image/cross.png"></td>
+          </tr>
+        </table>
+        <p style="font-size: 15px;">*On Dropbox, users can organize files by "last modified" or "name".</p>
+        <!-- Takeaways -->
+        <p style="font-weight: 600;">Takeaways</p>
+        <ol style="list-style-type: decimal; padding-left: 50px; margin-bottom: 10px;">
+          <li><p>Our product can stand out by incorporating a video-editing tool.</p></li>
+          <li><p>We should maintain real-time collaboration for all our products.</p></li>
+          <li><p>We should provide better security for storing sensitive information.</p></li>
+        </ol>
+        <p>One example of real-time collaboration is the ability to check unread comments and to respond to them immediately. Let's look at how users check unread comments on Google Drive.</p>
+        <p>Open from email:</p>
+        <img src="image/from-email.png" style="width: 70%; height: 70%;">
+        <p>Open from dashboard:</p>
+        <img src="image/from-dashboard.png">
+        <p>Opening unread comments from email is fast and direct. However, notification emails of unread comments can push important emails down.</p>
+        <p>Attempting the second route (i.e. opening from dashboard) is not ideal. The process contains many steps which can be time-consuming.</p>
+        <p>One way to improve the experience is to show all unread comments at the top of the dashboard so that users can immediately view all of them in one go. I will demonstrate that in my mockup.</p><br>
+        <h3 style="font-weight: 600;">2. Online Video-editing Tools</h3>
+        <p>One of the problems my product aims to solve is the lack of a cloud-based video-editing tool incorporated <i>in the cloud drive</i> alongside other tools. To understand this market, I compared two popular online video-editing platforms:</p>
+        <table class="video-compare">
+          <tr>
+            <td style="text-align: center; padding-bottom: 15px;" id="vid-heading">We Video</td>
+            <td style="text-align: center; padding-bottom: 15px;" id="vid-heading">Clip Champ</td>
+          </tr>
+          <tr>
+            <td style="width: 300px; height: 450px"><img src="image/wevideo.png"></td>
+            <td style="width: 300px; height: 450px"><img src="image/clipchamp.png"></td>
+          </tr>
+          <tr>
+            <td><p id="vid-heading">Pros:</p>
+              <ul>
+                <li><p id="vid-content">Various framing options</p></li>
+                <li><p id="vid-content">Resolution: up to 480p</p></li>
+              </ul>
+            </td>
+            <td><p id="vid-heading">Pros:</p>
+              <ul>
+                <li><p id="vid-content">Resolution: up to 480p</p></li>
+                <li><p id="vid-content">Unlimited video exports</p></li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td><p id="vid-heading">Cons:</p>
+              <ul>
+                <li><p id="vid-content">Storage size: 1GB</p></li>
+                <li><p id="vid-content">One 5-min video/ month</p></li>
+              </ul>
+            </td>
+            <td><p id="vid-heading">Cons:</p>
+              <ul>
+                <li><p id="vid-content">Need to pay to stock videos and audio files.</p></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <p style="font-size: 15px; padding-bottom: 20px;">(To conduct a fair comparison, I focused on the free account of the two service providers).</p>
+        <!-- Takeaways -->
+        <p style="font-weight: 600;">Takeaways</p>
+        <p>While these options can provide a decent video-editing experience (and even unlimited exports), they require users to store the videos somewhere online or offline. Also, users cannot jot notes or add comments to the videos by time stamps.</p>
+        <p>Taking these factors into consideration, I created a bunch of sketches and wireframes.</p>
+      </section>
+
+      <!-- Sketches, Wireframes & Testing -->
+      <section id="wireframe">
+        <h2>Sketches & Wireframes</h2>
+        <p>Sketches</p>
+        <img style="width: 830px; height: 607;" src="image/sketches.png">
+        <p>Wireframes</p>
+        <img style="width: 825px; height: 580;" src="image/wireframes.png"><br>
+        <h2>User Testing of Wireframes</h2>
+        <p>In the test, I asked participants to describe what they thought the pages were about and to navigating to different pages.</p>
+        <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">Here is what surprised me:</p>
+        <p style="color: #DE2B04; margin-bottom: 15px; font-weight: 600;">Labels may not be helpful</p>
+        <p style="margin: 0px;">There was an option in the wireframe where users can categorize files by patterns. While this method is more accessible than color tags, it can be confusing in some situations:</p>
+        <table>
+          <tr>
+            <td style="width: 70%">
+              <ol style="list-style-type: decimal; padding-left: 50px; margin-bottom: 10px;">
+                <li><p>Not everyone finds patterns easy to remember.</p></li>
+                <li><p>Some content can take up more than one category. An image that was took on a vacation but is used for work-related content can fit under "images", "personal", and "work".</p></li>
+              </ol>
+            </td>
+            <td style="width: 30%">
+              <img style="width: 150px; height: 170px;" src="image/wireframe_pattern.png">
+            </td>
           </table>
-          <p style="font-size: 15px;">*On Dropbox, users can organize files by "last modified" or "name".</p>
-          <!-- Takeaways -->
-          <p style="font-weight: 600;">Takeaways</p>
-          <ol style="list-style-type: decimal; padding-left: 50px; margin-bottom: 10px;">
-            <li><p>Our product can stand out by incorporating a video-editing tool.</p></li>
-            <li><p>We should maintain real-time collaboration for all our products.</p></li>
-            <li><p>We should provide better security for storing sensitive information.</p></li>
-          </ol>
-          <p>One example of real-time collaboration is the ability to check unread comments and to respond to them immediately. Let's look at how users check unread comments on Google Drive.</p>
-          <p>Open from email:</p>
-          <img src="image/from-email.png" style="width: 70%; height: 70%;">
-          <p>Open from dashboard:</p>
-          <img src="image/from-dashboard.png">
-          <p>Opening unread comments from email is fast and direct. However, notification emails of unread comments can push important emails down.</p>
-          <p>Attempting the second route (i.e. opening from dashboard) is not ideal. The process contains many steps which can be time-consuming.</p>
-          <p>One way to improve the experience is to show all unread comments at the top of the dashboard so that users can immediately view all of them in one go. I will demonstrate that in my mockup.</p><br>
-          <h3 style="font-weight: 600;">2. Online Video-editing Tools</h3>
-          <p>One of the problems my product aims to solve is the lack of a cloud-based video-editing tool incorporated <i>in the cloud drive</i> alongside other tools. To understand this market, I compared two popular online video-editing platforms:</p>
-          <table class="video-compare">
-            <tr>
-              <td style="text-align: center; padding-bottom: 15px;" id="vid-heading">We Video</td>
-              <td style="text-align: center; padding-bottom: 15px;" id="vid-heading">Clip Champ</td>
-            </tr>
-            <tr>
-              <td style="width: 300px; height: 450px"><img src="image/wevideo.png"></td>
-              <td style="width: 300px; height: 450px"><img src="image/clipchamp.png"></td>
-            </tr>
-            <tr>
-              <td><p id="vid-heading">Pros:</p>
-                <ul>
-                  <li><p id="vid-content">Various framing options</p></li>
-                  <li><p id="vid-content">Resolution: up to 480p</p></li>
-                </ul>
-              </td>
-              <td><p id="vid-heading">Pros:</p>
-                <ul>
-                  <li><p id="vid-content">Resolution: up to 480p</p></li>
-                  <li><p id="vid-content">Unlimited video exports</p></li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td><p id="vid-heading">Cons:</p>
-                <ul>
-                  <li><p id="vid-content">Storage size: 1GB</p></li>
-                  <li><p id="vid-content">One 5-min video/ month</p></li>
-                </ul>
-              </td>
-              <td><p id="vid-heading">Cons:</p>
-                <ul>
-                  <li><p id="vid-content">Need to pay to stock videos and audio files.</p></li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-          <p style="font-size: 15px; padding-bottom: 20px;">(To conduct a fair comparison, I focused on the free account of the two service providers).</p>
-          <!-- Takeaways -->
-          <p style="font-weight: 600;">Takeaways</p>
-          <p>While these options can provide a decent video-editing experience (and even unlimited exports), they require users to store the videos somewhere online or offline. Also, users cannot jot notes or add comments to the videos by time stamps.</p>
-          <p>Taking these factors into consideration, I created a bunch of sketches and wireframes.</p>
+          <p style="color: #DE2B04; margin-bottom: 15px; font-weight: 600;">Systematic but cluttered</p>
+          <p style="margin: 0px;">While organizing content into various labelled groups is systematic, the overall layout looks cluttered.</p>
+          <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">Here is what I've learned:</p>
+          <p style="color: #DE2B04; margin-bottom: 15px; font-weight: 600;">Attempt to show everything is to show nothing</p>
+          <p>My initial attempt to show all recent items was to speed up the file-location process. But when everything is on the dashboard and is calling for your attention, it is hard to locate a particular file.</p>
+          <img src="image/attention.png">
+          <p>I learned to show the frequently opened files on the dashboard only instead of all the recently opened ones.</p>
         </section>
 
-        <!-- Sketches, Wireframes & Testing -->
-        <section id="wireframe">
-          <h2>Sketches & Wireframes</h2>
-          <p>Sketches</p>
-          <img style="width: 830px; height: 607;" src="image/sketches.png">
-          <p>Wireframes</p>
-          <img style="width: 825px; height: 580;" src="image/wireframes.png"><br>
-          <h2>User Testing of Wireframes</h2>
-          <p>In the test, I asked participants to describe what they thought the pages were about and to navigating to different pages.</p>
+        <!-- Mockups & Testing -->
+        <section id="mockup">
+          <h2>Mockups</h2>
+          <p>After revising the wireframes, I created mockups of the product. Here are some of the pages:</p>
+          <img src="image/mockups.png">
+          <h2>User Testing of Mockups</h2>
+          <p>In the test, I asked participants to comment on the visual aspect of the pages and to test the functional aspect of the product.</p>
           <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">Here is what surprised me:</p>
-          <p style="color: #DE2B04; margin-bottom: 15px; font-weight: 600;">Labels may not be helpful</p>
-          <p style="margin: 0px;">There was an option in the wireframe where users can categorize files by patterns. While this method is more accessible than color tags, it can be confusing in some situations:</p>
+          <table>
+            <tr>
+              <td style="width: 60%; padding-right: 20px;">
+                <p style="color: #DE2B04; vertical-align: text-top; margin-bottom: 15px; font-weight: 600;">Content V.S. Construct:</p>
+                <p style="margin: 0px;">While the layout is clear in general, the most noticeable element is the set of lines. I learned that under certain contexts, using lines as a separator can make the layout look archaic.</p>
+                <p>Instead, I learned to use contrasting colors and shapes to highlight certain sections.</p>
+              </td>
+              <td style="width: 30%;">
+                <img style="width: 170px; height: 260px;" src="image/dash-line.png">
+              </td>
+            </tr>
+          </table>
+          <p style="color: #DE2B04; margin-bottom: 15px; font-weight: 600;">Color combinations:</p>
+          <p style="margin: 0px;">Color combinations that blend well in the nature do not always translate to the same effect on screen.</p>
+          <img src="image/color-combination2.png">
+          <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">Here is what I've learned:</p>
+          <table>
+            <tr>
+              <td style="width: 60%; vertical-align: text-top; padding-right: 10px;">
+                <p style="color: #DE2B04; margin-bottom: 15px; font-weight: 600; ">Web design V.S. Poster design</p>
+                <p>While the landing page looks neat and have buttons, it looks more like a poster than a clickable product.</p>
+                <p>I learned that it is crucial to have visual cues that can guide users to click on interactive elements and to explore the page.</p>
+              </td>
+              <td style="width: 40%;">
+                <img src="image/mock-landing.png">
+              </td>
+            </tr>
+          </table>
+        </section>
+
+        <!-- Branding -->
+        <section id="branding">
+          <h2>Brand story</h2>
+          <p>Before I reveal the final design, let’s look at the branding of this product.</p>
+          <p>To highlight the diverse tools available on this cloud platform, I chose the name ‘Tangram’. A tangram is a puzzle with 7 pieces which you can mix and match to create different objects.</p>
+          <img style ="width: 300px; height: 300px;" src="image/tangram-puzzle.png">
+          <p style="font-size: 14px;">Photo credit: <a href="https://www.amazon.com/Newcreativetop-Children-Educational-Colorful-Training/dp/B0189HHEY0">Amazon</a></p>
+          <p>Similar to a Tangram puzzle, our cloud storage platform aims to provide different tools for users to achieve different project goals.</p>
+          <p>In short, Tangram values:</p>
+          <ul style="list-style-type: disc; padding-left: 50px; margin-bottom:0px;">
+            <li><p style="margin: 5px;">creativity</p></li>
+            <li><p style="margin: 5px;">logical organization</p></li>
+            <li><p style="margin: 5px;">collaboration</p></li>
+          </ul><br>
+          <h2>Brand logo</h2>
+          <img src="image/tangram-logo.png">
+          <p>Among the sketches, I chose the one with an abstract "T" shape surrounded by a circle. The "T" shape is composed of four tangram pieces. The design is meant to reinforce the idea of collaboration and creativity.</p><br>
+          <h2>Color</h2>
+          <table>
+            <tr>
+              <td style="vertical-align: text-top;">
+                <p>As shown in the logo, the brand colors are yellow and orange.</p>
+                <p>In the user survey, those who frequently use cloud storages are between 20 and 40 years old. The chosen set of warm colors can provoke friendliness and acceptance to new ideas, which is generally welcomed by the target group of users.</p>
+              </td>
+              <td>
+                <img src="image/tangram-color.png">
+              </td>
+            </tr>
+          </table><br>
+          <h2>Typography</h2>
+          <table>
+            <tr>
+              <td style="vertical-align: text-top;">
+                <p>I chose “Futura” as the brand’s typeface. Its geometric presentation is neat and modern. Also, a rounder typeface can suggest friendliness.</p>
+                <p>I chose “Roboto” as the complementary typeface as it is highly legible across large and small prints.</p>
+              </td>
+              <td>
+                <img src="image/tangram-typeface.png">
+              </td>
+            </tr>
+          </table><br>
+        </section>
+
+        <!-- Prototype -->
+        <section id="prototype">
+          <h2>Interactive Prototype</h2>
+          <p>Based on the respondents’ feedback, I revised the design and created the following prototypes:</p>
+          <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">1. Landing Page</p>
+          <table>
+            <tr>
+              <td>
+                <img style="width: 500px; height: auto; border: 1px solid #C4C4C4;" src="image/tangram-landing1.png">
+              </td>
+              <td style ="vertical-align: text-top;">
+                <p style="padding-left: 25px; padding-top: 55px;">I enlarged the caption in the hero image to draw the user’s attention to the brand.</p>
+              </td>
+            </tr>
+          </table>
+          <p>I also added a carousel at the top of the page to display the product’s features:</p>
+          <img style="border:1px solid #C4C4C4" src="image/tan-carousel.gif">
+          <p>Deep down, we know that not every user has time to read through the entire page. The carousel is used for showcasing the unique features of this cloud storage in one go, which can save the user’s time.</p>
+          <p>The post-it notes serve to pique the users’ curiosity to explore the next feature. By clicking on the post-it notes (or the arrows on the side), the user will see the hero image morphing into the next one. This animation adds a little reward to every click.</p><br>
+          <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">2. Dashboard</p>
           <table>
             <tr>
               <td style="width: 70%">
-                <ol style="list-style-type: decimal; padding-left: 50px; margin-bottom: 10px;">
-                  <li><p>Not everyone finds patterns easy to remember.</p></li>
-                  <li><p>Some content can take up more than one category. An image that was took on a vacation but is used for work-related content can fit under "images", "personal", and "work".</p></li>
-                </ol>
+                <img src="image/web-dash.png">
               </td>
               <td style="width: 30%">
-                <img style="width: 150px; height: 170px;" src="image/wireframe_pattern.png">
+                <img src="image/mobile_dash.gif">
               </td>
-            </table>
-            <p style="color: #DE2B04; margin-bottom: 15px; font-weight: 600;">Systematic but cluttered</p>
-            <p style="margin: 0px;">While organizing content into various labelled groups is systematic, the overall layout looks cluttered.</p>
-            <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">Here is what I've learned:</p>
-            <p style="color: #DE2B04; margin-bottom: 15px; font-weight: 600;">Attempt to show everything is to show nothing</p>
-            <p>My initial attempt to show all recent items was to speed up the file-location process. But when everything is on the dashboard and is calling for your attention, it is hard to locate a particular file.</p>
-            <img src="image/attention.png">
-            <p>I learned to show the frequently opened files on the dashboard only instead of all the recently opened ones.</p>
+            </tr>
+          </table>
+          <p>The main changes were in the layout and the use of colors. Without the borders, the product appears more lively. I also applied a bright red to highlight the number of unread comments.</p><br>
+          <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">3. Video-editing Page</p>
+          <table>
+            <tr>
+              <td style="width: 70%">
+                <img src="image/web_video_final.png">
+              </td>
+              <td style="width: 30%">
+                <img src="image/mobile_vid_final.png">
+              </td>
+            </tr>
+          </table>
+          <p>This platform provides basic functions for editing and exporting video clips. Users can jot notes or add comments to the video precisely by timestamps:</p>
+          <img src="image/vid-commenting.png">
+          <p>This makes collaboration easier.</p><br>
+          <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">4. Other pages</p>
+          <img src="image/tan-others.png">
+          <p>To learn more, click on the prototypes below:</p>
+          <a href="https://www.figma.com/proto/8L9u0qGLSBn2QLzQEj56qp/Assignment-10.18-cloud_case-study_landing?scaling=min-zoom&node-id=2166%3A2" target="_blank" class="proto-btn">landing page</a>
+          <a href="https://www.figma.com/proto/2zB7EZk7Ib4T7XFQwAFlr7/Assignment-10.18-cloud_web_case-study-_final?scaling=min-zoom&node-id=1890%3A1075" target="_blank" class="proto-btn">web prototype</a>
+          <a href="https://www.figma.com/proto/xQVbpM4Z6AcUrRk48BFaH0/Assignment-10.18-cloud_mobile_case-study_final?node-id=2122%3A5&scaling=scale-down" target="_blank" class="proto-btn">mobile prototype</a>
+        </section>
 
-          </section>
-
-          <!-- Mockups & Testing -->
-          <section id="mockup">
-            <h2>Mockups</h2>
-            <p>After revising the wireframes, I created mockups of the product. Here are some of the pages:</p>
-            <img src="image/mockups.png">
-            <h2>User Testing of Mockups</h2>
-            <p>In the test, I asked participants to comment on the visual aspect of the pages and to test the functional aspect of the product.</p>
-            <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">Here is what surprised me:</p>
-            <table>
-              <tr>
-                <td style="width: 60%; padding-right: 20px;">
-                  <p style="color: #DE2B04; vertical-align: text-top; margin-bottom: 15px; font-weight: 600;">Content V.S. Construct:</p>
-                  <p style="margin: 0px;">While the layout is clear in general, the most noticeable element is the set of lines. I learned that under certain contexts, using lines as a separator can make the layout look archaic.</p>
-                  <p>Instead, I learned to use contrasting colors and shapes to highlight certain sections.</p>
-                </td>
-                <td style="width: 30%;">
-                  <img style="width: 170px; height: 260px;" src="image/dash-line.png">
-                </td>
-              </tr>
-            </table>
-            <p style="color: #DE2B04; margin-bottom: 15px; font-weight: 600;">Color combinations:</p>
-            <p style="margin: 0px;">Color combinations that blend well in the nature do not always translate to the same effect on screen.</p>
-            <img src="image/color-combination2.png">
-            <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">Here is what I've learned:</p>
-            <table>
-              <tr>
-                <td style="width: 60%; vertical-align: text-top; padding-right: 10px;">
-                  <p style="color: #DE2B04; margin-bottom: 15px; font-weight: 600; ">Web design V.S. Poster design</p>
-                  <p>While the landing page looks neat and have buttons, it looks more like a poster than a clickable product.</p>
-                  <p>I learned that it is crucial to have visual cues that can guide users to click on interactive elements and to explore the page.</p>
-                </td>
-                <td style="width: 40%;">
-                  <img src="image/mock-landing.png">
-                </td>
-              </tr>
-            </table>
-          </section>
-
-          <!-- Branding -->
-          <section id="branding">
-            <h2>Brand story</h2>
-            <p>Before I reveal the final design, let’s look at the branding of this product.</p>
-            <p>To highlight the diverse tools available on this cloud platform, I chose the name ‘Tangram’. A tangram is a puzzle with 7 pieces which you can mix and match to create different objects.</p>
-            <img style ="width: 300px; height: 300px;" src="image/tangram-puzzle.png">
-            <p style="font-size: 14px;">Photo credit: <a href="https://www.amazon.com/Newcreativetop-Children-Educational-Colorful-Training/dp/B0189HHEY0">Amazon</a></p>
-            <p>Similar to a Tangram puzzle, our cloud storage platform aims to provide different tools for users to achieve different project goals.</p>
-            <p>In short, Tangram values:</p>
-            <ul style="list-style-type: disc; padding-left: 50px; margin-bottom:0px;">
-              <li><p style="margin: 5px;">creativity</p></li>
-              <li><p style="margin: 5px;">logical organization</p></li>
-              <li><p style="margin: 5px;">collaboration</p></li>
-            </ul><br>
-            <h2>Brand logo</h2>
-            <img src="image/tangram-logo.png">
-            <p>Among the sketches, I chose the one with an abstract "T" shape surrounded by a circle. The "T" shape is composed of four tangram pieces. The design is meant to reinforce the idea of collaboration and creativity.</p><br>
-            <h2>Color</h2>
-            <table>
-              <tr>
-                <td style="vertical-align: text-top;">
-                  <p>As shown in the logo, the brand colors are yellow and orange.</p>
-                  <p>In the user survey, those who frequently use cloud storages are between 20 and 40 years old. The chosen set of warm colors can provoke friendliness and acceptance to new ideas, which is generally welcomed by the target group of users.</p>
-                </td>
-                <td>
-                  <img src="image/tangram-color.png">
-                </td>
-              </tr>
-            </table><br>
-            <h2>Typography</h2>
-            <table>
-              <tr>
-                <td style="vertical-align: text-top;">
-                  <p>I chose “Futura” as the brand’s typeface. Its geometric presentation is neat and modern. Also, a rounder typeface can suggest friendliness.</p>
-                  <p>I chose “Roboto” as the complementary typeface as it is highly legible across large and small prints.</p>
-                </td>
-                <td>
-                  <img src="image/tangram-typeface.png">
-                </td>
-              </tr>
-            </table><br>
-          </section>
-
-          <!-- Prototype -->
-          <section id="prototype">
-            <h2>Interactive Prototype</h2>
-            <p>Based on the respondents’ feedback, I revised the design and created the following prototypes:</p>
-            <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">1. Landing Page</p>
-            <table>
-              <tr>
-                <td>
-                  <img style="width: 500px; height: auto; border: 1px solid #C4C4C4;" src="image/tangram-landing1.png">
-                </td>
-                <td style ="vertical-align: text-top;">
-                  <p style="padding-left: 25px; padding-top: 55px;">I enlarged the caption in the hero image to draw the user’s attention to the brand.</p>
-                </td>
-              </tr>
-            </table>
-            <p>I also added a carousel at the top of the page to display the product’s features:</p>
-            <img style="border:1px solid #C4C4C4" src="image/tan-carousel.gif">
-            <p>Deep down, we know that not every user has time to read through the entire page. The carousel is used for showcasing the unique features of this cloud storage in one go, which can save the user’s time.</p>
-            <p>The post-it notes serve to pique the users’ curiosity to explore the next feature. By clicking on the post-it notes (or the arrows on the side), the user will see the hero image morphing into the next one. This animation adds a little reward to every click.</p><br>
-            <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">2. Dashboard</p>
-            <table>
-              <tr>
-                <td style="width: 70%">
-                  <img src="image/web-dash.png">
-                </td>
-                <td style="width: 30%">
-                  <img src="image/mobile_dash.gif">
-                </td>
-              </tr>
-            </table>
-            <p>The main changes were in the layout and the use of colors. Without the borders, the product appears more lively. I also applied a bright red to highlight the number of unread comments.</p><br>
-            <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">3. Video-editing Page</p>
-            <table>
-              <tr>
-                <td style="width: 70%">
-                  <img src="image/web_video_final.png">
-                </td>
-                <td style="width: 30%">
-                  <img src="image/mobile_vid_final.png">
-                </td>
-              </tr>
-            </table>
-            <p>This platform provides basic functions for editing and exporting video clips. Users can jot notes or add comments to the video precisely by timestamps:</p>
-            <img src="image/vid-commenting.png">
-            <p>This makes collaboration easier.</p><br>
-
-
-            <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">4. Other pages</p>
-            <img src="image/tan-others.png">
-            <p>To learn more, click on the prototypes below:</p>
-            <a href="#landing" class="proto-btn">landing page</a>
-            <a href="#web-protoype" class="proto-btn">web prototype</a>
-            <a href="#mobile-prototype" class="proto-btn">mobile prototype</a>
-          </section>
-
-          <!-- Reflection -->
-          <section id="reflection">
-            <h2>Reflection</h2>
-            <p>Despite the growing number of products that provide data storage online (e.g. Instagram, Slack, etc.), rarely do they market themselves as cloud storages. It has been, perhaps, as expected function for new products/ apps that are launched in the market.</p>
-            <p>To make my product stand out, I added new features such as video-editing and more effective ways to customize files organization. But to remain relevant in the market, there is still much to learn.</p>
-            <p style="font-weight: 600"> If I had more time</p>
-            <p>I would incorporate a checkbox and a search bar above each column on the dashboard. This can allow users to do a quick search for particular files in order to mass edit them (e.g. to share or to delete them).</p>
-            <p>I would also add a dark mode to my cloud storage. This can soothe the eyes of users who prefer to (or have to) work in darker environment.</p>
-          </p>
+        <!-- Reflection -->
+        <section id="reflection">
+          <h2>Reflection</h2>
+          <p>Despite the growing number of products that provide data storage online (e.g. Instagram, Slack, etc.), rarely do they market themselves as cloud storages. It has been, perhaps, as expected function for new products/ apps that are launched in the market.</p>
+          <p>To make my product stand out, I added new features such as video-editing and more effective ways to customize files organization. But to remain relevant in the market, there is still much to learn.</p>
+          <p style="font-weight: 600"> If I had more time</p>
+          <p>I would incorporate a checkbox and a search bar above each column on the dashboard. This can allow users to do a quick search for particular files in order to mass edit them (e.g. to share or to delete them).</p>
+          <p>I would also add a dark mode to my cloud storage. This can soothe the eyes of users who prefer to (or have to) work in darker environment.</p>
         </section>
       </div>
     </main>
@@ -589,8 +584,8 @@
   <div id="web_footer">
     Thanks for visiting! You can find me at:<br>
     <ul id="footer_icons">
-      <li class="footer-item"><a href="#email"><img src="logo/email.png" style="width: 45px; height: 35px;"></a></li>
-      <li class="footer-item"><a href="#linkedin"><img src="logo/linkedin_black.png" style="width: 35px; height: 35px;"></a></li>
+      <li class="footer-item"><a href="mailto:designwithjc@gmail.com"><img src="logo/email.png" style="width: 45px; height: 35px;"></a></li>
+      <li class="footer-item"><a href="https://www.linkedin.com/in/juliamchow/" target="_blank"><img src="logo/linkedin_black.png" style="width: 35px; height: 35px;"></a></li>
     </ul>
   </div>
   </html>
