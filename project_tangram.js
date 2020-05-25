@@ -1,6 +1,5 @@
 // For bolding items in the side sticky menu upon arrival
 window.addEventListener('DOMContentLoaded', () => {
-
 	const observer = new IntersectionObserver(entries => {
 		entries.forEach(entry => {
 			const id = entry.target.getAttribute('id');
