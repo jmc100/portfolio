@@ -15,7 +15,6 @@ main {
 
 /* Key elements */
 
-
 ul, ol {
   list-style: none;
   margin: 0;
@@ -278,7 +277,7 @@ section {
   p {
     font-size: 18px;
     line-height: 30px;
-      letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
 
   }
   .toggle_menu {
@@ -304,7 +303,6 @@ section {
   .toggle_menu {
     display:flex;
   }
-
 }
 
 /* for small screens (mobile) */
@@ -329,7 +327,6 @@ section {
   .toggle_menu {
     display:flex;
   }
-
 }
 
 
