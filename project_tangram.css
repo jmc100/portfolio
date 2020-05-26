@@ -305,13 +305,14 @@ section {
 }
 
 /* problems */
-.problem-list h4 {
+.prob-bullet {
   display: flex;
   justify-content:center;
   align-items: center;
   height: 40px;
   width: 40px;
   font-size: 16px;
+  font-weight: 600;
   background-color: #E32900;
   color: #FFFFFF;
   border-radius: 100px;
@@ -450,13 +451,14 @@ img {
 /* User Research */
 
 /* chart results*/
-.research  #result-num{
+.result-num{
   display: flex;
   justify-content:center;
   align-items: center;
   height: 40px;
   width: 80px;
   font-size: 18px;
+  font-weight: 600;
   margin-top: 5px;
   background-color: #0074D8;
   color: #FFFFFF;
@@ -465,8 +467,9 @@ img {
 
 /* user stories */
 
-.user-stories h4 {
+.user-bullet {
   font-size:18px;
+  font-weight: 600;
   color: #EA0000;
   padding-right: 10px;
   margin-top: 0px;
@@ -591,7 +594,7 @@ img {
   width: 200px;
 }
 
-.cloud-compare #symbol {
+.symbol {
   width: 40px;
   height: 40px;
 }
@@ -600,14 +603,14 @@ img {
   vertical-align: text-top;
 }
 
-.video-compare #vid-heading{
+.vid-heading{
   font-weight: 700;
   margin-bottom: 5px;
   padding: 0px;
   line-height: 20px;
 }
 
-.video-compare #vid-content{
+.vid-content{
   margin-bottom: 5px;
   padding: 0px;
   line-height: 20px;
@@ -742,10 +745,9 @@ img {
 
 
 /* ------Footer------ */
-#web_footer {
+footer {
   padding-top: 20px;
   padding-bottom: 0px;
-  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
