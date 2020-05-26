@@ -246,33 +246,6 @@ h3 {
   height: 400px;
 }
 
-/* ------Footer------ */
-#web_footer {
-  padding-top: 20px;
-  padding-bottom: 0px;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #F8F4F0;
-  color: #333333;
-  font-size: 20px;
-  font-weight: 300;
-  text-align: center;
-}
-#footer_icons{
-  list-style-type: none;
-  margin: 0;
-  padding: 10px;
-  z-index: 1;
-  background-color: transparent;
-  text-align:center;
-}
-.footer-item {
-  display: inline-table;
-  padding: 10px;
-}
-
 /*------Responsive Design------*/
 
 /* for large screens (e.g. laptop, desktop) */
@@ -376,4 +349,32 @@ h3 {
   .toggle_menu {
     display:flex;
   }
+}
+
+/* ------Footer------ */
+footer {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #F8F4F0;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+#footer_icons{
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  z-index: 1;
+  background-color: transparent;
+  text-align:center;
+}
+
+.footer-item {
+  display: inline-table;
+  padding: 10px;
 }
