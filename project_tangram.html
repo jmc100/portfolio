@@ -22,9 +22,9 @@
          <!-- toggle menu -->
          <input type='checkbox' id='toggle' style='display:none;' />
          <label class='toggle-btn toggle-btn__cross' for='toggle'>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
          </label>
          <nav class="toggle_menu">
             <ul>
@@ -52,11 +52,13 @@
                <li><a href="#summary">SUMMARY</a></li>
                <li><a href="#problem-solutions">PROBLEMS &amp; SOLUTIONS</a></li>
                <li><a href="#user-research">USER RESEARCH</a></li>
-               <ul>
-                  <li><a href="#survey" style="padding: 5px;">Survey</a></li>
-                  <li class=""><a href="#user-stories" style="padding: 5px;">User Stories</a></li>
-                  <li class=""><a href="#personas" style="padding: 5px;">Personas</a></li>
-               </ul>
+               <li>
+                  <ul>
+                     <li><a href="#survey" style="padding: 5px;">Survey</a></li>
+                     <li class=""><a href="#user-stories" style="padding: 5px;">User Stories</a></li>
+                     <li class=""><a href="#personas" style="padding: 5px;">Personas</a></li>
+                  </ul>
+               </li>
                <li><a href="#comp-analysis">COMPETITIVE ANALYSIS</a></li>
                <li><a href="#wireframe">SKETCHES, WIREFRAMES &amp; TESTING</a></li>
                <li><a href="#mockup">MOCKUPS &amp; TESTING</a></li>
@@ -125,22 +127,22 @@
                <h2>Solutions</h2>
                <div class="carousel">
                   <input type="checkbox" class="faux-ui-facia">
-                  <div class="slide" slide="4" annot="Solution #3">
+                  <div class="slide" data-slide="4" data-annot="Solution #3">
                      <img src="image/solution4_concern.png"  alt="Solution #3">
                   </div>
                   <input type="checkbox" class="faux-ui-facia">
-                  <div class="slide" slide="3" annot="Solution #2b">
+                  <div class="slide" data-slide="3" data-annot="Solution #2b">
                      <img src="image/solution3_D2.gif"  alt="Solution #2b">
                   </div>
                   <input type="checkbox" class="faux-ui-facia">
-                  <div class="slide" slide="2" annot="Solution #2a">
+                  <div class="slide" data-slide="2" data-annot="Solution #2a">
                      <img src="image/solution2_D1.png"  alt="Solution #2a">
                   </div>
                   <input type="checkbox" class="faux-ui-facia">
-                  <div class="slide" slide="1" annot="Solution #1">
+                  <div class="slide" data-slide="1" data-annot="Solution #1">
                      <img src="image/solution1_ABC.png" alt="Solution #1">
                   </div>
-                  <div class="counter" count="4"> / 4</div>
+                  <div class="counter"> / 4</div>
                </div>
                <p>(Click on the slide to see the next solution.)</p>
             </section>
@@ -330,18 +332,18 @@
                   <h2>Personas</h2>
                   <div class="carousel2">
                      <input type="checkbox" class="faux-ui-facia">
-                     <div class="slide2" slide="3">
+                     <div class="slide2" data-slide="3">
                         <img src="image/persona_beth.png" alt="persona Beth">
                      </div>
                      <input type="checkbox" class="faux-ui-facia">
-                     <div class="slide2" slide="2">
+                     <div class="slide2" data-slide="2">
                         <img src="image/persona_phoebe.png" alt="persona Phoebe">
                      </div>
                      <input type="checkbox" class="faux-ui-facia">
-                     <div class="slide2" slide="1">
+                     <div class="slide2" data-slide="1">
                         <img src="image/persona_john.png" alt="persona John">
                      </div>
-                     <div class="counter" count="3"> / 3</div>
+                     <div class="counter"> / 3</div>
                   </div>
                   <p>(Click on the slide to see the next profile.)</p>
                </section>
