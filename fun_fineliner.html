@@ -10,22 +10,22 @@
       <!-- Google font-->
       <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
       <!-- put "index.css" after "reset.css" to avoid the style being reset to plain -->
-      <link rel="stylesheet" type="text/css" href="fun_fineliner.css">
+      <link rel="stylesheet" type="text/css" href="main.css">
    </head>
    <body>
       <header>
          <!-- toggle menu -->
          <input type='checkbox' id='toggle' style='display:none;' />
          <label class='toggle-btn toggle-btn__cross' for='toggle'>
-           <span class="bar"></span>
-           <span class="bar"></span>
-           <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
          </label>
          <nav class="toggle_menu">
             <ul>
                <li><a href="index.html">Work</a></li>
                <li><a href="about.html">About</a></li>
-               <li><a href="resume.html">Resume</a></li>
+               <li><a href="https://drive.google.com/open?id=1LDv4mc87nm7BIayDa0eGEzJIjg3bZv_a" target="_blank">Resume</a></li>
                <li><a href="fun.html">Fun</a></li>
             </ul>
          </nav>
@@ -34,40 +34,40 @@
          <ul id="nav_bar">
             <li class="nav_item"><a href="index.html">Work</a></li>
             <li class="nav_item"><a href="about.html">About</a></li>
-            <li class="nav_item"><a href="resume.html">Resume</a></li>
+            <li class="nav_item"><a href="https://drive.google.com/open?id=1LDv4mc87nm7BIayDa0eGEzJIjg3bZv_a" target="_blank">Resume</a></li>
             <li class="nav_item"><a href="fun.html">Fun</a></li>
          </ul>
          <!-- End of nav bar -->
       </header>
-      <main>
+      <main class="fineliner-main">
          <!-- Side Menu Bar -->
          <nav class="section-nav" style="letter-spacing: 1px;">
             <ol>
-               <li><img id="personal-logo" src="logo/final_logo_large.png" alt="personal logo"></li>
+               <li id="home-btn"><a href="index.html"><img id="personal-logo" src="logo/final_logo_large.png" alt="personal logo"></a></li>
             </ol>
          </nav>
          <!-- Content-->
          <div style="padding-top: 20px; padding-bottom: 20px;" class="content">
             <p>Some of my fineliner illustration:</p>
-            <div class="carousel">
+            <div class="carousel" id="car-fine">
                <input type="checkbox" class="faux-ui-facia">
-               <div class="slide" data-slide="5" data-annot="Surveillance (Dec 2019)">
+               <div class="slide-fine slide" data-slide="5" data-annot="Surveillance (Dec 2019)">
                   <img src="fun/fine-surveillance.jpeg"  alt="surveillance">
                </div>
                <input type="checkbox" class="faux-ui-facia">
-               <div class="slide" data-slide="4" data-annot="Vision (Aug 2019)">
+               <div class="slide-fine slide" data-slide="4" data-annot="Vision (Aug 2019)">
                   <img src="fun/fine-vision.jpeg"  alt="vision">
                </div>
                <input type="checkbox" class="faux-ui-facia">
-               <div class="slide" data-slide="3" data-annot="House (Apr 2019)">
+               <div class="slide-fine slide" data-slide="3" data-annot="House (Apr 2019)">
                   <img src="fun/fine-house.jpeg"  alt="house">
                </div>
                <input type="checkbox" class="faux-ui-facia">
-               <div class="slide" data-slide="2" data-annot="Heart (Dec 2018)">
+               <div class="slide-fine slide" data-slide="2" data-annot="Heart (Dec 2018)">
                   <img src="fun/fine-heart.jpeg"  alt="heart">
                </div>
                <input type="checkbox" class="faux-ui-facia">
-               <div class="slide" data-slide="1" data-annot="Unmasked (July 2018)">
+               <div class="slide-fine slide" data-slide="1" data-annot="Unmasked (July 2018)">
                   <img src="fun/fine-unmasked.jpeg" alt="unmasked">
                </div>
                <div class="counter"> / 5</div>
@@ -76,12 +76,13 @@
          </div>
       </main>
       <!-- footer -->
-      <footer>
+      <footer class="fine-footer">
          Thanks for visiting! You can find me at:<br>
          <ul id="footer_icons">
             <li class="footer-item"><a href="mailto:designwithjc@gmail.com"><img src="logo/email.png" alt="email logo" style="width: 45px; height: 35px;"></a></li>
             <li class="footer-item"><a href="https://www.linkedin.com/in/juliamchow/" target="_blank"><img src="logo/linkedin_black.png" alt ="linkedin logo" style="width: 35px; height: 35px;"></a></li>
          </ul>
+         <p id="copyright">Designed and developed by Julia Chow.</p>
       </footer>
    </body>
 </html>
