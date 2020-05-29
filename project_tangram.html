@@ -12,7 +12,7 @@
       <!-- link to "animate.css" -->
       <link rel="stylesheet" type="text/css" href="animate.css">
       <!-- put "index.css" after "reset.css" to avoid the style being reset to plain -->
-      <link rel="stylesheet" type="text/css" href="project_tangram.css">
+      <link rel="stylesheet" type="text/css" href="main.css">
       <!-- for Chart JS -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
       <script type="text/javascript" src="project_tangram.js"></script>
@@ -30,7 +30,7 @@
             <ul>
                <li><a href="index.html">Work</a></li>
                <li><a href="about.html">About</a></li>
-               <li><a href="resume.html">Resume</a></li>
+               <li><a href="https://drive.google.com/open?id=1LDv4mc87nm7BIayDa0eGEzJIjg3bZv_a" target="_blank">Resume</a></li>
                <li><a href="fun.html">Fun</a></li>
             </ul>
          </nav>
@@ -39,16 +39,16 @@
          <ul id="nav_bar">
             <li class="nav_item"><a href="index.html">Work</a></li>
             <li class="nav_item"><a href="about.html">About</a></li>
-            <li class="nav_item"><a href="resume.html">Resume</a></li>
+            <li class="nav_item"><a href="https://drive.google.com/open?id=1LDv4mc87nm7BIayDa0eGEzJIjg3bZv_a" target="_blank">Resume</a></li>
             <li class="nav_item"><a href="fun.html">Fun</a></li>
          </ul>
          <!-- End of nav bar -->
       </header>
-      <main>
+      <main class="proj-tangram-main">
          <!-- Side Menu Bar -->
          <nav class="section-nav" style="letter-spacing: 1px;">
             <ol>
-               <li><img id="personal-logo" src="logo/final_logo_large.png" alt="personal logo"></li>
+               <li id="home-btn"><a href="index.html"><img id="personal-logo" src="logo/final_logo_large.png" alt="personal logo"></a></li>
                <li><a href="#summary">SUMMARY</a></li>
                <li><a href="#problem-solutions">PROBLEMS &amp; SOLUTIONS</a></li>
                <li><a href="#user-research">USER RESEARCH</a></li>
@@ -125,21 +125,21 @@
                </table>
                <!-- Solutions -->
                <h2>Solutions</h2>
-               <div class="carousel">
+               <div class="carousel" id="car-solut">
                   <input type="checkbox" class="faux-ui-facia">
-                  <div class="slide" data-slide="4" data-annot="Solution #3">
+                  <div class="slide-solut slide" data-slide="4" data-annot="Solution #3">
                      <img src="image/solution4_concern.png"  alt="Solution #3">
                   </div>
                   <input type="checkbox" class="faux-ui-facia">
-                  <div class="slide" data-slide="3" data-annot="Solution #2b">
+                  <div class="slide-solut slide" data-slide="3" data-annot="Solution #2b">
                      <img src="image/solution3_D2.gif"  alt="Solution #2b">
                   </div>
                   <input type="checkbox" class="faux-ui-facia">
-                  <div class="slide" data-slide="2" data-annot="Solution #2a">
+                  <div class="slide-solut slide" data-slide="2" data-annot="Solution #2a">
                      <img src="image/solution2_D1.png"  alt="Solution #2a">
                   </div>
                   <input type="checkbox" class="faux-ui-facia">
-                  <div class="slide" data-slide="1" data-annot="Solution #1">
+                  <div class="slide-solut slide" data-slide="1" data-annot="Solution #1">
                      <img src="image/solution1_ABC.png" alt="Solution #1">
                   </div>
                   <div class="counter"> / 4</div>
@@ -330,17 +330,17 @@
                <!-- Personas -->
                <section id="personas">
                   <h2>Personas</h2>
-                  <div class="carousel2">
+                  <div class="carousel" id="car-per">
                      <input type="checkbox" class="faux-ui-facia">
-                     <div class="slide2" data-slide="3">
+                     <div class="slide-per slide" data-slide="3">
                         <img src="image/persona_beth.png" alt="persona Beth">
                      </div>
                      <input type="checkbox" class="faux-ui-facia">
-                     <div class="slide2" data-slide="2">
+                     <div class="slide-per slide" data-slide="2">
                         <img src="image/persona_phoebe.png" alt="persona Phoebe">
                      </div>
                      <input type="checkbox" class="faux-ui-facia">
-                     <div class="slide2" data-slide="1">
+                     <div class="slide-per slide" data-slide="1">
                         <img src="image/persona_john.png" alt="persona John">
                      </div>
                      <div class="counter"> / 3</div>
@@ -372,28 +372,28 @@
                      <th>
                         <p>Real-time collaboration</p>
                      </th>
-                     <td class="symbol"><img src="image/tick.png" alt="tick"></td>
-                     <td class="symbol"><img src="image/tick.png" alt="tick"></td>
+                     <td class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                     <td class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
                   </tr>
                   <tr>
                      <th>
                         <p>Customizable organization</p>
                      </th>
-                     <td class="symbol"><img src="image/cross.png" alt="cross"></td>
+                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
                      <td><img src="image/tick-star.png" style="width: 50px; height: 50px;" alt="special tick"></td>
                   <tr>
                      <th>
                         <p>Video-editing tool</p>
                      </th>
-                     <td class="symbol"><img src="image/cross.png" alt="cross"></td>
-                     <td class="symbol"><img src="image/cross.png" alt="cross"></td>
+                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
                   </tr>
                   <tr>
                      <th>
                         <p>Private folders</p>
                      </th>
-                     <td class="symbol"><img src="image/cross.png" alt="cross"></td>
-                     <td class="symbol"><img src="image/cross.png" alt="cross"></td>
+                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
                   </tr>
                </table>
                <p style="font-size: 15px;">*On Dropbox, users can organize files by "last modified" or "name".</p>
@@ -680,6 +680,7 @@
             <li class="footer-item"><a href="mailto:designwithjc@gmail.com"><img src="logo/email.png" alt="email logo" style="width: 45px; height: 35px;"></a></li>
             <li class="footer-item"><a href="https://www.linkedin.com/in/juliamchow/" target="_blank"><img src="logo/linkedin_black.png" alt ="linkedin logo" style="width: 35px; height: 35px;"></a></li>
          </ul>
+         <p id="copyright">Designed and developed by Julia Chow.</p>
       </footer>
    </body>
 </html>
