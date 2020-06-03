@@ -887,7 +887,7 @@ footer #copyright {
     max-width: 675px;
     max-height: 400px;
   }
-  
+
   /* PROJECT TANGRAM */
   .proj-tangram-main {
     grid-template-columns: 50% 50%;
@@ -1084,7 +1084,8 @@ footer #copyright {
   .case-grid-container {
     grid-template-columns: 1fr;
     padding-top: 20px;
-    padding-left: 50px;
+    padding-left: 30px;
+    padding-right: 20px;
     display: block;
     margin-bottom: 50px;
   }
@@ -1113,6 +1114,7 @@ footer #copyright {
     font-size: 18px;
     padding-top: 30px;
     line-height: 25px;
+    padding-right: 20px;
   }
   #top_right #tagline br{
     display: none;
