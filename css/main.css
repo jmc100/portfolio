@@ -828,12 +828,102 @@ footer #copyright {
 /* ======RESPONSIVE======= */
 
 /* for extra large screens (e.g. external monitors) */
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 2050px) {
+  h1 {
+    font-size: 50px;
+    line-height: 85px;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 37px;
+    line-height: 45px;
+  }
+  p {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .toggle_menu {
+    display:none;
+  }
+  .toggle-btn {
+    display:none;
+  }
+  #personal-logo {
+    width: 210px;
+    height: 210px;
+  }
 
+  /* INDEX */
+  #main_logo {
+    width: 210px;
+    height: 210px;
+  }
+  #hero_left{
+    font-weight: 600;
+    text-align: right;
+    padding-top: 140px;
+    padding-bottom: 100px;
+  }
+  #hero_right{
+    font-weight: 600;
+    padding-top: 51px;
+    text-align: left;
+    z-index: 1;
+  }
+  #top_right #tagline {
+    padding-top: 10px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .proj-description {
+    display: block;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .case-grid-container {
+    grid-template-columns: 50% 50%;
+  }
+  #proj-cover {
+    max-width: 675px;
+    max-height: 400px;
+  }
+  
+  /* PROJECT TANGRAM */
+  .proj-tangram-main {
+    grid-template-columns: 50% 50%;
+    column-gap: 100px;
+  }
+
+  /* ABOUT */
+  .about-main{
+    grid-template-columns: 35% 65%;
+    column-gap: 50px;
+    max-width: 80%;
+  }
+  .abt-heading {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  /* FUN & sub-pages */
+  .fun-content {
+    display:inline-flex;
+  }
+  .fun-main {
+    grid-template-columns: 30% 70%;
+  }
+  .digital-main{
+    grid-template-columns: 50% 50%;
+    column-gap: 100px;
+  }
+  .fineliner-main {
+    grid-template-columns: 50% 50%;
+    column-gap: 100px;
+  }
 }
 
 /* for standard web screens (e.g. laptop, desktop) */
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 2049px) {
   h1 {
     font-size: 35.5px;
   }
@@ -860,7 +950,6 @@ footer #copyright {
   .toggle-btn {
     display:none;
   }
-
   /* FUN */
   .fun-content {
     display:inline-flex;
