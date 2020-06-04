@@ -1130,6 +1130,7 @@ footer #copyright {
   }
   #hidden-case-tan-btn {
     margin-top: 20px;
+    margin-left: 20px;
     display: block;
   }
 
@@ -1188,7 +1189,7 @@ footer #copyright {
 
   /* FUN */
   .fun-main {
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.8fr;
   }
   .fun-content {
     display: table-row;
