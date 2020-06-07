@@ -933,6 +933,11 @@ footer #copyright {
   p {
     font-size: 18px;
   }
+  #personal-logo {
+    position: fixed;
+    left: 150px;
+    top: 40px;
+  }
   .proj-description {
     display: block;
     font-size: 20px;
@@ -969,6 +974,11 @@ footer #copyright {
   }
   p {
     font-size: 16px;
+  }
+  #personal-logo {
+    position: relative;
+    left: 30px;
+    top: 40px;
   }
   .case-grid-container {
     grid-template-columns: 1fr 1fr;
@@ -1130,7 +1140,7 @@ footer #copyright {
   }
   #hidden-case-tan-btn {
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     display: block;
   }
 
