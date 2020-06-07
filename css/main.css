@@ -51,11 +51,9 @@ p {
 section {
   padding-bottom: 30px;
 }
-
 td {
   vertical-align: top;
 }
-
 
 /* Carousel + Annotation on each slide */
 .carousel {
@@ -68,7 +66,6 @@ td {
 .carousel:hover .slide:before {
   opacity: 1;
 }
-
 .counter {
   position: absolute;
   bottom: 20px;
@@ -126,7 +123,6 @@ td {
 }
 
 /* annotation */
-
 .slide {
   float: right;
   position: absolute;
@@ -177,8 +173,14 @@ td {
   display: inline-block;
   vertical-align: middle;
 }
-
 #personal-logo {
+  width: 115px;
+  height: 115px;
+  border: 1px solid #C0C0C0;
+  border-radius: 100%;
+  margin-bottom: 25px;
+}
+#case-stud-personal-logo {
   width: 115px;
   height: 115px;
   border: 1px solid #C0C0C0;
@@ -379,9 +381,11 @@ main > nav {
 #personal-logo:hover {
   border: 2px solid #808080;
 }
+#case-stud-personal-logo:hover {
+  border: 2px solid #808080;
+}
 
 /* ------End of Side Menu------ */
-
 
 /* ------Footer------ */
 footer {
@@ -397,7 +401,6 @@ footer {
   font-weight: 300;
   text-align: center;
 }
-
 #footer_icons{
   list-style-type: none;
   margin: 0;
@@ -406,16 +409,13 @@ footer {
   background-color: transparent;
   text-align:center;
 }
-
 .footer-item {
   display: inline-table;
 }
-
 footer #copyright {
   text-align: center;
   font-size: 14px;
 }
-
 
 /* ======INDEX======= */
 
@@ -571,8 +571,6 @@ footer #copyright {
   margin: 0px;
   padding: 0px;
 }
-
-
 
 .problem-list  #prob-special {
   display: flex;
@@ -854,19 +852,22 @@ footer #copyright {
   }
 
   /* INDEX */
+  .wrapper_top {
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
   #main_logo {
     width: 210px;
     height: 210px;
   }
-  #hero_left{
-    font-weight: 600;
+  #hero_left {
+    line-height: 55px;
     text-align: right;
     padding-top: 140px;
     padding-bottom: 100px;
   }
-  #hero_right{
-    font-weight: 600;
-    padding-top: 51px;
+  #hero_right {
+    padding-top: 58px;
     text-align: left;
     z-index: 1;
   }
@@ -882,6 +883,7 @@ footer #copyright {
   }
   .case-grid-container {
     grid-template-columns: 50% 50%;
+    padding-left: 400px;
   }
   #proj-cover {
     max-width: 675px;
@@ -933,6 +935,10 @@ footer #copyright {
   p {
     font-size: 18px;
   }
+  #case-stud-personal-logo {
+    left: 150px;
+    top: 40px;
+  }
   #personal-logo {
     position: fixed;
     left: 150px;
@@ -975,11 +981,6 @@ footer #copyright {
   p {
     font-size: 16px;
   }
-  #personal-logo {
-    position: relative;
-    left: 30px;
-    top: 40px;
-  }
   .case-grid-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -989,6 +990,13 @@ footer #copyright {
   }
   .section-nav {
     font-size: 70%;
+  }
+  /* PROJECT TANGRAM */
+  #case-stud-personal-logo {
+    width: 60%;
+    height: 60%;
+    left: 30px;
+    top: 40px;
   }
   #cover-image {
     width: 50%;
@@ -1012,10 +1020,10 @@ footer #copyright {
   div .slide{
     width: 100%;
   }
-
   div .counter {
     display: none;
   }
+  /* INDEX */
   #main_logo {
     width: 70px;
     height: 70px;
@@ -1024,16 +1032,21 @@ footer #copyright {
   #personal-logo {
     width: 60%;
     height: 60%;
+    position: relative;
+    left: 30px;
+    top: 40px;
   }
   #proj-cover {
     max-width: 100%;
   }
+  /* TOGGLE MENU */
   .toggle_menu {
     display:none;
   }
   .toggle-btn {
     display:none;
   }
+
   /* FUN */
   .fun-content {
     display: block;
@@ -1044,7 +1057,7 @@ footer #copyright {
 /* set to 665 to cater the navbar */
 @media screen and (max-width: 665px) {
 
-  /* general */
+  /* GENERAL */
   h1 {
     font-size: 22px;
   }
@@ -1071,6 +1084,7 @@ footer #copyright {
     position: relative;
     vertical-align: bottom;
   }
+
   /* INDEX */
   .case-left {
     height: 20px;
@@ -1083,7 +1097,6 @@ footer #copyright {
     text-align: center;
     padding: 0px;
   }
-
   .proj-description {
     display: none;
   }
@@ -1099,7 +1112,6 @@ footer #copyright {
     display: block;
     margin-bottom: 50px;
   }
-
   #proj-cover {
     max-width: 100%;
     max-height: 80%;
@@ -1153,7 +1165,6 @@ footer #copyright {
     width: 95%;
     height: 95%;
   }
-
   #car-solut {
     width: 100%;
     max-height: 200px;
@@ -1183,6 +1194,7 @@ footer #copyright {
     width: 100%;
     height: 100px;
   }
+
   /* ABOUT */
   .about-main {
     display: inline-block;
@@ -1219,6 +1231,7 @@ footer #copyright {
   .slide-digi {
     height: 100%;
   }
+
   /* FUN FINELINER  */
   .fineliner-main {
     display: inline-block;
