@@ -355,6 +355,7 @@ main > nav {
 .section-nav {
   text-align: right;
   font-size: 14px;
+  padding-bottom: 35px;
 }
 /* 5. Non-selected tab */
 .section-nav a {
@@ -390,7 +391,7 @@ main > nav {
 /* ------Footer------ */
 footer {
   border-top: 50px;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 10px;
   left: 0;
   bottom: 0;
@@ -429,15 +430,21 @@ footer #copyright {
   background-color: #F8CC46;
   z-index: 1;
 }
+
 #top_right {
   padding-left: 20px;
   background-color: #F8F4F0;
 }
-#top_right #tagline {
+#tagline {
   font-weight: 300;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 20px;
+  line-height: 30px;
   float: left;
+}
+.firstname {
+  display: block;
+  padding-top: 30px;
 }
 #hero_left{
   text-align: right;
@@ -526,10 +533,52 @@ footer #copyright {
   height: 410px;
   padding-bottom: 35px;
 }
-#deliverables {
-  width: 700px;
-  height: 580px;
-  margin-top: 50px;
+
+/* text-detectable deliverables */
+.deliver-table {
+  border-collapse: separate;
+  border-spacing: 30px 20px;
+  vertical-align: middle;
+}
+.deliver-header {
+  text-align: left;
+  font-weight: 400;
+}
+.deliver-txt {
+  margin:0px;
+}
+
+.deliverable-grp1 {
+  background-color: #E2E2E2;
+  border-radius: 10px;
+  padding: 12px;
+}
+.deliverable-grp2 {
+  background-color: #FFD31D;
+  border-radius: 10px;
+  padding: 12px;
+
+}
+.deliverable-grp3 {
+  color: #FFFFFF;
+  background-color: #CF7500;
+  border-radius: 10px;
+  padding: 12px;
+
+}
+.deliverable-grp4 {
+  color: #FFFFFF;
+  background-color: #8C6B14;
+  border-radius: 10px;
+  padding: 12px;
+
+}
+.deliverable-grp5 {
+  color: #FFFFFF;
+  background-color: #444444;
+  border-radius: 10px;
+  padding: 12px;
+
 }
 
 /* prototype buttons */
@@ -684,6 +733,10 @@ footer #copyright {
   line-height: 20px;
 }
 
+/* go to top button */
+.top-btn {
+  display: none;
+}
 
 /* ======ABOUT======= */
 
@@ -708,26 +761,29 @@ footer #copyright {
 
 #art-tag {
   color: #000000;
-  background-color: #F8CC46;
+  background-color: #FFE000;
   text-decoration: none;
 }
 
 #art-tag:hover {
-  background-color: #F0A500;
+  color: #FFFBF7;
+  background-color: #FEAD46;
 }
 
 /* ======FUN======= */
-
+.fun-general {
+  padding-top: 10px;
+  padding-left: 60px;
+}
 .fun-main {
   display: grid;
-  grid-template-columns: 20% 70% 10%;
+  grid-template-columns: 20% 80%;
   width: 90%;
   margin: 10px;
 }
-
 .display-container {
   position: relative;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-left: 50px;
   width: 100%;
 }
@@ -838,7 +894,7 @@ footer #copyright {
   }
   p {
     font-size: 28px;
-    line-height: 40px;
+    line-height: 42px;
   }
   .toggle_menu {
     display:none;
@@ -854,7 +910,7 @@ footer #copyright {
   /* INDEX */
   .wrapper_top {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 30% 70%;
   }
   #main_logo {
     width: 210px;
@@ -871,15 +927,14 @@ footer #copyright {
     text-align: left;
     z-index: 1;
   }
-  #top_right #tagline {
+  #tagline {
     padding-top: 10px;
     font-size: 28px;
-    line-height: 40px;
+    line-height: 42px;
   }
   .proj-description {
     display: block;
     font-size: 28px;
-    line-height: 40px;
   }
   .case-grid-container {
     grid-template-columns: 50% 50%;
@@ -912,7 +967,7 @@ footer #copyright {
     display:inline-flex;
   }
   .fun-main {
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 80%;
   }
   .digital-main{
     grid-template-columns: 50% 50%;
@@ -947,6 +1002,7 @@ footer #copyright {
   .proj-description {
     display: block;
     font-size: 20px;
+    line-height: 30px;
   }
   .case-grid-container {
     grid-template-columns: 1fr 1fr;
@@ -970,7 +1026,7 @@ footer #copyright {
 /* for medium screens (e.g. tablet) */
 @media screen and (max-width: 1024px) {
   h1 {
-    font-size: 20px;
+    font-size: 28px;
   }
   h2 {
     font-size: 25px;
@@ -981,12 +1037,20 @@ footer #copyright {
   p {
     font-size: 16px;
   }
+  #tagline {
+    padding-top: 8px;
+  }
+  .firstname {
+    display: block;
+    padding-top: 14px;
+  }
   .case-grid-container {
     grid-template-columns: 1fr 1fr;
   }
   .proj-description {
     display: block;
     font-size: 16px;
+    margin-right: 5px;
   }
   .section-nav {
     font-size: 70%;
@@ -1002,12 +1066,8 @@ footer #copyright {
     width: 50%;
     height: 50%;
   }
-  #deliverables {
-    width: 80%;
-    height: 80%;
-  }
   #hero_right {
-    padding-top: 64px;
+    padding-top: 60px;
   }
   #car-solut {
     width: 100%;
@@ -1030,11 +1090,11 @@ footer #copyright {
     left: 50px;
   }
   #personal-logo {
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
     position: relative;
     left: 30px;
-    top: 40px;
+    top: 10px;
   }
   #proj-cover {
     max-width: 100%;
@@ -1048,6 +1108,9 @@ footer #copyright {
   }
 
   /* FUN */
+  .fun-general {
+    padding-left: 100px;
+  }
   .fun-content {
     display: block;
   }
@@ -1080,10 +1143,6 @@ footer #copyright {
   .toggle_menu {
     display:flex;
   }
-  footer {
-    position: relative;
-    vertical-align: bottom;
-  }
 
   /* INDEX */
   .case-left {
@@ -1098,7 +1157,11 @@ footer #copyright {
     padding: 0px;
   }
   .proj-description {
-    display: none;
+    display: block;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
   }
   .proj-tangram-main {
     display: inline-block;
@@ -1110,17 +1173,18 @@ footer #copyright {
     padding-left: 30px;
     padding-right: 20px;
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 140px;
   }
   #proj-cover {
+    position: relative;
     max-width: 100%;
     max-height: 80%;
-    margin-top: 20px;
+    margin-top: 140px;
   }
   #main_logo {
     width: 70px;
     height: 70px;
-    left: 50px;
+    left: 45px;
     top: 30px;
   }
   #hero_left{
@@ -1132,9 +1196,9 @@ footer #copyright {
   #hero_right {
     padding-top: 74px;
   }
-  #top_right #tagline {
-    font-size: 18px;
-    padding-top: 30px;
+  #tagline {
+    font-size: 16px;
+    padding-top: 5px;
     line-height: 25px;
     padding-right: 20px;
   }
@@ -1142,7 +1206,7 @@ footer #copyright {
     display: none;
   }
   .wrapper_top {
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 35% 65%;
   }
   #nav_bar .nav_item{
     display: none;
@@ -1152,7 +1216,8 @@ footer #copyright {
   }
   #hidden-case-tan-btn {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
   }
 
@@ -1161,9 +1226,49 @@ footer #copyright {
     width: 100%;
     height: 100%;
   }
-  #deliverables {
-    width: 95%;
-    height: 95%;
+  .deliver-table {
+    border-collapse: separate;
+    border-spacing: 8px;
+    vertical-align: middle;
+  }
+  .deliverable-grp1{
+    font-size: 11px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  .deliverable-grp2{
+    font-size: 11px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  .deliverable-grp3{
+    font-size: 11px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  .deliverable-grp4{
+    font-size: 11px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  .deliverable-grp5{
+    font-size: 11px;
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  .deliver-txt {
+    margin: 0px;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .deliver-header{
+    font-size: 15px;
+    font-weight: 600;
   }
   #car-solut {
     width: 100%;
@@ -1210,11 +1315,18 @@ footer #copyright {
   }
 
   /* FUN */
+  .fun-general {
+    padding-left: 20px;
+  }
   .fun-main {
-    grid-template-columns: 0.8fr;
+    grid-template-columns: 0.95fr;
   }
   .fun-content {
     display: table-row;
+  }
+  .display-container {
+    margin-left: 20px;
+    margin-bottom: 20px;
   }
 
   /* FUN DIGITAL  */
@@ -1244,5 +1356,20 @@ footer #copyright {
   .slide-fine {
     width: 338px;
     height: 293px;
+  }
+  .top-btn {
+    display: block;
+    float: right;
+    width: 40px;
+    height: 50px;
+    padding: 10px;
+    border: 3px solid #FF8C00;
+    margin-bottom: 15px;
+  }
+  /* FOOTER  */
+  footer {
+    vertical-align: bottom;
+    font-size: 16px;
+    /* position: relative; */
   }
 }
