@@ -466,6 +466,12 @@ footer #copyright {
   top: 40px;
   z-index: 2;
 }
+.dn-btn {
+  display: block;
+  width: 25px;
+  height: 20px;
+  margin-left: 29%;
+}
 /* Case Study Text */
 .proj-name {
   font-weight: 700;
