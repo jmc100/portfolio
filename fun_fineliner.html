@@ -49,31 +49,93 @@
          <!-- Content-->
          <div style="padding-top: 20px; padding-bottom: 20px;" class="content">
             <p>Some of my fineliner illustration:</p>
-            <div class="carousel" id="car-fine">
-               <input type="checkbox" class="faux-ui-facia">
-               <div class="slide-fine slide" data-slide="5" data-annot="Surveillance (Dec 2019)">
-                  <img src="fun/fine-surveillance.jpeg"  alt="surveillance">
-               </div>
-               <input type="checkbox" class="faux-ui-facia">
-               <div class="slide-fine slide" data-slide="4" data-annot="Vision (Aug 2019)">
-                  <img src="fun/fine-vision.jpeg"  alt="vision">
-               </div>
-               <input type="checkbox" class="faux-ui-facia">
-               <div class="slide-fine slide" data-slide="3" data-annot="House (Apr 2019)">
-                  <img src="fun/fine-house.jpeg"  alt="house">
-               </div>
-               <input type="checkbox" class="faux-ui-facia">
-               <div class="slide-fine slide" data-slide="2" data-annot="Heart (Dec 2018)">
-                  <img src="fun/fine-heart.jpeg"  alt="heart">
-               </div>
-               <input type="checkbox" class="faux-ui-facia">
-               <div class="slide-fine slide" data-slide="1" data-annot="Unmasked (July 2018)">
-                  <img src="fun/fine-unmasked.jpeg" alt="unmasked">
-               </div>
-               <div class="counter"> / 5</div>
-            </div>
-            <p style="font-size: 15px;">Click on the slide to see the next picture.</p>
-         </div>
+         <!-- new carousel -->
+         <section>
+             <div class="car-container">
+                 <div class="new-car">
+                     <input type="radio" name="slides" checked="checked" id="slide-1">
+                     <input type="radio" name="slides" id="slide-2">
+                     <input type="radio" name="slides" id="slide-3">
+                     <input type="radio" name="slides" id="slide-4">
+                     <input type="radio" name="slides" id="slide-5">
+                     <ul class="carousel__slides">
+                         <li class="carousel__slide">
+                             <figure>
+                                 <div>
+                                     <img src="fun/fine-unmasked.jpeg" alt="unmasked">
+                                 </div>
+                                 <figcaption>
+                                     <p>Unmasked</p>
+                                     <span class="credit"><p>July 2018</p></span>
+                                 </figcaption>
+                             </figure>
+                         </li>
+                         <li class="carousel__slide">
+                             <figure>
+                                 <div>
+                                     <img src="fun/fine-heart.jpeg"  alt="heart">
+                                 </div>
+                                 <figcaption>
+                                     <p>Heart</p>
+                                     <span class="credit"><p>Dec 2018</p></span>
+                                 </figcaption>
+                             </figure>
+                         </li>
+                         <li class="carousel__slide">
+                             <figure>
+                                 <div>
+                                     <img src="fun/fine-house.jpeg"  alt="house">
+                                 </div>
+                                 <figcaption>
+                                     <p>House</p>
+                                     <span class="credit"><p>Apr 2019</p></span>
+                                 </figcaption>
+                             </figure>
+                         </li>
+                         <li class="carousel__slide">
+                             <figure>
+                                 <div>
+                                     <img src="fun/fine-vision.jpeg"  alt="vision">
+                                 </div>
+                                 <figcaption>
+                                     <p>Vision</p>
+                                     <span class="credit"><p>Aug 2019</p></span>
+                                 </figcaption>
+                             </figure>
+                         </li>
+                         <li class="carousel__slide">
+                             <figure>
+                                 <div>
+                                     <img src="fun/fine-surveillance.jpeg"  alt="surveillance">
+                                 </div>
+                                 <figcaption>
+                                     <p>Surveillance</p>
+                                     <span class="credit"><p>Dec 2019</p></span>
+                                 </figcaption>
+                             </figure>
+                         </li>
+                     </ul>
+                     <ul class="carousel__thumbnails">
+                         <li>
+                             <label for="slide-1"><img src="fun/fine-unmasked.jpeg" alt="unmasked"></label>
+                         </li>
+                         <li>
+                             <label for="slide-2"><img src="fun/fine-heart.jpeg"  alt="heart"></label>
+                         </li>
+                         <li>
+                             <label for="slide-3"><img src="fun/fine-house.jpeg"  alt="house"></label>
+                         </li>
+                         <li>
+                             <label for="slide-4"><img src="fun/fine-vision.jpeg"  alt="vision"></label>
+                         </li>
+                         <li>
+                             <label for="slide-5"><img src="fun/fine-surveillance.jpeg"  alt="surveillance"></label>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </section>
+         <!-- End of new carousel -->
       </main>
       <!-- footer -->
       <footer class="fine-footer">
