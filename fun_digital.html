@@ -25,7 +25,7 @@
             <ul>
                <li><a href="index.html">Work</a></li>
                <li><a href="about.html">About</a></li>
-               <li><a href="https://drive.google.com/file/d/1VMbuv_aoehqs2VGaS53P_KbL0vlYs9Zk/view?usp=sharing" target="_blank">Resume</a></li>
+               <li><a href="https://drive.google.com/open?id=1Ok5G4QNDf8jmcljT6fi7IfVavXikEwD4" target="_blank">Resume</a></li>
                <li><a href="fun.html">Art</a></li>
             </ul>
          </nav>
@@ -34,7 +34,7 @@
          <ul id="nav_bar">
             <li class="nav_item"><a href="index.html">Work</a></li>
             <li class="nav_item"><a href="about.html">About</a></li>
-            <li class="nav_item"><a href="https://drive.google.com/file/d/1VMbuv_aoehqs2VGaS53P_KbL0vlYs9Zk/view?usp=sharing" target="_blank">Resume</a></li>
+            <li class="nav_item"><a href="https://drive.google.com/open?id=1Ok5G4QNDf8jmcljT6fi7IfVavXikEwD4" target="_blank">Resume</a></li>
             <li class="nav_item"><a href="fun.html">Art</a></li>
          </ul>
          <!-- End of nav bar -->
@@ -49,22 +49,64 @@
          <!-- Content-->
          <div style="padding-top: 50px; padding-bottom: 30px;" class="content">
             <h3 id="digital-heading" style="font-weight: 600;">A can of home (2019)</h3>
-            <div class="carousel" id="car-digi">
-               <input type="checkbox" class="faux-ui-facia">
-               <div class="slide-digi slide"  data-slide="3" data-annot="Bathroom (front & rear)">
-                  <img src="fun/can-bathroom.png"  alt="Bathroom">
-               </div>
-               <input type="checkbox" class="faux-ui-facia">
-               <div class="slide-digi slide" data-slide="2" data-annot="Kitchen (front & rear)">
-                  <img src="fun/can-kitchen.png" alt="Kitchen">
-               </div>
-               <input type="checkbox" class="faux-ui-facia">
-               <div class="slide-digi slide" data-slide="1" data-annot="Bedroom (front & rear)">
-                  <img src="fun/can-bedroom.png"  alt="Bedroom">
-               </div>
-               <div class="counter"> / 3</div>
-            </div>
-            <p style="font-size: 15px;">(Click on the slide to see the next picture.)</p>
+            <!-- new carousel -->
+            <section>
+                <div class="car-container">
+                    <div class="new-car">
+                        <input type="radio" name="slides" checked="checked" id="slide-1">
+                        <input type="radio" name="slides" id="slide-2">
+                        <input type="radio" name="slides" id="slide-3">
+                        <ul class="carousel__slides">
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="fun/can-bathroom.png"  alt="Bathroom">
+                                    </div>
+                                    <figcaption>
+                                        <p>Bathroom</p>
+                                        <span class="credit"><p>(front and rear)</p></span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="fun/can-kitchen.png" alt="Kitchen">
+                                    </div>
+                                    <figcaption>
+                                        <p>Kitchen</p>
+                                        <span class="credit"><p>(front and rear)</p></span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="fun/can-bedroom.png"  alt="Bedroom">
+                                    </div>
+                                    <figcaption>
+                                        <p>Bedroom</p>
+                                        <span class="credit"><p>(front and rear)</p></span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                        </ul>
+                        <ul class="carousel__thumbnails">
+                            <li>
+                                <label for="slide-1"><img src="fun/can-bathroom.png"  alt="Bathroom"></label>
+                            </li>
+                            <li>
+                                <label for="slide-2"><img src="fun/can-kitchen.png" alt="Kitchen"></label>
+                            </li>
+                            <li>
+                                <label for="slide-3"><img src="fun/can-bedroom.png"  alt="Bedroom"></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- End of new carousel -->
             <p>In this series, I imagined what it would be like to build a home out of cans. In Hong Kong, the price of housing is so high that it is common for locals to live in crammed homes. This series is meant to be a light-hearted capture of the bitter situation.</p>
             <p>Created in 2019 with Adobe Illustrator.</p>
          </div>
