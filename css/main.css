@@ -578,7 +578,7 @@ footer #copyright {
   cursor: pointer;
 }
 .carousel__thumbnails label:hover img, .carousel__thumbnails label:focus img {
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 0px 1px #9C9C9C;
   transition: all 300ms ease-in-out;
 }
 .carousel__thumbnails img {
@@ -596,7 +596,7 @@ footer #copyright {
 /* Hero image */
 .wrapper_top {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 32% 68%;
 }
 #top_left {
   padding-right: 15px;
@@ -643,7 +643,7 @@ footer #copyright {
   display: block;
   width: 25px;
   height: 20px;
-  margin-left: 29%;
+  margin-left: 30%;
 }
 /* Case Study Text */
 .proj-name {
@@ -691,6 +691,7 @@ footer #copyright {
   grid-template-columns: 1fr;
   grid-template-rows: 30% 70%;
   grid-template-areas: "case-left" "case-right";
+  margin: 50px;
   padding-left: 115px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -792,8 +793,8 @@ footer #copyright {
   height: 40px;
   width: 40px;
   font-size: 16px;
-  font-weight: 600;
-  background-color: #E32900;
+  font-weight: 700;
+  background-color: #E53F2E;
   color: #FFFFFF;
   border-radius: 100px;
   margin: 0px;
@@ -807,10 +808,12 @@ footer #copyright {
   height: 40px;
   width: 80px;
   font-size: 18px;
+  letter-spacing: .5px;
+  font-weight: 600;
   margin-top: 8px;
   margin-bottom: 10px;
   background-color: #FFDF37;
-  color: #333333;
+  color: #000000;
   border-radius: 5px;
 }
 .problem-list p {
@@ -842,7 +845,7 @@ footer #copyright {
   font-size: 18px;
   font-weight: 600;
   margin-top: 5px;
-  background-color: #0074D8;
+  background-color: #A86702;
   color: #FFFFFF;
   border-radius: 5px;
 }
@@ -1057,6 +1060,17 @@ footer #copyright {
   text-indent: 605px;
 }
 
+/* ======CONTACT FORM======= */
+
+.contact-main {
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+  column-gap: 50px;
+  max-width: 100em;
+  width: 90%;
+  margin-left: 10px;
+}
+
 
 /* ======RESPONSIVE======= */
 
@@ -1089,7 +1103,7 @@ footer #copyright {
   /* INDEX */
   .wrapper_top {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 40% 60%;
   }
   #main_logo {
     width: 210px;
@@ -1451,11 +1465,17 @@ footer #copyright {
   }
   #car-solut {
     width: 100%;
-    max-height: 200px;
+    max-height: 400px;
   }
   #car-per {
-    width: 100%;
-    height: 270px;
+    /* width: 100%; */
+    max-height: 660px;
+  }
+  .per-txt {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0px;
+    padding: 0px;
   }
   .slide-solut{
     width: 100%;
