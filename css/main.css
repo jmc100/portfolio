@@ -727,7 +727,6 @@ footer #copyright {
 .deliver-txt {
   margin:0px;
 }
-
 .deliverable-grp1 {
   background-color: #E2E2E2;
   border-radius: 10px;
@@ -737,28 +736,24 @@ footer #copyright {
   background-color: #FFD31D;
   border-radius: 10px;
   padding: 12px;
-
 }
 .deliverable-grp3 {
   color: #FFFFFF;
   background-color: #CF7500;
   border-radius: 10px;
   padding: 12px;
-
 }
 .deliverable-grp4 {
   color: #FFFFFF;
   background-color: #8C6B14;
   border-radius: 10px;
   padding: 12px;
-
 }
 .deliverable-grp5 {
   color: #FFFFFF;
   background-color: #444444;
   border-radius: 10px;
   padding: 12px;
-
 }
 
 /* prototype buttons */
@@ -794,7 +789,7 @@ footer #copyright {
   width: 40px;
   font-size: 16px;
   font-weight: 700;
-  background-color: #FF4836;;
+  background-color: #FF4836;
   color: #FFFFFF;
   border-radius: 100px;
   margin: 0px;
