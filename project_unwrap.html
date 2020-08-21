@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Julia Chow | Unwrap</title>
+      <link rel="shortcut icon" type="image/png" href="logo/favicon.png">
+      <meta charset="utf-8">
+      <!-- to avoid inconsistencies between browsers -->
+      <link rel="stylesheet" href="css/reset.css">
+      <!-- Google font-->
+      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+      <!-- put "index.css" after "reset.css" to avoid the style being reset to plain -->
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <!-- for Chart JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+      <script type="text/javascript" src="project_menu.js"></script>
+   </head>
+   <body>
+      <header>
+         <!-- toggle menu -->
+         <input type='checkbox' id='toggle' style='display:none;' />
+         <label class='toggle-btn toggle-btn__cross' for='toggle'>
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+         </label>
+         <nav class="toggle_menu">
+            <ul>
+               <li><a href="index.html">Work</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="https://drive.google.com/file/d/1JCZVW5uDHsFxszfEWS9Aeu2gq3JeE4lU/view?usp=sharing" target="_blank">Resume</a></li>
+               <li><a href="fun.html">Art</a></li>
+            </ul>
+         </nav>
+         <!-- End of toggle menu -->
+         <!-- nav bar -->
+         <ul id="nav_bar">
+            <li class="nav_item"><a href="index.html">Work</a></li>
+            <li class="nav_item"><a href="about.html" style="color: #BDBDBD">About</a></li>
+            <li class="nav_item"><a href="https://drive.google.com/file/d/1JCZVW5uDHsFxszfEWS9Aeu2gq3JeE4lU/view?usp=sharing" target="_blank" style="color: #BDBDBD">Resume</a></li>
+            <li class="nav_item"><a href="fun.html" style="color: #BDBDBD">Art</a></li>
+         </ul>
+         <!-- End of nav bar -->
+      </header>
+      <main class="proj-tangram-main">
+         <!-- Side Menu Bar -->
+         <nav class="section-nav" style="letter-spacing: 1px;">
+            <ol>
+               <li id="home-btn"><a href="index.html"><img id="case-stud-personal-logo" src="logo/final_logo_large.png" alt="personal logo"></a></li>
+               <li><a href="#summary">OVERVIEW</a></li>
+               <li><a href="#prob-solut">PROBLEMS &amp; SOLUTIONS</a></li>
+               <li><a href="#user-research">USER RESEARCH</a></li>
+               <li>
+                  <ul>
+                     <li><a href="#survey" style="line-height: 14px;">Survey</a></li>
+                     <li><a href="#personas" style="line-height: 14px;">Personas</a></li>
+                     <li><a href="#user-stories" style="line-height: 14px;">User Stories</a></li>
+                  </ul>
+               </li>
+               <li><a href="#comp-analysis">COMPETITIVE ANALYSIS</a></li>
+               <li><a href="#wireframe">SKETCHES, WIREFRAMES &amp; TESTING</a></li>
+               <li><a href="#mockup">MOCKUPS &amp; TESTING</a></li>
+               <li><a href="#branding">BRANDING</a></li>
+               <li><a href="#prototype">PROTOTYPE</a></li>
+               <li><a href="#reflection">REFLECTION</a></li>
+            </ol>
+         </nav>
+         <!-- Content-->
+         <div class ="content">
+            <!-- Summary -->
+            <section id="summary">
+               <h2 class="main-head">Unwrap</h2>
+               <img style="width: 100%; height: auto;" id ="cover-image" src="image/Unwrap_main_cover.png" alt="cover image">
+               <a href="https://www.figma.com/proto/p2U9aMvYD8XBLUAGC8qFGF/Unwrap_Final_Prototype?node-id=2263%3A0&scaling=scale-down" target="_blank" class="proto-btn">view prototype</a>
+               <h2>Overview</h2>
+               <p>In theory, the concept of zero waste is to create no trash. But in practice, it is not always feasible. For hygienic reasons, surgeons need to use disposable masks and gloves to ensure an operation is carried out in a sterile environment. However, there are cases in which <a href="https://interestingengineering.com/17-completely-nonsense-yet-real-packaging-examples" target="_blank" >food items are packaged individually in disposable containers</a>. This creates unnecessary waste.</p>
+               <p>Despite knowing these issues, many consumers are unable to act upon it. On the one hand, consumers find it hard to locate  stores. On the other hand, zero waste store owners notice that a lot of their customers are one-time enthusiasts only.</p>
+               <p>To tackle these problems, I created Unwrap. It is a mobile app that helps users find zero waste stores and it has a loyalty program to provide gifts and discounts for regular customers. These functions aim to help users explore zero waste alternatives and store owners to retain customers.</p>
+               <table class="deliver-table">
+                  <tr>
+                     <td>
+                        <h2 class="deliver-header">My roles</h2>
+                     </td>
+                     <td>
+                        <h2 class="deliver-header">Deliverables</h2>
+                     </td>
+                     <td>
+                        <h2 class="deliver-header">Methods/ Tools</h2>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="vertical-align: middle;">
+                        <p class="deliverable-grp1">UX research</p>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp1" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">User surveys</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">User stories</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">User flow</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Personas</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp1" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">Google Form</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">research, reviews</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Whimsical</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">interviews</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="vertical-align: middle;">
+                        <p class="deliverable-grp6">UX/UI design</p>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp6" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">Sketches & Wireframes</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Usability tests</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Mockups</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Prototypes</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp6" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">pencil sketches, Figma</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">guided and unguided tests</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Figma, Illustrator</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Figma, Illustrator, Photoshop</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="vertical-align: middle;">
+                        <p class="deliverable-grp7">Visual design</p>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp7" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">Color & Typography</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Logo design</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp7" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">Material Design Guidelines</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Figma</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="vertical-align: middle;">
+                        <p class="deliverable-grp8">Motion Design</p>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp8" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt-dark">Launch screen animation</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt-dark">Data Visualisation</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp8" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt-dark">Illustrator, After Effects</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt-dark">After Effects</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="vertical-align: middle;">
+                        <p class="deliverable-grp9">Market research</p>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp9" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt-dark">Competitive Analysis</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp9" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt-dark">App store reviews, interviews</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <!-- ==== end of deliverables ==== -->
+            </section>
+            <!-- Problem & Solutions -->
+            <section id="prob-solut">
+               <!-- Problems -->
+               <h2>Problems</h2>
+               <table>
+                  <tr>
+                     <td>
+                        <p><mark style="background-color: #FFD600; color: #444444; padding: 5px; border-radius: 5px;">Consumers</mark></p>
+                        <ul>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">“Don’t know the location and the opening hours of zero waste stores.”</p>
+                           </li>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">“Zero waste products are expensive.”</p>
+                           </li>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">“It’s unclear how buying from zero waste stores can help with environment.”</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="width: 60px;"></td>
+                     <td>
+                        <p><mark style="background-color: #FFD600; color: #444444; padding: 5px; border-radius: 5px;">Zero waste store owners</mark></p>
+                        <ul>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">“Compared to supermarkets, our shops are treated as an option instead of a need.” </p>
+                           </li>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">“I’m not tech-savvy enough to promote my store online.”</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <!-- Solutions -->
+               <h2 style="padding-bottom: 0px;">Solutions</h2>
+               <!-- Press type carousel -->
+               <div class="press-container">
+                  <div class="carousel_press">
+                     <input type="radio" id="carousel_press-1" name="carousel_press[]" checked>
+                     <input type="radio" id="carousel_press-2" name="carousel_press[]">
+                     <input type="radio" id="carousel_press-3" name="carousel_press[]">
+                     <input type="radio" id="carousel_press-4" name="carousel_press[]">
+                     <ul class="carousel_press__items">
+                        <!-- solution page 1 -->
+                        <li class="carousel_press__item">
+                           <h3 style="padding-top:20px; font-weight: 600;" class="solut-hd">Page #1: Search</h3>
+                           <br>
+                           <img class="solut-img" style="margin-left:70px; height: 75%; border: 1px solid #E0E0E0;" src="image/uw-search-list.gif"  alt="search list">
+                           <img class="solut-img" style="margin-left:5px; height: 75%; border: 1px solid #E0E0E0;" src="image/uw-search-map.png"  alt="search map">
+                           <img class="solut-img" style="margin-left:5px; height: 75%; border: 1px solid #E0E0E0;" src="image/uw-store-details.gif"  alt="store details">
+                           <p class="per-txt" style="text-align: left;">Results are available in list-view or map-view. Users can also learn about the store’s information (e.g. opening hours, location, contact details, and reviews).</p>
+                        </li>
+                        <!-- solution page 2 -->
+                        <li class="carousel_press__item">
+                           <h3 style="padding-top:20px; font-weight: 600;" class="solut-hd">Page #2: Data</h3>
+                           <br>
+                           <img class="solut-img" style="margin-left:70px; height: 75%; border: 1px solid #E0E0E0;" src="image/uw-data-bar.gif"  alt="data bar">
+                           <img class="solut-img" style="margin-left:5px; height: 75%; border: 1px solid #E0E0E0;" src="image/uw-data-circle.gif"  alt="data circle">
+                           <p class="per-txt" style="text-align: left;">Users can check how much material they have saved and the zero waste products that they bought most.</p>
+                        </li>
+                        <!-- solution page 3 -->
+                        <li class="carousel_press__item">
+                           <h3 style="padding-top:20px; font-weight: 600;" class="solut-hd">Page #3: Tree</h3>
+                           <br>
+                           <img class="solut-img" style="margin-left:70px; height: 75%; border: 1px solid #E0E0E0;" src="image/uw-tree.gif"  alt="tree">
+                           <p class="per-txt" style="text-align: left;">There is a loyalty program for regular customers to save points (or in our case, seeds) to redeem gifts and discounts. This can also help store owners retain customers.</p>
+                        </li>
+                        <!-- solution page 4 -->
+                        <li class="carousel_press__item">
+                           <h3 style="padding-top:20px; font-weight: 600;" class="solut-hd">Page #4: Profile</h3>
+                           <br>
+                           <img class="solut-img" style="margin-left:70px; height: 75%; border: 1px solid #E0E0E0;" src="image/uw-prof.gif"  alt="profile">
+                           <p class="per-txt" style="text-align: left;">Users can bookmarks stores they want to visit and save them on their profile page.</p>
+                     </ul>
+                     <div class="carousel_press__prev">
+                        <label for="carousel_press-1"></label>
+                        <label for="carousel_press-2"></label>
+                        <label for="carousel_press-3"></label>
+                        <label for="carousel_press-4"></label>
+                     </div>
+                     <div class="carousel_press__next">
+                        <label for="carousel_press-1"></label>
+                        <label for="carousel_press-2"></label>
+                        <label for="carousel_press-3"></label>
+                        <label for="carousel_press-4"></label>
+                     </div>
+                     <div class="carousel_press__nav">
+                        <label for="carousel_press-1"></label>
+                        <label for="carousel_press-2"></label>
+                        <label for="carousel_press-3"></label>
+                        <label for="carousel_press-4"></label>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!-- User Research -->
+            <section id="user-research">
+               <h2>User research</h2>
+               <!-- Survey -->
+               <section id="survey">
+                  <h2>Survey</h2>
+                  <p>To understand how people think about zero waste shopping, I created a survey with 3 parts.</p>
+                  <h3 style="padding-top: 15px; font-weight: 600;">Part 1: Ideas on Environmental Protection</h3>
+                  <p style="font-weight: 600;">What do you think is the most effective way to help the environment?</p>
+                  <canvas id="myChart4" style="width: 40%; height: 40%;"></canvas>
+                  <script>
+                     var ctx = document.getElementById('myChart4').getContext('2d');
+                     var chart = new Chart(ctx, {
+                       // The type of chart we want to create
+                       type: 'bar',
+                       // The data for our dataset
+                       data: {
+                         labels: ['recycling', 'bring your own bags', 'reusing', 'reduce energy consumption','zero waste shopping', 'support local farming', 'others'],
+                         datasets: [{
+                           label: "respondents",
+                           backgroundColor: "#60801A",
+                           barThickness: 60,
+                           borderColor: "#FFFFFF",
+                           data: [28, 26, 25, 20, 11, 15, 10],
+                         }]
+                       },
+                       options: {
+                         scales: {
+                           yAxes: [{
+                             ticks: {
+                               beginAtZero: true
+                             }
+                           }]
+                         }
+                       }
+                     });
+                  </script>
+                  <p>Among the 30 respondents, the majority voted “recycling items” (99.6%) to be the most effective method to protect the environment. Other common methods include “bring your own bag” (89%) and “reusing items” (83%). Only 38% of the respondents believe that zero waste shopping is an effective method.</p>
+                  <p style="font-weight: 600">Implications</p>
+                  <p>A lot of people seem to value recycling over the concept of zero waste. But according to the owner of <a href="http://thezerowasteshop.co.uk/" target="_blank">“Earth, Food, Love”</a>, recycling is a distraction to our growing waste problem.</p>
+                  <img src="image/uw-recycle-prob.png" alt="recycle problem">
+                  <p>That is because while certain material can be recycled to create other products, those products cannot be further recycled. They will end up in landfill just like other non-recyclable waste. That is why recycling is not enough to improve our environment. We need to create less (if not zero) waste.</p>
+                  <h3 style="padding-top: 15px; font-weight: 600;">Part 2: Awareness of Zero Waste</h3>
+                  <table>
+                     <tr>
+                        <td>
+                           <p style="font-weight: 600;">1. Have you heard about zero waste stores?</p>
+                           <canvas id="myChart5" style="width: 40%; height: 60%; display: flex;"></canvas>
+                           <script>
+                              var ctx = document.getElementById('myChart5').getContext('2d');
+                              var chart = new Chart(ctx, {
+                                // The type of chart we want to create
+                                type: 'pie',
+                                // The data for our dataset
+                                data: {
+                                  labels: ['Yes', 'No'],
+                                  datasets: [{
+                                    label: "Respondents",
+                                    backgroundColor: [
+                                      "#FFD31D",
+                                      "#4D3E3E"
+                                    ],
+                                    borderColor: "#FFFFFF",
+                                    data: [20, 10]
+                                  }]
+                                },
+                              });
+                           </script>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p style="font-weight: 600;">2. How often do you buy from zero waste stores?</p>
+                           <canvas id="myChart6" style="width: 35%; height: 60%; display: flex;"></canvas>
+                           <script>
+                              var ctx = document.getElementById('myChart6').getContext('2d');
+                              var chart = new Chart(ctx, {
+                                // The type of chart we want to create
+                                type: 'pie',
+                                // The data for our dataset
+                                data: {
+                                  labels: ['Never', 'A few times a year', 'A few times every 6 months'],
+                                  datasets: [{
+                                    label: "Frequency",
+                                    backgroundColor: [
+                                      "#527318",
+                                      "#FEB72B",
+                                      "#FFE75E",
+                                    ],
+                                    borderColor: "#FFFFFF",
+                                    data: [21, 7, 2]
+                                  }]
+                                },
+                              });
+                           </script>
+                        </td>
+                     </tr>
+                  </table>
+                  <p style="margin-top: 25px;">While 67% of the respondents have heard of “zero waste stores”, only 30% have bought from zero waste stores. In the follow-up interview, users said the main reasons they could not commit to zero waste shopping was because:</p>
+                  <ul>
+                     <li style="margin-left: 25px; list-style-type: disc;">
+                        <p>They do not know where the shops are.</p>
+                     </li>
+                     <li style="margin-left: 25px; list-style-type: disc;">
+                        <p>zero waste products are too expensive</p>
+                     </li>
+                     <li style="margin-left: 25px; list-style-type: disc;">
+                        <p>They worried that package-less items are not always hygienic</p>
+                     </li>
+                  </ul>
+                  <p>To tackle these problems, I should include in my solution (1) the location and opening hours of stores, (2) a loyalty program with discounts and gifts for regular customers, and (3) reviews from customers to potential customers.</p>
+                  <h3 style="padding-top: 15px; font-weight: 600;">Part 3: Consumption Habits, Goals and Frustrations</h3>
+                  <p style="font-weight: 600;">1. How did you come across zero waste stores?</p>
+                  <canvas id="myChart7" style="width: 50%; height: 50%;"></canvas>
+                  <script>
+                     var ctx = document.getElementById('myChart7').getContext('2d');
+                     var chart = new Chart(ctx, {
+                       // The type of chart we want to create
+                       type: 'bar',
+                       // The data for our dataset
+                       data: {
+                         labels: ['Friends & family', 'Social media', 'Google search'],
+                         datasets: [{
+                           label: "respondents",
+                           backgroundColor: "#00918E",
+                           barThickness: 60,
+                           borderColor: "#FFFFFF",
+                           data: [6, 2, 1],
+                         }]
+                       },
+                       options: {
+                         scales: {
+                           yAxes: [{
+                             ticks: {
+                               beginAtZero: true
+                             }
+                           }]
+                         }
+                       }
+                     });
+                  </script>
+                  <p>There is, indeed, a lack of online presence and promotion for the majority of zero waste stores.</p>
+                  <p style="font-weight: 600;">2. If you could have a personal account from zero waste stores, what type of info do you want to see?</p>
+                  <p>Zero waste shoppers</p>
+                  <canvas id="myChart8" style="width: 60%;"></canvas>
+                  <script>
+                     var ctx = document.getElementById('myChart8').getContext('2d');
+                     var chart = new Chart(ctx, {
+                       // The type of chart we want to create
+                       type: 'bar',
+                       // The data for our dataset
+                       data: {
+                         labels: ['How much resources I saved', 'How much I spent', 'Updates & promotion'],
+                         datasets: [{
+                           label: "respondents",
+                           backgroundColor: "#A2DE96",
+                           barThickness: 60,
+                           borderColor: "#FFFFFF",
+                           data: [8, 6, 6],
+                         }]
+                       },
+                       options: {
+                         scales: {
+                           yAxes: [{
+                             ticks: {
+                               beginAtZero: true
+                             }
+                           }]
+                         }
+                       }
+                     });
+                  </script>
+                  <p>Non zero waste shoppers</p>
+                  <canvas id="myChart9" style="width: 60%;"></canvas>
+                  <script>
+                     var ctx = document.getElementById('myChart9').getContext('2d');
+                     var chart = new Chart(ctx, {
+                       // The type of chart we want to create
+                       type: 'bar',
+                       // The data for our dataset
+                       data: {
+                         labels: ['How much resources I saved', 'How much I spent', 'Updates & promotion'],
+                         datasets: [{
+                           label: "respondents",
+                           backgroundColor: "#A2DE96",
+                           barThickness: 60,
+                           borderColor: "#FFFFFF",
+                           data: [17, 12, 9],
+                         }]
+                       },
+                       options: {
+                         scales: {
+                           yAxes: [{
+                             ticks: {
+                               beginAtZero: true
+                             }
+                           }]
+                         }
+                       }
+                     });
+                  </script>
+                  <p>The majority of respondents, regardless of their consumption habit, would like to see how much resources they can save. This makes sense because such data is not easily available on a daily basis. Providing this information to consumers will also boost their incentive to continue buying from zero waste stores.</p>
+               </section>
+               <!-- Personas -->
+               <section id="personas">
+                  <h2>Personas</h2>
+                  <p>Based on the demographic info of my respondents, I created 3 personas.</p>
+                  <table>
+                     <tr>
+                        <td style="width: 40%;">
+                           <img style="margin-top: 20px; border-radius: 50px;" src="image/uw-sophie.jpg" alt="persona Sophie">
+                        </td>
+                        <td style="width: 60%;">
+                           <p class="per-txt per-title">Sophie<br>Student/ Eco-warrior (on a budget), 21</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <p style="margin-left: 15px; font-weight: 700; text-align: left;">Lifestyle:</p>
+                           <ul>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Live an eco-friendly and almost zero waste lifestyle.</p>
+                              </li>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Promote eco-friendly living on social media.</p>
+                              </li>
+                           </ul>
+                           <p style="margin-left: 15px; font-weight: 700; text-align: left;">Frustrations:</p>
+                           <ul>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Not sure if the zero waste stores are open or not.</p>
+                              </li>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Some zero waste stores are expensive and not very budget-friendly.</p>
+                              </li>
+                           </ul>
+                           <p style="margin-left: 15px; font-weight: 700; text-align: left;">Wishes:</p>
+                           <ul>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">I wish to know the opening hours of the zero waste stores nearby my location.</p>
+                              </li>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">I hope there will be some discounts for loyal customers.</p>
+                              </li>
+                           </ul>
+                           <p style="margin-left: 15px; font-weight: 600; text-align: left;">“While we gain efficiency out of disposables, our earth suffers.”</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="width: 40%;">
+                           <img style="margin-top: 20px; border-radius: 50px;" src="image/uw-michelle.jpg" alt="persona Michelle">
+                        </td>
+                        <td style="width: 60%;">
+                           <p class="per-txt per-title">Michelle<br>Business analyst, 37</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <p style="margin-left: 15px; font-weight: 700; text-align: left;">Lifestyle:</p>
+                           <ul>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Dealing with a busy work schedule.</p>
+                              </li>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Is willing to pay more for efficiency and convenience.</p>
+                              </li>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Willing to adapt to an eco-friendly lifestyle if it does not compromise her time.</p>
+                              </li>
+                           </ul>
+                           <p style="margin-left: 15px; font-weight: 700; text-align: left;">Frustrations:</p>
+                           <ul>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">No time to search the location and opening hours of nearby zero waste stores.</p>
+                              </li>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Not sure what is available in each store.</p>
+                              </li>
+                           </ul>
+                           <p style="margin-left: 15px; font-weight: 700; text-align: left;">Wishes:</p>
+                           <ul>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">I want to know the location and opening hours of the zero waste stores nearby.</p>
+                              </li>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">I want to read a quick summary and reviews of the stores I am interested in.</p>
+                              </li>
+                           </ul>
+                           <p style="margin-left: 15px; font-weight: 600; text-align: left;">“There must be more we can do to help the environment without trading off our time too much.”</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="width: 40%;">
+                           <img style="margin-top: 20px; border-radius: 50px; width: 120%" src="image/uw-peter.jpg" alt="persona Peter">
+                        </td>
+                        <td style="width: 60%;">
+                           <p class="per-txt per-title">Peter<br>zero waste store owner, 45</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                           <p style="margin-left: 15px; font-weight: 700; text-align: left;">Lifestyle:</p>
+                           <ul>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Committed to a zero waste lifestyle.</p>
+                              </li>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Not very tech-savvy and does not have social media accounts.</p>
+                              </li>
+                           </ul>
+                           <p style="margin-left: 15px; font-weight: 700; text-align: left;">Frustrations:</p>
+                           <ul>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Doesn’t know how to promote his store to new customers through social media.</p>
+                              </li>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">Notice that many people visit the store out of curiosity instead of a need.</p>
+                              </li>
+                           </ul>
+                           <p style="margin-left: 15px; font-weight: 700; text-align: left;">Wishes:</p>
+                           <ul>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">I want to show that a zero waste lifestyle can also be easy and convenient.</p>
+                              </li>
+                              <li style="margin-left: 25px; list-style-type: disc;">
+                                 <p style="margin-top: 0px; margin-bottom: 0px;">I am willing to work with other zero waste stores to provide promotional gifts.</p>
+                              </li>
+                           </ul>
+                           <p style="margin-left: 15px; font-weight: 600; text-align: left;">“It’s not just about banning plastic bags. It’s about being conscious of your every decision and how it plays a role in our shared world.”</p>
+                        </td>
+                     </tr>
+                  </table>
+                  <!-- closing tag of persona sub-section -->
+               </section>
+               <!-- User Stories -->
+               <section id="user-stories">
+                  <h2>User Stories</h2>
+                  <p>The goals and frustrations mentioned above can be summarised in the following table:</p>
+                  <p style="font-weight: 600;">As a customer:</p>
+                  <table class="user-stories">
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>I’d like to locate the zero waste stores in my location. </p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>I’d like to know in a glance which are the stores that are still open.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>I’d like to understand how zero waste consumption can contribute to the ecosystem.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet med">Medium</p>
+                        </th>
+                        <td>
+                           <p>I’d like to get discounts and gifts for my loyalty to zero-waste shopping.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet med">Medium</p>
+                        </th>
+                        <td>
+                           <p>I’d like to read reviews of the stores that I’m interested in.</p>
+                        </td>
+                     </tr>
+                  </table>
+                  <p style="font-weight: 600;">As a zero waste store owner:</p>
+                  <table class="user-stories">
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>I want to promote my shop to new customers.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>I’d like to see more returning customers (not just one-time enthusiasts).</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>I want people to understand how their consumption habit can impact the environment.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet med">Medium</p>
+                        </th>
+                        <td>
+                           <p>I’d like to get feedback from my customers on what they like and dislike about my store.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet med">Medium</p>
+                        </th>
+                        <td>
+                           <p>I want to learn about other zero-waste stores as well. </p>
+                        </td>
+                     </tr>
+                  </table>
+                  <!-- closing the "user stories" section -->
+               </section>
+               <!-- closing the "user research" section -->
+            </section>
+            <!-- Competitive Analysis -->
+            <section id="comp-analysis">
+               <h2>Competitive Analysis</h2>
+               <p>I evaluated three apps which have similar functions: Happy Cow, Starbucks, and AirBnB.</p>
+               <table>
+                  <!-- happy cow -->
+                  <tr>
+                     <td><img style="width: 30%;" src="logo/uw-happycow-logo.png" alt="happy cow logo"></td>
+                  </tr>
+                  <tr>
+                     <td colspan="3">
+                        <img style="border:1px solid #E5E5E5; width:30%;" src="image/uw-happycow-list.jpg" alt="happy cow list">
+                        <img style="border:1px solid #E5E5E5; width:30%;" src="image/uw-happycow-map.jpg" alt="happy cow map">
+                        <img style="border:1px solid #E5E5E5; width:30%;" src="image/uw-happycow-review.jpg" alt="happy cow reviews">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="width: 50%;">
+                        <p style="font-weight: 600">Pros:</p>
+                        <ul>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">Sufficient information</p>
+                           </li>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">Results available in list-view & map-view</p>
+                           </li>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">Reviews from users</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="width: 150px;"></td>
+                     <td style="width: 40%;">
+                        <p style="font-weight: 600">Cons:</p>
+                        <ul>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">List view is cluttered</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <!-- starbucks -->
+                  <tr>
+                     <td><img style="width: 30%;margin-top: 30px;" src="logo/uw-starbucks-logo.png" alt="starbucks logo"></td>
+                  </tr>
+                  <tr>
+                     <td colspan="3">
+                        <img style="border:1px solid #E5E5E5; width: 30%;" src="image/uw-starbucks-map.png" alt="starbucks map">
+                        <img style="border:1px solid #E5E5E5; width: 30%;" src="image/uw-starbucks-pts.png" alt="starbucks points">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="width: 40%;">
+                        <p style="font-weight: 700">Pros:</p>
+                        <ul>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">Locate stores nearby</p>
+                           </li>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">Keep track of points and rewards</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="width: 150px;"></td>
+                     <td style="width: 50%;">
+                        <p style="font-weight: 700">Cons:</p>
+                        <ul>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">Lack opening hours & reviews</p>
+                           </li>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">Confusing navigation: Scan icon & “Scan in store” button</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <!-- airbnb -->
+                  <tr>
+                     <td><img style="width: 30%;margin-top: 30px;" src="logo/uw-airbnb-logo.png" alt="airbnb logo"></td>
+                  </tr>
+                  <tr>
+                     <td colspan="3">
+                        <img style="border:1px solid #E5E5E5; width: 30%;" src="image/uw-airbnb-list.jpg" alt="airbnb list">
+                        <img style="border:1px solid #E5E5E5; width: 30%;" src="image/uw-airbnb-details.jpg" alt="airbnb details">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="width: 40%;">
+                        <p style="font-weight: 700">Pros:</p>
+                        <ul>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">Clean and minimalistic layout</p>
+                           </li>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">Information presentation is neat and organized</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="width: 150px;"></td>
+                     <td style="width: 50%;">
+                        <p style="font-weight: 700">Cons:</p>
+                        <ul>
+                           <li style="margin-left: 25px; list-style-type: disc;">
+                              <p style="margin-top: 0px; margin-bottom: 0px;">Large info card: Almost showing one apartment per page. Not optimized for a quick mobile view.</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <p>Learning from these apps, Unwrap should make the search process intutive and the information optimized for mobile view.</p>
+               <p>Search zero waste stores:</p>
+               <img style=" width: 100%;" src="image/uw-userflow-search.png" alt="userflow search">
+               <p>View results (list view & map view)</p>
+               <img src="image/uw-userflow-result.png" alt="userflow view result">
+               <p>Check data</p>
+               <img style="width: 70%;" src="image/uw-userflow-data.png" alt="check data">
+            </section>
+            <!-- Sketches, Wireframes & Testing -->
+            <section id="wireframe">
+               <h2>Sketches & Wireframes</h2>
+               <p>Some of the sketches:</p>
+               <img style="width: 830px;" src="image/uw-sketches.png" alt="uw sketches">
+               <p>Some of the wireframes</p>
+               <img style="width: 830px;" src="image/uw-wf1.png" alt="uw wireframes"><br>
+               <h2 style="margin-top: 25px;">User Testing of Wireframes</h2>
+               <p>In the test, I asked participants to describe what they thought the pages were about and explained how to navigate to different pages.</p>
+               <p style="font-size: 20px; font-weight: 700; margin-top: 30px;">Here is what I've learned:</p>
+               <!-- point 1 -->
+               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">1. Highlight important information to save the user's time</p>
+               <p>I learned that if users cannot immediately tell apart a list of information while skimming, it is already considered not user-friendly. To save the user’s time, I created a color-coded earmark system.</p>
+               <!-- before & after table -->
+               <table>
+                  <tr>
+                     <td style="width: 30%;">
+                        <img src="image/uw-wf1-list.gif" alt="no earmark">
+                        <p style="text-align: center; font-weight: 700;">BEFORE</p>
+                     </td>
+                     <td style="width: 10%;">
+                        <img style="margin-top: 250%; padding-left: 10%; padding-right: 10%;" src="image/arrow-lr.png" alt="arrow left to right">
+                     </td>
+                     <td style="width: 30%;">
+                        <img src="image/uw-wf2-list.gif" alt="revised uw wireframe">
+                        <p style="text-align: center; font-weight: 700;">AFTER</p>
+                     </td>
+                     <td style="width: 30%;"><img src="image/uw-list-explain.png" alt="wireframe explained"></td>
+                  </tr>
+               </table>
+               <p>Green indicates stores that are open, yellow are those which are closing, and dark grey are those which are closed.</p>
+               <!-- point 2 -->
+               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">2. Write precise titles</p>
+               <p>Given the limited space on a mobile screen, I prioritized short titles in my initial design. However, some users found the title “How I spent” confusing because the chart which follows is not a complete summary of every item (zero-waste or not) the user bought.</p>
+               <!-- before & after table -->
+               <table style="width:80%;">
+                  <tr>
+                     <td style="width: 40%;">
+                        <img src="image/uw-wf1-data.png" alt="vague title">
+                        <p style="text-align: center; font-weight: 700;">BEFORE</p>
+                     </td>
+                     <td style="width: 15%;">
+                        <img style="margin-top: 200%; padding-left: 10%; padding-right: 10%;" src="image/arrow-lr.png" alt="arrow left to right">
+                     </td>
+                     <td style="width: 40%;">
+                        <img src="image/uw-wf2-data.png" alt="precise title">
+                        <p style="text-align: center; font-weight: 700;">AFTER</p>
+                     </td>
+                  </tr>
+               </table>
+               <p>In the revised version, I changed to the title to “Zero waste products I bought”. It’s longer but it makes more sense to users.</p>
+               <!-- point 3 -->
+               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">3. Make navigation easier</p>
+               <p>I also tested the mode of navigation.</p>
+               <!-- before & after table -->
+               <table style="width:80%;">
+                  <tr>
+                     <td style="width: 40%;">
+                        <img src="image/uw-sidemenu.gif" alt="side menu">
+                        <p style="text-align: center; font-weight: 700;">Hamburger menu</p>
+                     </td>
+                     <td style="width: 20%;">
+                     </td>
+                     <td style="width: 40%;">
+                        <img src="image/uw-bottomnav.gif" alt="bottom nav">
+                        <p style="text-align: center; font-weight: 700;">Bottom navigation</p>
+                     </td>
+                  </tr>
+               </table>
+               <p>The majority of users chose bottom navigation over side menu because they just need to tab on the icon to go to their desired page. Conversely, the hamburger menu option requires users to open a side menu and find the page from the menu.</p>
+            </section>
+            <!-- Mockups & Testing -->
+            <section id="mockup">
+               <h2>Mockups</h2>
+               <p>Based on the revised wireframes, I created a mockup. Here are some of the pages:</p>
+               <img style="width: 830px;" src="image/uw-mu.png" alt="uw mockup">
+               <h2 style="margin-top: 25px;">User Testing of Mockups</h2>
+               <p style="font-size: 20px; font-weight: 700; margin-top: 30px;">Here is what I've learned:</p>
+               <!-- point 1 -->
+               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">Use icons for clarification</p>
+               <p>In the user test, I learned to not overlook details. For example, some users mistook the “review” button as reading reviews instead of writing a review. In the revised version, I added a pen icon to make it explicit that it is a button for writing reviews.</p>
+               <!-- before & after table -->
+               <table style="width:80%;">
+                  <tr>
+                     <td style="width: 40%;">
+                        <img src="image/uw-mu1-btn.png" alt="unclear button">
+                        <p style="width: 70%; text-align: center; font-weight: 700;">BEFORE</p>
+                     </td>
+                     <td style="width: 15%;">
+                        <img style="margin-top: 200%; padding-left: 10%; padding-right: 10%;" src="image/arrow-lr.png" alt="arrow left to right">
+                     </td>
+                     <td style="width: 40%;">
+                        <img src="image/uw-mu2-btn.png" alt="clear button">
+                        <p style="width: 70%; text-align: center; font-weight: 700;">AFTER</p>
+                     </td>
+                  </tr>
+               </table>
+               <p>In the revised version, I added a pen icon to make it explicit that it is a button for writing reviews.</p>
+            </section>
+            <!-- Branding -->
+            <section id="branding">
+               <h2>Branding: Logo</h2>
+               <p>The app is called “Unwrap” which stands for the unwrapping of packaging material. To illustrate this idea, I aimed to create geometric logo that depicts both the earth and idea of over-packaging.</p>
+               <p>At first, I thought of using an earth and a plastic bag. But it’s too complicated. I then simplified it to a sphere with 4 slices to suggest a sense of rotation:</p>
+               <img style="width: 50%;" src="image/uw-logo1.png" alt="logo1">
+               <p>When the icon is minimized, however, the details are merged. As a result, I further simplified it into two semi-circles and a square:</p>
+               <img style="width: 70%;" src="image/uw-logo2.png" alt="logo2">
+               <h2>Branding: Launch animation</h2>
+               <p>But to show the user what the logo is basde on, I created a launch animation:</p>
+               <img style="width: 50%;" src="image/uw-launch.gif" alt="launch animation">
+               <h2>Branding: Color & Type</h2>
+               <p>The colors I chose are primarily green and yellow as they are often associated with eco-friendliness and the environment. Following the Material Design guidelines, I named the colors as Unwrap Light Green 800, 900, Unwrap Yellow 700, and Unwrap Yellow 50 respectively.</p>
+               <img style="width: 30%;" src="image/uw-colors.png" alt="brand colors">
+               <p>As for the brand type, I chose Josefin Slab because of its thin and minimalistic presentation. It is only used in the brand name. All other text are in Work Sans as it is highly legible across small and large print.</p>
+               <img style="width: 60%; border: 1px solid #BBBBBB" src="image/uw-type.png" alt="brand type">
+            </section>
+            <!-- Prototype -->
+            <section id="prototype">
+               <h2>Interactive Prototype</h2>
+               <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">1. Language Localization</p>
+               <p>This app aims to serve people from around the world. Apart from English, this app is also available in some of the most popular languages.</p>
+               <img src="image/uw-proto-lang.png" alt="language localisation">
+               <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">2. Search page</p>
+               <p>Users only need to enter key phrases to search. The suggested results include both store names and location names.</p>
+               <img src="image/uw-proto-search.png" alt="search results">
+               <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">3. Search results</p>
+               <p>The result is available in list-view and map-view. In the store-details page, users can see detailed information and reviews about the store.</p>
+               <table>
+                  <tr>
+                     <td>
+                        <img style="width: 80%;" src="image/uw-proto-result.gif" alt="search results">
+                     </td>
+                     <td>
+                        <img style="width: 80%;" src="image/uw-proto-store.gif" alt="store details">
+                     </td>
+                  </tr>
+               </table>
+               <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">4. Information Architecture</p>
+               <p>Designing the information architecture on the card was challenging. On the one hand, I need the keep the card short so that it is optimized for mobile experience. On the other hand, I want to show as much key info on the card as needed.</p>
+               <p>In the end, I came up with the following design:</p>
+               <img style="width: 60%;" src="image/uw-info-still.png" alt="info arch still">
+               <p>Each card is composed of two sheets: the image and the info. I made the info sheet slightly transparent and overlapping one-third of the image. This allows users to see most of the image and grasp the name and overview of the store. The non-overlapping section shows the location and opening hours. These are crucial information and so I left the backgrond plain.</p>
+               <img style="width: 60%;" src="image/uw-infoarch.gif" alt="info arch animation">
+               <p>(1)Store name & overview, (2) Location & opening hours</p>
+               <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">5. Data</p>
+               <p>Users will only see the exact amount of products they saved when they click on each bar. This can prevent the screen from getting too crowded.</p>
+               <table>
+                  <tr>
+                     <td><img style="width: 80%;" src="image/uw-proto-data1.gif" alt="data1"></td>
+                     <td><img style="width: 80%;" src="image/uw-proto-data2.gif" alt="data2"></td>
+                  </tr>
+               </table>
+               <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">6. Profile & Tree</p>
+               <p>users can save stores they want to visit in their profile page. Regular customers can also see how many points (or in our case, seeds) they have saved and the gifts they can redeem.</p>
+               <table>
+                  <tr>
+                     <td><img style="width: 80%;" src="image/uw-prof.gif" alt="profile"></td>
+                     <td><img style="width: 80%;" src="image/uw-tree.gif" alt="gifts"></td>
+                  </tr>
+               </table>
+               <p>To learn more, click on the button below:</p>
+               <a href="https://www.figma.com/proto/p2U9aMvYD8XBLUAGC8qFGF/Unwrap_Final_Prototype?node-id=2263%3A0&scaling=scale-down" target="_blank" class="proto-btn">view prototype</a>
+            </section>
+            <!-- Reflection -->
+            <section id="reflection">
+               <h2>Reflection</h2>
+               <p>In face of climate change, one thing we can do is to cut down on the amount of waste we create. This can save resources used for making disposable items and chemicals used for disintegrating them. But when I talked to zero waste store owners and different types of consumers in the user research process, I learned that even if the user wants to explore/ promote zero waste shopping, the situation is not always easy (see: "User research" section). As a result, I created Unwrap in the hope of making zero waste shopping easier and fun.</p>
+               <p>If I can push it further, I would add a function for users to send seeds and coupons to friends to strengthen the Unwrap community.</p>
+            </section>
+         </div>
+      </main>
+      <!-- footer -->
+      <footer>
+         Thanks for visiting! You can find me at:<br>
+         <ul id="footer_icons">
+            <li class="footer-item"><a href="mailto:designwithjc@gmail.com"><img src="logo/email.png" alt="email logo" style="width: 45px; height: 35px;"></a></li>
+            <li class="footer-item"><a href="https://www.linkedin.com/in/juliamchow/" target="_blank"><img src="logo/linkedin_black.png" alt ="linkedin logo" style="width: 35px; height: 35px;"></a></li>
+         </ul>
+         <p id="copyright">Designed and developed by Julia Chow.</p>
+      </footer>
+   </body>
+</html>
