@@ -28,55 +28,43 @@
             <ul>
                <li><a href="index.html">Work</a></li>
                <li><a href="about.html">About</a></li>
-               <li><a href="https://drive.google.com/file/d/1VMbuv_aoehqs2VGaS53P_KbL0vlYs9Zk/view?usp=sharing" target="_blank">Resume</a></li>
+               <li><a href="https://drive.google.com/file/d/1JCZVW5uDHsFxszfEWS9Aeu2gq3JeE4lU/view?usp=sharing" target="_blank">Resume</a></li>
                <li><a href="fun.html">Art</a></li>
                <li><a href="contact.html">Contact</a></li>
             </ul>
          </nav>
          <!-- end of toggle menu -->
-         <div class="wrapper_top">
-            <img id="main_logo" src="logo/final_logo_large.png" alt="personal logo">
-            <div id="top_left">
-               <h1 id="hero_left">Hi, I am<span class="firstname">Julia.</span></h1>
-            </div>
-            <div id="top_right">
-               <!-- nav bar -->
-               <ul id="nav_bar">
-                  <li class="nav_item"><a href="index.html">Work</a></li>
-                  <li class="nav_item"><a href="about.html">About</a></li>
-                  <li class="nav_item"><a href="https://drive.google.com/file/d/1VMbuv_aoehqs2VGaS53P_KbL0vlYs9Zk/view?usp=sharing" target="_blank">Resume</a></li>
-                  <li class="nav_item"><a href="fun.html">Art</a></li>
-                  <li class="nav_item"><a href="contact.html">Contact</a></li>
-               </ul>
-               <!-- End of nav bar -->
-               <div class="animated fadeInLeft">
-                  <h1 id="hero_right">a UX designer.</h1>
-                  <h3 id="tagline">I aim to help users achieve their goals <br>through understanding what matters to them.
-                  </h3>
-               </div>
-            </div>
+         <!-- new hero -->
+         <div id="hero-bkgd">
+            <!-- nav bar -->
+            <ul id="nav_bar">
+               <li class="nav_item"><a href="index.html">Work</a></li>
+               <li class="nav_item"><a href="about.html" style="color: #BDBDBD">About</a></li>
+               <li class="nav_item"><a href="https://drive.google.com/file/d/1JCZVW5uDHsFxszfEWS9Aeu2gq3JeE4lU/view?usp=sharing" target="_blank" style="color: #BDBDBD">Resume</a></li>
+               <li class="nav_item"><a href="fun.html" style="color: #BDBDBD">Art</a></li>
+               <li class="nav_item"><a href="contact.html" style="color: #BDBDBD">Contact</a></li>
+            </ul>
          </div>
+         <!-- End of nav bar -->
+         <img id="index_logo" src="logo/final_logo_large.png" alt="index logo">
+         <h1 id="intro-left">Hi, I am<br>Julia.</h1>
+         <div id="hero-yellow"></div>
+         <h1 class="animated fadeInLeft" id="intro-right">a UX designer.</h1>
+         <h3 class="animated fadeInLeft slow" id="index-statement">I dive deep into learning the “why” in a user’s problem<br> in order to find the “how” to a solution.</h3>
       </header>
-      <a href="#case-mark"><img class="dn-btn" src="image/dbl-dn-arrow.png" alt="db-arrow"></a>
       <!-- container for the projects -->
-      <div id="case-mark" class="case-grid-container">
-         <!-- Project 1 -->
-         <div class="case-left">
-            <div class="case-text">
-               <h1 class="proj-name">Tangram</h1>
-               <h3 class="proj-description">
-                  A cloud storage that facilitates creative expression and promotes effective collaboration.
-               </h3>
-            </div>
-            <a id="case-tan-btn" href="project_tangram.html" class="case-btn">View Case Study</a>
-         </div>
-         <div class="case-right">
-            <img id="proj-cover" src="image/tangram-cover1.png" alt="project cover">
-            <a id="hidden-case-tan-btn" href="project_tangram.html" class="case-btn">View Case Study</a>
-         </div>
-         <!-- end of Project 1 -->
-      </div>
-      <!-- end of project container -->
+      <table>
+         <!-- project 1 -->
+         <tr><td><img style="margin-left: auto; margin-right: auto; margin-top: 50px; width: 60%; display: block;" src="image/uw-index.png" alt="unwrap cover"></td></tr>
+         <tr><td><h2 style="text-align: center;">Unwrap</h2></td></tr>
+         <tr><td><p style="margin-left:20px; margin-right: 20px; margin-top:0px; text-align: center; font-weight: 200;">A mobile app that helps consumers find zero-waste stores and store owners retain customers through a loyalty program.</p></td></tr>
+         <tr><td><a style="margin-left: auto; margin-right: auto; margin-bottom: 50px; display: block;" href="project_unwrap.html" class="proto-btn">View Case Study</a></td></tr>
+         <!-- project 2 -->
+         <tr><td><img style="margin-left: auto; margin-right: auto; margin-top: 50px; width: 60%; display: block;" src="image/tg-index.png" alt="tangram cover"></td></tr>
+         <tr><td><h2 style="text-align: center;">Tangram</h2></td></tr>
+         <tr><td><p style="margin-left:20px; margin-right: 20px; margin-top:0px; text-align: center; font-weight: 200;">A cloud storage that facilitates creative expression and promotes effective collaboration.</p></td></tr>
+         <tr><td><a style="margin-left: auto; margin-right: auto; margin-bottom: 50px;display: block;" href="project_tangram.html" class="proto-btn">View Case Study</a></td></tr>
+      </table>
       <!-- footer -->
       <footer>
          Thanks for visiting! You can find me at:<br>
