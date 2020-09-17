@@ -73,8 +73,8 @@
                <img style="width: 100%; height: auto;" id ="cover-image" src="image/Unwrap_main_cover.png" alt="cover image">
                <a href="https://www.figma.com/proto/p2U9aMvYD8XBLUAGC8qFGF/Unwrap_Final_Prototype?node-id=2263%3A0&scaling=scale-down" target="_blank" class="proto-btn">view prototype</a>
                <h2>Overview</h2>
-               <p>What is the first thing that comes to your mind regarding “eco-friendliness”? Recycling? In the user survey, the majority of respondents picked “recycling” as the most effective method. But sometimes, "<a style="color: #6C931F;" href="http://thezerowasteshop.co.uk/pages/zero-waste/zero-waste/84">recycling is a distraction to our growing waste problem</a>". A lot of recycled products cannot be further recycled and will end up in the landfill as well. To save the environment, we should aim at creating zero trash.</p>
-               <p>But in some cases, it is not always feasible. For hygienic reasons, used tissue paper as well as the gloves and masks used by surgeons in an operation should not be reused. On the other hand, some manufacturers tend to <a style="color: #6C931F;" href="https://interestingengineering.com/17-completely-nonsense-yet-real-packaging-examples">package dry food items individually in disposable containers</a>, which creates unnecessary waste. Despite knowing these issues, many consumers are unable to act upon it. Some find it hard to locate zero waste stores while others find the products too expensive.</p>
+               <p>What is the first thing that comes to your mind regarding “eco-friendliness”? Recycling? In the user survey, the majority of respondents picked “recycling” as the most effective method. But sometimes, "<a style="color: #6C931F;" href="http://thezerowasteshop.co.uk/pages/zero-waste/zero-waste/84" target="_blank">recycling is a distraction to our growing waste problem</a>". A lot of recycled products cannot be further recycled and will end up in the landfill as well. To save the environment, we should aim at creating zero trash.</p>
+               <p>But in some cases, it is not always feasible. For hygienic reasons, used tissue paper as well as the gloves and masks used by surgeons in an operation should not be reused. On the other hand, some manufacturers tend to <a style="color: #6C931F;" href="https://interestingengineering.com/17-completely-nonsense-yet-real-packaging-examples" target="_blank">package dry food items individually in disposable containers</a>, which creates unnecessary waste. Despite knowing these issues, many consumers are unable to act upon it. Some find it hard to locate zero waste stores while others find the products too expensive.</p>
                <p>To tackle these problems, I created Unwrap. It is a mobile app design that aims to help users find zero waste stores, read reviews, and save points on each spending in return for discounts and gifts. With these functions, it is easier for shoppers to find zero-waste alternatives and store owners can retain more customers.</p>
                <table class="deliver-table">
                   <tr>
@@ -456,7 +456,6 @@
                            label: "respondents",
                            backgroundColor: "#00918E",
                            barThickness: 60,
-                           borderColor: "#FFFFFF",
                            data: [6, 2, 1],
                          }]
                        },
@@ -473,7 +472,7 @@
                   </script>
                   <p>There is, indeed, a lack of online presence and promotion for the majority of zero waste stores.</p>
                   <p style="font-weight: 600;">2. If you could have a personal account from zero waste stores, what type of info do you want to see?</p>
-                  <p>Zero waste shoppers</p>
+                  <p style="font-weight: 600; color: #5B8452">Zero waste shoppers</p>
                   <canvas id="myChart8" style="width: 60%;"></canvas>
                   <script>
                      var ctx = document.getElementById('myChart8').getContext('2d');
@@ -485,9 +484,8 @@
                          labels: ['How much resources I saved', 'How much I spent', 'Updates & promotion'],
                          datasets: [{
                            label: "respondents",
-                           backgroundColor: "#A2DE96",
+                           backgroundColor: "#5B8452",
                            barThickness: 60,
-                           borderColor: "#FFFFFF",
                            data: [8, 6, 6],
                          }]
                        },
@@ -502,7 +500,7 @@
                        }
                      });
                   </script>
-                  <p>Non zero waste shoppers</p>
+                  <p style="font-weight: 600; color:#DCB552;">Non zero waste shoppers</p>
                   <canvas id="myChart9" style="width: 60%;"></canvas>
                   <script>
                      var ctx = document.getElementById('myChart9').getContext('2d');
@@ -514,9 +512,8 @@
                          labels: ['How much resources I saved', 'How much I spent', 'Updates & promotion'],
                          datasets: [{
                            label: "respondents",
-                           backgroundColor: "#A2DE96",
+                           backgroundColor: "#DCB552",
                            barThickness: 60,
-                           borderColor: "#FFFFFF",
                            data: [17, 12, 9],
                          }]
                        },
