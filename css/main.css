@@ -222,6 +222,15 @@ td {
 .solut-img {
   margin-left: 70px;
 }
+.ff-solut-img {
+  margin-left: 80px;
+}
+.ff-per-txt{
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 90px;
+  text-align: left;
+}
 /* end of press carousel 1 */
 
 /* ======End of carousel======*/
@@ -407,7 +416,16 @@ main > nav {
   color: #000000;
   font-weight: 700;
 }
+.sub-sect li.active > a {
+  color: #000000;
+  font-weight: 700;
+}
 /* 4. Side Menu Navigation */
+.sub-sect li a{
+  font-size: 14px;
+  padding: 2px;
+  font-weight: 200;
+}
 .section-nav {
   text-align: right;
   font-size: 14px;
@@ -419,7 +437,7 @@ main > nav {
   line-height: 25px;
   display: block;
   padding: 8px;
-  color: #545454;
+  color: #555555;
   font-weight: 400;
   transition: all 20ms ease-in-out; /* This small transition makes setting
   of the active state smooth */
@@ -690,7 +708,7 @@ footer #copyright {
 /* ======PROJECT TANGRAM======= */
 .proj-tangram-main {
   display: grid;
-  grid-template-columns: 25% 58% 17%;
+  grid-template-columns: 25% 65% 10%;
   column-gap: 60px;
   max-width: 100em;
   width: 90%;
@@ -789,6 +807,43 @@ footer #copyright {
   font-size: 17px;
   color: #FFFFFF;
   background-color: #60801A;
+  border-radius: 8px;
+  padding: 8px;
+}
+.deliverable-grp10 {
+  line-height: 28px;
+  font-size: 17px;
+  color: #FFFFFF;
+  background-color: #303030;
+  border-radius: 8px;
+  padding: 8px;
+}
+.deliverable-grp11 {
+  line-height: 28px;
+  font-size: 17px;
+  background-color: #FFD43D;
+  border-radius: 8px;
+  padding: 8px;
+}
+.deliverable-grp12 {
+  line-height: 28px;
+  font-size: 17px;
+  color: #FFFFFF;
+  background-color: #4E4E4E;
+  border-radius: 8px;
+  padding: 8px;
+}
+.deliverable-grp13 {
+  line-height: 28px;
+  font-size: 17px;
+  background-color: #EEEBEB;
+  border-radius: 8px;
+  padding: 8px;
+}
+.deliverable-grp14 {
+  line-height: 28px;
+  font-size: 17px;
+  background-color: #FFF4DE;
   border-radius: 8px;
   padding: 8px;
 }
@@ -1368,6 +1423,12 @@ footer #copyright {
   }
   .solut-img {
     margin-left: 40px;
+  }
+  .ff-solut-img {
+    margin-left: 40px;
+  }
+  .ff-per-txt{
+    padding-top: 10px;
   }
   .top-btn {
     display: block;
