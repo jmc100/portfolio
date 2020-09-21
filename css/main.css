@@ -424,7 +424,7 @@ main > nav {
 .sub-sect li a{
   font-size: 14px;
   padding: 2px;
-  font-weight: 200;
+  font-weight: 300;
 }
 .section-nav {
   text-align: right;
@@ -438,7 +438,7 @@ main > nav {
   display: block;
   padding: 8px;
   color: #555555;
-  font-weight: 400;
+  font-weight: 600;
   transition: all 20ms ease-in-out; /* This small transition makes setting
   of the active state smooth */
 }
