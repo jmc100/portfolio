@@ -1,4 +1,4 @@
-// For bolding items in the side sticky menu upon arrival
+// For applying styles to the cliked item in the side sticky menu
 window.addEventListener('DOMContentLoaded', () => {
 	const observer = new IntersectionObserver(entries => {
 		entries.forEach(entry => {
