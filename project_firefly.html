@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Julia Chow | Firefly</title>
+      <link rel="shortcut icon" type="image/png" href="logo/favicon.png">
+      <meta charset="utf-8">
+      <!-- to avoid inconsistencies between browsers -->
+      <link rel="stylesheet" href="css/reset.css">
+      <!-- Google font-->
+      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+      <!-- put "index.css" after "reset.css" to avoid the style being reset to plain -->
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <!-- for Chart JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+      <script type="text/javascript" src="project_menu.js"></script>
+   </head>
+   <body>
+      <header>
+         <!-- toggle menu -->
+         <input type='checkbox' id='toggle' style='display:none;' />
+         <label class='toggle-btn toggle-btn__cross' for='toggle'>
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
+         </label>
+         <nav class="toggle_menu">
+            <ul>
+               <li><a href="index.html">Work</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="https://drive.google.com/file/d/1JCZVW5uDHsFxszfEWS9Aeu2gq3JeE4lU/view?usp=sharing" target="_blank">Resume</a></li>
+               <li><a href="fun.html">Art</a></li>
+            </ul>
+         </nav>
+         <!-- End of toggle menu -->
+         <!-- nav bar -->
+         <ul id="nav_bar">
+            <li class="nav_item"><a href="index.html">Work</a></li>
+            <li class="nav_item"><a href="about.html" style="color: #BDBDBD">About</a></li>
+            <li class="nav_item"><a href="https://drive.google.com/file/d/1JCZVW5uDHsFxszfEWS9Aeu2gq3JeE4lU/view?usp=sharing" target="_blank" style="color: #BDBDBD">Resume</a></li>
+            <li class="nav_item"><a href="fun.html" style="color: #BDBDBD">Art</a></li>
+         </ul>
+         <!-- End of nav bar -->
+      </header>
+      <main class="proj-tangram-main">
+         <!-- Side Menu Bar -->
+         <nav class="section-nav" style="letter-spacing: 1px;">
+            <ol>
+               <li id="home-btn"><a href="index.html"><img id="case-stud-personal-logo" src="logo/final_logo_large.png" alt="personal logo"></a></li>
+               <li><a href="#summary">OVERVIEW</a></li>
+               <li><a href="#prob-solut">PROBLEMS &amp; SOLUTIONS</a></li>
+               <li><a href="#user-research">USER RESEARCH</a></li>
+               <li>
+                  <ul class="sub-sect">
+                     <li><a href="#survey">Survey</a></li>
+                     <li><a href="#personas">Personas</a></li>
+                     <li><a href="#user-stories">User Stories</a></li>
+                  </ul>
+               </li>
+               <li><a href="#comp-analysis">COMPETITIVE ANALYSIS</a></li>
+               <li><a href="#wireframe">SKETCHES, WIREFRAMES &amp; TESTING</a></li>
+               <li><a href="#mockup">MOCKUPS &amp; TESTING</a></li>
+               <li><a href="#branding">BRANDING</a></li>
+               <li>
+                  <ul class="sub-sect">
+                     <li><a href="#b-logo">Name & Logo</a></li>
+                     <li><a href="#b-animation">Launch Animation</a></li>
+                     <li><a href="#b-color">Color & Typography</a></li>
+                  </ul>
+               </li>
+               <li><a href="#prototype">PROTOTYPE</a></li>
+               <li><a href="#reflection">REFLECTION</a></li>
+            </ol>
+         </nav>
+         <!-- Content-->
+         <div class ="content">
+            <!-- Summary -->
+            <section id="summary">
+               <h2 class="main-head">Firefly</h2>
+               <img style="width: 100%; height: auto;" id ="cover-image" src="image/ff-maincov.png" alt="cover image">
+               <a href="https://www.figma.com/proto/byBbFCJV7wsojEz2PZw3iR/firefly_final_prototype_night?node-id=330%3A57&scaling=contain" target="_blank" class="proto-btn">Dark prototype</a>
+               <a href="https://www.figma.com/proto/CjVNTIX363QFErpyxwXGKf/firefly_final_prototype_tourist?node-id=332%3A52&scaling=contain" target="_blank" class="proto-btn">Light prototype</a>
+              <h2>Overview</h2>
+              <p>Imagine you are a student going home at 11pm from the library. You open a navigation app and it suggests that you rush to catch the last train or walk through an alley to take a bus. What would you do? This is not a mere hypothetical situation but a scenario faced by multiple female passengers daily.
+                In fact, the design of a lot of navigation apps tend to prioritize efficiency and may not have considered <a style="color: #EC881E;" href="https://www.theguardian.com/careers/2019/jun/05/do-mapping-apps-need-a-night-safe-mode-for-women" target="_blank">the potential danger faced by the user when using the routes they suggested at night</a>.</p>
+                <p>In a survey on personal safety, up to 50% of female (and 16% of male) expressed that they <a style="color: #EC881E;" href="https://today.yougov.com/topics/lifestyle/articles-reports/2019/03/28/women-safety-sexual-assault-awareness" target="_blank">often feel unsafe when walking alone on the street or through an alley at night</a>. Currently, there are apps that warn users of negative experiences at certain areas so that the user can avoid them. But there are not many apps that highlight where users can find a temporary "shelter" if they feel unsafe.</p>
+                <p>To fill this gap, I created Firefly. It is a mobile navigation app that highlights places which are stil in operation (e.g. restaurants, shops, and convenient stores). They can provide a bright and safe space for the user to rest, to make calls and to look for staff to help out if needed. Together with functions such as texting, sharing one’s GPS location, getting reminders on when to leave for commute on time, and having a light/dark mode switch, Firefly can help individual home-goers at night and solo travelers!</p>
+               <table class="deliver-table">
+                  <tr>
+                     <td>
+                        <h2 class="deliver-header">My roles</h2>
+                     </td>
+                     <td>
+                        <h2 class="deliver-header">Deliverables</h2>
+                     </td>
+                     <td>
+                        <h2 class="deliver-header">Methods/ Tools</h2>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="vertical-align: middle;">
+                        <p class="deliverable-grp10">UX research</p>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp10" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt-dark">User surveys</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt-dark">User stories</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt-dark">Personas</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp10" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt-dark">Google Form</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt-dark">research, reviews</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt-dark">interviews</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="vertical-align: middle;">
+                        <p class="deliverable-grp11">UX/UI design</p>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp11" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">Sketches & Wireframes</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Usability tests</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Mockups</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Prototypes</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp11" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">pencil sketches, Figma</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">guided and unguided tests</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Figma, Illustrator</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt">Figma, Illustrator, Photoshop</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="vertical-align: middle;">
+                        <p class="deliverable-grp12">Visual design</p>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp12" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt-dark">Color & Typography</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt-dark">Logo design</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp12" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt-dark">Material Design Guidelines</p>
+                           </li>
+                           <li>
+                              <p class="deliver-txt-dark">Figma</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="vertical-align: middle;">
+                        <p class="deliverable-grp13">Motion Design</p>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp13" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">Launch screen animation</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp13" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">Illustrator, After Effects</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="vertical-align: middle;">
+                        <p class="deliverable-grp14">Market research</p>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp14" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">Competitive Analysis</p>
+                           </li>
+                        </ul>
+                     </td>
+                     <td style="vertical-align: middle;">
+                        <ul class="deliverable-grp14" style="list-style: none;">
+                           <li>
+                              <p class="deliver-txt">App store reviews, interviews</p>
+                           </li>
+                        </ul>
+                     </td>
+                  </tr>
+               </table>
+               <!-- ==== end of deliverables ==== -->
+            </section>
+            <!-- Problem & Solutions -->
+            <section id="prob-solut">
+               <!-- Problems -->
+               <h2>Problems</h2>
+               <p style="font-weight: 600; color: #955B0D">Late-night home-goers</p>
+               <table class="problem-list">
+                  <tr>
+                     <td>
+                        <p class="prob-bullet">A</p>
+                     </td>
+                     <td>
+                          <p style="margin-top: 15px; margin-bottom: 0px;">“There was a time when I suspected that I was <mark style=" background-color: #FFFFFF; font-weight: 700;">being followed at night</mark>. But since I was <mark style=" background-color: #FFFFFF; font-weight: 700;">not familiar with that area</mark>, I <mark style=" background-color: #FFFFFF; font-weight: 700;">didn’t know where to hide</mark> to call for help.”</p>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>
+                        <p class="prob-bullet">B</p>
+                     </th>
+                     <td>
+                        <p style="margin-top: 15px; margin-bottom: 0px;">“There were quite a few times that I <mark style=" background-color: #FFFFFF; font-weight: 700;">looked up a route only to discover that I had missed the last bus/train</mark> and had to take other options (e.g. walk home at night/ take a taxi).”</p>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th>
+                        <p class="prob-bullet">C</p>
+                     </th>
+                     <td>
+                        <p style="margin-top: 15px; margin-bottom: 0px;">“The map is only available in <mark style=" background-color: #FFFFFF; font-weight: 700;">light mode</mark>. Reading it at night <mark style=" background-color: #FFFFFF; font-weight: 700;">hurts my eyes</mark>.”</p>
+                     </td>
+                  </tr>
+                </table>
+                <p style="font-weight: 600; color: #ED8A17">Tourists/ Business travelers</p>
+                <table class="problem-list">
+                   <tr>
+                      <th>
+                         <p class="prob-bullet">D</p>
+                      </th>
+                      <td>
+                        <p style="margin-top: 15px; margin-bottom: 0px;">“I’m <mark style=" background-color: #FFFFFF; font-weight: 700;">not familiar with the public transport schedule</mark> of the country I visit and I <mark style=" background-color: #FFFFFF; font-weight: 700;">have to be constantly aware of the time</mark> as I can’t be late for the next meeting/ the place where I made reservations. This <mark style=" background-color: #FFFFFF; font-weight: 700;">adds stress to the trip</mark>.”</p>
+                      </td>
+                   </tr>
+                 </table>
+                 <!-- Solutions -->
+                 <h2 style="padding-bottom: 0px;">Solutions</h2>
+                 <!-- Press type carousel -->
+                 <div class="press-container">
+                    <div class="carousel_press">
+                       <input type="radio" id="carousel_press-1" name="carousel_press[]" checked>
+                       <input type="radio" id="carousel_press-2" name="carousel_press[]">
+                       <input type="radio" id="carousel_press-3" name="carousel_press[]">
+                       <input type="radio" id="carousel_press-4" name="carousel_press[]">
+                       <ul class="carousel_press__items">
+                          <!-- solution page 1 -->
+                          <li class="carousel_press__item">
+                             <h3 class="solut-hd">Solution to <span class="prob-bullet" style="text-align: center; margin-left: 10px; margin-right: 10px;">A</span></h3>
+                             <table>
+                               <tr>
+                            <td><img class="ff-solut-img" style="filter:saturate(1.5)" src="image/ff-route.gif" alt="search route dark"></td>
+                             <td style="width: 60%;"><p class="ff-per-txt">A map that highlights places which are still open. These places are updated as you search.</p></td>
+                           </tr>
+                         </table>
+                          </li>
+                          <!-- solution page 2 -->
+                          <li class="carousel_press__item">
+                             <h3 class="solut-hd">Solution to <span class="prob-bullet" style="text-align: center; margin-left: 10px;">B</span></h3>
+                             <table>
+                               <tr>
+                            <td><img class="ff-solut-img" style="filter:saturate(1.5)" src="image/ff-broadcast.gif" alt="broadcast gps">
+                             <td style="width: 60%;"><p class="ff-per-txt">Users can share one's live GPS location (together with an optional message) to people they trust.</p></td>
+                            </tr>
+                            </table>
+                          </li>
+                          <!-- solution page 3 -->
+                          <li class="carousel_press__item">
+                             <h3 class="solut-hd">Solution to <span class="prob-bullet" style="text-align: center; margin-left: 10px;">C</span></h3>
+                             <table>
+                               <tr>
+                            <td>
+                              <img class="ff-solut-img" style="filter:saturate(1.5)" src="image/ff-lighttodark.gif" alt="light to dark">
+                             <td style="width: 60%;"><p class="ff-per-txt">Users can switch between light mode and dark mode.</p></td>
+                            </tr>
+                            </table>
+                          </li>
+                          <!-- solution page 4 -->
+                          <li class="carousel_press__item">
+                             <h3 class="solut-hd">Solution to <span class="prob-bullet" style="text-align: center; margin-left: 10px;">D</span></h3>
+                             <table>
+                               <tr>
+                            <td>
+                              <img class="ff-solut-img" style="filter:saturate(1.3)" src="image/ff-not1.gif" alt="notification">
+                             <td style="width: 60%;"><p class="ff-per-txt">Users can set notification reminders on when to leave in order to arrive at the destination on time.</p></td>
+                            </tr>
+                            </table>
+                          </li>
+                       </ul>
+                       <div class="carousel_press__prev">
+                          <label for="carousel_press-1"></label>
+                          <label for="carousel_press-2"></label>
+                          <label for="carousel_press-3"></label>
+                          <label for="carousel_press-4"></label>
+                       </div>
+                       <div class="carousel_press__next">
+                          <label for="carousel_press-1"></label>
+                          <label for="carousel_press-2"></label>
+                          <label for="carousel_press-3"></label>
+                          <label for="carousel_press-4"></label>
+                       </div>
+                       <div class="carousel_press__nav">
+                          <label for="carousel_press-1"></label>
+                          <label for="carousel_press-2"></label>
+                          <label for="carousel_press-3"></label>
+                          <label for="carousel_press-4"></label>
+                       </div>
+                    </div>
+                 </div>
+            </section>
+            <!-- User Research -->
+            <section id="user-research">
+               <h2>User research</h2>
+               <!-- Survey -->
+               <section id="survey">
+                  <h2>Survey</h2>
+                  <p>To understand the goals and frustrations faced by users of navigation apps, I created a survey with 2 parts.</p>
+                  <h3 style="padding-top: 15px; font-weight: 600;">Part 1: Information useful to the users</h3>
+                   <p style="font-weight: 600; color: #955B0D">Late-night home-goers</p>
+                  <p style="font-weight: 600;">What types of information are essential to you when traveling home at night?</p>
+                  <canvas id="myChart10" style="width: 40%; height: 40%;"></canvas>
+                  <script>
+                     var ctx = document.getElementById('myChart10').getContext('2d');
+                     var chart = new Chart(ctx, {
+                       // The type of chart we want to create
+                       type: 'bar',
+                       // The data for our dataset
+                       data: {
+                         labels: ['virtual maps on a mobile app', 'arrival times of public transport', 'being able to call/ text people I trust'],
+                         datasets: [{
+                           label: "respondents",
+                           backgroundColor: "#955B0D",
+                           barThickness: 60,
+                           data: [8, 13, 11],
+                         }]
+                       },
+                       options: {
+                         scales: {
+                           yAxes: [{
+                             ticks: {
+                               beginAtZero: true
+                             }
+                           }]
+                         }
+                       }
+                     });
+                  </script>
+                  <p style="font-weight: 600; color: #FF8E09">Tourists/ Business travelers</p>
+                  <p style="font-weight: 600;">Which navigation tools are helpful to you when traveling to a foreign city/country?</p>
+                  <canvas id="myChart11" style="width: 40%; height: 40%;"></canvas>
+                  <script>
+                     var ctx = document.getElementById('myChart11').getContext('2d');
+                     var chart = new Chart(ctx, {
+                       // The type of chart we want to create
+                       type: 'bar',
+                       // The data for our dataset
+                       data: {
+                         labels: ['physical paper maps', 'virtual maps on a mobile app', 'a virtual GPS helper', 'notifications on journey', 'city guide book'],
+                         datasets: [{
+                           label: "respondents",
+                           backgroundColor: "#FFB054",
+                           barThickness: 60,
+                           data: [2, 6, 2, 5, 3],
+                         }]
+                       },
+                       options: {
+                         scales: {
+                           yAxes: [{
+                             ticks: {
+                               beginAtZero: true
+                             }
+                           }]
+                         }
+                       }
+                     });
+                  </script>
+                  <p style="font-weight: 600;"><mark style="background-color: #FFD600;">Implications</mark></p>
+                  <ul>
+                     <li style="margin-left: 25px; list-style-type: disc;">
+                        <p>Users find: (1) public transport schedule, (2) virtual map, and (3) journey reminders/ notifications on the navigation app necessary.</p>
+                     </li>
+                     <li style="margin-left: 25px; list-style-type: disc;">
+                        <p>Users also want to call or text people they trust to let them look into the user’s immediate situation.These functions can make the user feel safe and connected.</p>
+                     </li>
+                  </ul>
+                <p>But this is only what people who are in a distance can do at best. If we should provide better support and assistance to the user, we need to look into the potential danger the user may face and the potential shelters the user can use in their immediate physical location.</p>
+                <h3 style="padding-top: 15px; font-weight: 600;">Part 2: Strategies for ensuring a safe and efficient journey</h3>
+                <p style="font-weight: 600;color: #955B0D">Late-night home-goers</p>
+                <p style="font-weight: 600;">When you feel unsafe (e.g. think you might be followed), what would you do?</p>
+                <canvas id="myChart12" style="width: 40%; height: 40%;"></canvas>
+                <script>
+                   var ctx = document.getElementById('myChart12').getContext('2d');
+                   var chart = new Chart(ctx, {
+                     // The type of chart we want to create
+                     type: 'bar',
+                     // The data for our dataset
+                     data: {
+                       labels: ['Call the emergency number', 'Text/ call people you trust', 'Go to the nearest shop/ restaurant/ convenient store, etc.', 'Call an Uber/ taxi', 'Walk to busier streets'],
+                       datasets: [{
+                         label: "respondents",
+                         backgroundColor: "#955B0D",
+                         barThickness: 60,
+                         data: [3, 8, 9, 5, 1],
+                       }]
+                     },
+                     options: {
+                       scales: {
+                         yAxes: [{
+                           ticks: {
+                             beginAtZero: true
+                           }
+                         }]
+                       }
+                     }
+                   });
+                </script>
+                <p style="font-weight: 600;">Why did you choose this method?</p>
+                <img src="image/ff-night-reasons.gif" alt="home goers reasons">
+                <p style="font-weight: 600; color: #FF8E09">Tourists/ Business travelers</p>
+                <p style="font-weight: 600;">Which navigation tools are helpful to you when traveling to a foreign city/country?</p>
+                <canvas id="myChart13" style="width: 40%; height: 40%;"></canvas>
+                <script>
+                   var ctx = document.getElementById('myChart13').getContext('2d');
+                   var chart = new Chart(ctx, {
+                     // The type of chart we want to create
+                     type: 'bar',
+                     // The data for our dataset
+                     data: {
+                       labels: ['Call the emergency number', 'Text/ call people you trust', 'Go to the nearest shop/ restaurant/ convenient store, etc.', 'Call an Uber/ taxi'],
+                       datasets: [{
+                         label: "respondents",
+                         backgroundColor: "#FFB054",
+                         barThickness: 60,
+                         data: [2, 2, 7, 1],
+                       }]
+                     },
+                     options: {
+                       scales: {
+                         yAxes: [{
+                           ticks: {
+                             beginAtZero: true
+                           }
+                         }]
+                       }
+                     }
+                   });
+                </script>
+                <p style="font-weight: 600;">Why did you choose this method?</p>
+                <img src="image/ff-tourist-reasons.png" alt="tourist reasons">
+                <p style="font-weight: 600;"><mark style="background-color: #FFD600;">Implications</mark></p>
+                <ul>
+                   <li style="margin-left: 25px; list-style-type: disc;">
+                     <p>For both groups, the go-to method to cope with danger is to find the nearest shop, restaurant, or convenient store and stay there. Another popular choice is to call or text people you trust or call the emergency number. The main reason is because busier places (e.g. stores, busier streets) are harder for stalker to locate/harm a target.</p>
+                   </li>
+                   <li style="margin-left: 25px; list-style-type: disc;">
+                      <p>For tourists/ business travelers, the time zone of the place they visit and the time zone of their home countries might differ drastically. Since their family and friends are so far from them, popping into the nearest shop/ restaurants make the most sense.</p>
+                   </li>
+                </ul>
+               </section>
+
+               <!-- Personas -->
+               <section id="personas">
+                  <h2>Personas</h2>
+                  <p>Based on the demographic info of my respondents, I created 2 personas.</p>
+                  <table>
+                     <tr>
+                        <td style="padding-right: 10px; width: 30%">
+                           <img style="border-radius: 10px; width: 90%" src="image/ff-hannah.jpeg" alt="persona Hannah">
+                           <p class="per-text" style="font-weight: 600;text-transform: uppercase; letter-spacing: 0.5px;">Hannah<br>Research student, 25</p>
+                           <p style="font-weight: 700;">Lifestyle:</p>
+                           <p class="per-text">She is a diligent research student. Most of her days, she works in the library until 10pm. Occasionally, she enjoys socializing with her friends at theatres and bars too.</p>
+                           <p style="font-weight: 700;">Frustrations:</p>
+                           <ul>
+                              <li>
+                                 <p class="per-text">Some routes suggested by the navigation app include dark alleys. It’s not very practical following these suggestions at night.</p>
+                              </li>
+                              <li>
+                                 <p class="per-text">There was a time when I thought I was being followed. But I’m not familiar with that area and couldn’t find a safe place to make a call.</p>
+                              </li>
+                              <li>
+                                 <p class="per-text">The map is only available in light mode and it hurts my eyes to read it at night.</p>
+                              </li>
+                           </ul>
+                           <p style="font-weight: 700;">Wishes:</p>
+                           <ul>
+                              <li>
+                                 <p class="per-text">I wish I can choose to exclude alleys and quiet areas in my search of routes at night.</p>
+                              </li>
+                              <li>
+                                 <p class="per-text">I want the map to show places which are still open so that if I feel unsafe, I can stay there and make calls.</p>
+                              </li>
+                              <li>
+                                 <p class="per-text">I wish there is a night mode of the map.</p>
+                              </li>
+                           </ul>
+                           <p class="per-text" style="font-weight: 600;font-style: italic; padding-right: 5px;"><mark style="background-color: white;">“Having a reliable navigation app is crucial to commuting safely at night.”</mark></p>
+                        </td>
+                        <td style="padding-right: 10px; width: 30%;">
+                           <img style="border-radius: 10px; width: 90%" src="image/ff-ryan.jpg" alt="persona Ryan">
+                           <p class="per-text" style="font-weight: 600;text-transform: uppercase; letter-spacing: 0.5px;">Ryan<br>Business traveler, 36</p>
+                           <p style="font-weight: 700;">Lifestyle:</p>
+                           <p class="per-text">He is a manager who overlooks businesses in other countries for the company. In his free time, he also enjoys solo traveling and learns about different cultures as a local.</p>
+                           <p style="font-weight: 700;">Frustrations:</p>
+                           <ul>
+                              <li>
+                                 <p class="per-text">In some business trips, I have meetings at different locations on the same day. The navigation app will not notify you of accidents/ delays in public transports and sometimes, I arrived almost late for meetings.</p>
+                              </li>
+                              <li>
+                                 <p class="per-text">When I travel for leisure, I tend to explore different places until late at night and sometimes, it is hard to find a restaurant which is still open nearby.</p>
+                              </li>
+                              <li>
+                                 <p class="per-text">When I use the map at night, I need a light filter.</p>
+                              </li>
+                           </ul>
+                           <p style="font-weight: 700;">Wishes:</p>
+                           <ul>
+                             <li>
+                               <p class="per-text">I want to be notified of accidents on the road related to my journey and changes of schedule in public transport.</p>
+                              <li>
+                                 <p class="per-text">I want to see the operating hours of places immediately from my search.</p>
+                              </li>
+                              <li>
+                                 <p class="per-text">I wish there is a night mode to the virtual map.</p>
+                              </li>
+                           </ul>
+                          <p class="per-text" style="font-weight: 600;font-style: italic; padding-right: 5px;"><mark style="background-color: white;">“A navigation app can do more than just planning a journey. If developed well, it can work like a personal organizer or digital assistant.”</mark></p>
+                        </td>
+                     </tr>
+                  </table>
+                  <!-- closing tag of persona sub-section -->
+               </section>
+               <!-- User Stories -->
+               <section id="user-stories">
+                  <h2>User Stories</h2>
+                  <p>The goals and frustrations mentioned above can be summarised as follows:</p>
+                  <p style="font-weight: 600; color: #955B0D">Late-night home-goers</p>
+                  <table class="user-stories">
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>I want to follow a safe route home where I can avoid alleys and quiet areas.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>I want to be able to text and call people I trust when I feel unsafe.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>I want to see on the map places which are still open at night so that I can stay there and make calls to people whom I trust.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet med">Medium</p>
+                        </th>
+                        <td>
+                           <p>I want to read the map in dark mode.</p>
+                        </td>
+                     </tr>
+                  </table>
+                  <p style="font-weight: 600; color: #FF8E09">Tourists/ Business travelers</p>
+                  <table class="user-stories">
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>I want to know the convenient stores or restaurants that are still open at night.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>Since I am not familiar with the public transport schedule of the foreign country, I want to know how much time I should reserve for traffic.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet">High</p>
+                        </th>
+                        <td>
+                           <p>I want to get reminders on when I need to leave point A in order to arrive at point B on time especially when I have meetings at different locations on the same day.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <th>
+                           <p class="user-bullet med">Medium</p>
+                        </th>
+                        <td>
+                           <p>I want to be able to switch between a light mode and a dark mode.</p>
+                        </td>
+                     </tr>
+                  </table>
+                  <!-- closing the "user stories" section -->
+               </section>
+               <!-- closing the "user research" section -->
+            </section>
+            <!-- Competitive Analysis -->
+            <section id="comp-analysis">
+               <h2>Competitive Analysis</h2>
+               <p>To understand how to position Firefly in the market, I looked at the strengths and the limitations of two popular navigation apps (“Citymapper” and “Google Maps”) and two personal safety apps (“Save & the City” and “Circle of 6”).</p>
+               <table>
+                 <tr>
+                   <td></td>
+                   <td style="padding: 5px;"><img style="width: 70px;" src="logo/ff-cmapper.png" alt="citymapper logo"><p style="font-weight: 600; line-height: 18px; font-size: 16px;">Citymapper</p></td>
+                   <td style="padding: 5px;"><img style="width: 70px;" src="logo/ff-gmaps.png" alt="g maps logo"><p style="font-weight: 600; line-height: 18px; font-size: 16px;">Google Maps</p></td>
+                   <td style="padding: 5px;"><img style="width: 70px;" src="logo/ff-scity.png" alt="safe n the city logo"><p style="font-weight: 600; line-height: 18px; font-size: 16px;">Safe & the City</p></td>
+                   <td style="padding: 5px;"><img style="width: 70px;" src="logo/ff-circle6.jpeg" alt="circle of 6 logo"><p style="font-weight: 600; line-height: 18px; font-size: 16px;">Circle of 6</p></td>
+           </tr>
+                 <tr>
+                   <td style="width: 40%; padding-right: 10px;"><p style="font-weight: 600;">Can the user see reviews & warnings for different areas?</p></td>
+                   <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                  <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                  <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                   <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                 </tr>
+                 <tr>
+                   <td style="width: 40%; padding-right: 10px;"><p style="font-weight: 600;">Can it locate the user's GPS?</p></td>
+                   <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                   <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                  <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                  <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                 </tr>
+                 <tr>
+                   <td style="width: 40%; padding-right: 10px;"><p style="font-weight: 600;">Can the user send the GPS to others via the app?</p></td>
+                   <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                    <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                 <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                  <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                 </tr>
+                 <tr>
+                   <td style="width: 40%; padding-right: 10px;"><p style="font-weight: 600;">Can it show the public transport schedule by a particular departing time?</p></td>
+                   <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                   <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                  <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                  <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                 </tr>
+                 <tr>
+                   <td style="width: 40%; padding-right: 10px;"><p style="font-weight: 600;">Can it help the user plan a route?</p></td>
+                   <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                   <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                  <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                  <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                 </tr>
+                 <tr>
+                     <td style="width: 40%; padding-right: 10px;"><p style="font-weight: 600;">Can the user receive reminders on the journey?</p></td>
+                     <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                     <td style="width: 15%;"class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
+                    <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                    <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                   </tr>
+                   <tr>
+                     <td style="width: 40%; padding-right: 10px;"><p style="font-weight: 600;">Can the map show places which are still open?</p></td>
+                     <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                     <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                    <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                    <td style="width: 15%;"class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
+                 </tr>
+               </table>
+               <p style="font-weight: 600;"><mark style="background-color: #FFD600;">Implications</mark></p>
+               <p>Navigation apps tend to prioritize efficiency over safety. But for someone traveling at night, this is not always the best option.</p>
+               <p>Quite a number of personal safety apps aim to warn the user to avoid “dangerous” areas. While this function may enhance the user’s safety, it could also be <a style="color: #EC881E;" href="https://www.newyorker.com/business/currency/what-to-do-when-your-app-is-racist" target="_blank">misused to incite racial prejudice</a>.</p>
+               <p>When the user is alone on the street at night, it is more helpful to point out places which can provide a temporary “shelter”.</p>
+               <p>As a result, the map of Firefly will highlight “safe places” which are still open on the map. These include convenient stores, shops and restaurants as they have staff and security cameras in operation. This can prevent stalkers from approaching the user and thus, can provide a safe space for the user to stay and make calls if needed.</p>
+            </section>
+            <!-- Sketches, Wireframes & Testing -->
+            <section id="wireframe">
+               <h2>Sketches & Wireframes</h2>
+               <p style="font-weight:600;"><u>Sketches</u></p>
+               <img style="width: 70%;" src="image/ff-sketch.png" alt="ff sketches">
+               <p style="font-weight:600;"><u>Wireframes</u></p>
+               <p>Light mode:</p>
+               <img style="width: 830px;" src="image/ff-wf1.png" alt="ff wireframes"><br>
+               <p>Dark mode:</p>
+               <img style="width: 830px;" src="image/ff-wf1-dk.png" alt="ff wireframes"><br>
+               <h2 style="margin-top: 25px;">User Testing of Wireframes</h2>
+               <p>In the test, I asked participants to describe what they thought the pages were about and explained how to navigate to different pages.</p>
+               <p style="font-size: 20px; font-weight: 700; margin-top: 30px;">What I've learned:</p>
+               <!-- point 1 -->
+               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">Planning a route V.S. Searching a location</p>
+               <p>What if the user just wants to look up the stores or restaurants nearby a hotel or a train station? Asking users to enter a starting point and a destination assumes they are planning a route. But it is not always the case. Sometimes, they just want to check the stores nearby a place.</p>
+               <!-- before & after table -->
+               <table>
+                  <tr>
+                     <td style="width: 23%;">
+                        <img src="image/ff-wf2-route.png" alt="show a route">
+                        <p style="text-align: center; font-weight: 700;">BEFORE</p>
+                     </td>
+                     <td style="width: 10%;">
+                        <img style="margin-top: 250%; padding-left: 10%; padding-right: 10%;" src="image/arrow-lr.png" alt="arrow left to right">
+                     </td>
+                     <td style="width: 50%;">
+                        <img src="image/ff-wf2-spot.png" alt="show a spot">
+                        <p style="text-align: center; font-weight: 700;">AFTER</p>
+                     </td>
+                  </tr>
+               </table>
+             <p><mark style="background-color: #FFFFFF; font-weight: 600;">Revised version:</mark>The revised version allows users to look up a location before deciding to plan a route.</p>
+            </section>
+            <!-- Mockups & Testing -->
+            <section id="mockup">
+               <h2>Mockups</h2>
+               <p>Based on the revised wireframes, I created a mockup. Here are some of the pages:</p>
+               <img style="width: 85%;" src="image/ff-mu1.png" alt="ff mockup">
+               <h2 style="margin-top: 25px;">User Testing of Mockups</h2>
+               <p style="font-size: 20px; font-weight: 700; margin-top: 30px;">What I've learned:</p>
+               <!-- point 1 -->
+               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">1. Minimize other items to maximize map coverage</p>
+               <p>Some users pointed out that there is too much information listed at the top navigation. The colored dots which are used for indicating different categories (e.g. shops, restaurants, convenient stores, etc.) require additional cognitive load from the user.</p>
+               <img style="width: 35%;" src="image/ff-mu-dots.png" alt="mockup cluttered">
+               <p>Instead of showing all those information, users want to see more of the map.</p>
+               <!-- before & after table -->
+               <table style="width:80%;">
+                  <tr>
+                     <td style="width: 40%;">
+                        <img src="image/ff-mu1-cluttered.png" alt="cluttered top nav">
+                        <p style="margin-left: 40px; width: 70%; text-align: center; font-weight: 700;">BEFORE</p>
+                     </td>
+                     <td style="width: 15%;">
+                        <img style="margin-top: 200%; padding-left: 10%; padding-right: 10%;" src="image/arrow-lr.png" alt="arrow left to right">
+                     </td>
+                     <td style="width: 40%;">
+                        <img src="image/ff-mu2-clean.png" alt="clear layout">
+                        <p style="margin-left: 40px; width: 70%; text-align: center; font-weight: 700;">AFTER</p>
+                     </td>
+                  </tr>
+               </table>
+                <p><mark style="background-color: #FFFFFF; font-weight: 600;">Revised version:</mark> I moved the method of transportation and the steps to the floating buttons on the map. They are semi-transparent so that it is not entirely covering the screen. At the same time, the top section is less cluttered and the map can now take up more space on the screen.</p>
+                <!-- point 2 -->
+                <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">2. Color contrast in dark mode</p>
+                <p>At first, I used #121212 as the background color (except for the map page) as it is a recommended dark mode base color for Material Design. However, it blends in with the status bar and the bottom navigation.</p>
+                <img style="width: 30%;" src="image/ff-mu1-blend.png" alt="color blend">
+                <p>Also, the strong color contrast between the background and the words can make reading the screen tiring.</p>
+                <!-- before & after table -->
+                <table>
+                   <tr>
+                      <td style="width: 35%;">
+                         <img src="image/ff-mu1-color.png" alt="darker shade">
+                         <p style="margin-left: 40px; width: 50%; text-align: center; font-weight: 700;">BEFORE</p>
+                      </td>
+                      <td  style="width: 20%;">
+                         <img style=" width: 70%; margin-top: 250%;" src="image/arrow-lr.png" alt="arrow left to right">
+                      </td>
+                      <td style="width: 35%;">
+                         <img src="image/ff-mu2-color.png" alt="lighter shade">
+                         <p style="margin-left: 40px; width: 50%; text-align: center; font-weight: 700;">AFTER</p>
+                      </td>
+                   </tr>
+                </table>
+                 <p><mark style="background-color: #FFFFFF; font-weight: 600;">Revised version:</mark> I adjusted the background color to a slightly lighter shade (#303030) so that the status bar and the bottom navigation are now separated from the content. The color contrast is not as strong as the previous one but it is still easy to read in dark environment.</p>
+                 <p style="font-size: 20px; font-weight: 700; margin-top: 30px;">What surprised me:</p>
+                 <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">Dark mode V.S. Light mode</p>
+                 <p>Some users find the mockup insufficient to demonstrate how this app is especially helpful to tourists/ business travelers. Apart from its journey planning function, the app does not seem to respond to all the problems listed above.</p>
+                 <p><mark style="background-color: #FFFFFF; font-weight: 600;">Revised version:</mark> In addition to the dark mode, I created a light mode which depicts the scenario of a traveler using the app to get notification reminders on the departing time for his journey.</p>
+                 <table>
+                    <tr>
+                       <td>
+                         <p style="text-align: left; font-weight: 700; margin-bottom: 0px;">Dark mode:</p>
+                          <img src="image/ff-mu2-dark.png" alt="dark mode">
+
+                       </td>
+                     </tr>
+                     <tr>
+                       <td>
+                         <p style="text-align: left; font-weight: 700; margin-bottom: 0px;">Light mode:</p>
+                          <img src="image/ff-mu2-light.png" alt="light mode">
+                       </td>
+                    </tr>
+                 </table>
+            </section>
+            <!-- Branding -->
+            <section id="branding">
+               <h2>Branding</h2>
+               <section id="b-logo">
+               <h2>Name & Logo</h2>
+               <p>This app is called “Firefly” because our map highlights places which are open using colored dots. When viewed in dark mode, these dots are like fireflies, or stars, in the dark :)</p>
+               <img style="width: 20%;" src="image/ff-logo.png" alt="logo">
+               <p>To illustrate this idea, I used two "F"s (which stand for "Firefly"), flipped one vertically and horizontally so that together, they look like roads on a map. The two dots resemble stores that are open.</p>
+             </section>
+             <section id="b-animation">
+               <h2 style="margin-top: 20px;">Launch animation</h2>
+               <table>
+                  <tr>
+                     <td style="width: 40%; vertical-align: text-top;">
+                        <p>To create dynamics for the logo, I created a launch animation:</p>
+                     </td>
+                     <td style="width: 10%;"></td>
+                     <td style="width: 22%;">
+                        <img style="filter:saturate(1.5)" src="image/ff-launchscreen.gif" alt="launch animation">
+                     </td>
+                  </tr>
+               </table>
+             </section>
+             <section id="b-color">
+               <h2>Colors</h2>
+               <table>
+                  <tr>
+                     <td style="width: 45%; vertical-align: text-top;">
+                        <p>The colors I chose are primarily dark grey, yellow, and greyish white. These colors blend in well with both the dark mode and the light mode.</p>
+                     </td>
+                     <td style="width: 30%;"></td>
+                     <td style="width: 25%;">
+                        <img src="image/ff-bcolor.png" alt="brand colors">
+                     </td>
+                  </tr>
+               </table>
+               <br>
+               <h2>Typography</h2>
+               <table>
+                  <tr>
+                     <td style="width: 60%; vertical-align: text-top; padding-right: 15px;">
+                        <p>For the brand type, I chose Raleway. The rounded nature of the type complements the dots and round buttons on the map. It is only used in the brand name. All other text are in Roboto as it is a standard Material Design font. When reading the screen in dark mode, it is best to have a font which is highly legible and familar.</p>
+                     </td>
+                     <td style="width: 25px;"></td>
+                     <td>
+                        <img style="width: 60%;" src="image/ff-type.png" alt="brand type">
+                     </td>
+                  </tr>
+               </table>
+               <!-- closing the "color & typography" sub-section -->
+             </section>
+             <!-- closing the "branding" section -->
+            </section>
+            <!-- Prototype -->
+            <section id="prototype">
+               <h2>Interactive Prototype</h2>
+               <p style="font-size: 20px; font-weight: 600; margin-top: 30px; color: #955B0D">User: Late-night home-goer</p>
+
+               <table style="margin-top:20px;">
+                 <tr>
+                   <td style="width: 60%;">
+                     <p style="font-size: 20px; font-weight: 600;">1. Switch to dark mode</p>
+                     <p>The user can switch to dark mode when using the map in dark environment.</p>
+                   </td>
+                   <td style="width: 10%;"></td>
+                     <td><img style="filter:saturate(1.5)" src="image/ff-switchdark.gif" alt="switch to dark mode"></td>
+                 </tr>
+               </table>
+               <table style="margin-top:20px;">
+                 <tr>
+                   <td style="width: 60%;">
+                     <p style="font-size: 20px; font-weight: 600;">2. Planning a route</p>
+                     <p>Places which are open (as shown in colored dots) are updated according to the route.</p>
+                   </td>
+                   <td style="width: 10%;"></td>
+                     <td><img style="filter:saturate(1.5)" src="image/ff-route.gif" alt="search route dark"></td>
+                 </tr>
+               </table>
+               <table style="margin-top:20px;">
+                 <tr>
+                   <td style="width: 60%;">
+                     <p style="font-size: 20px; font-weight: 600;">3. Broadcasting one's live GPS location</p>
+                     <p>Users can share one's live GPS location (together with an optional message) to people they trust.</p>
+                   </td>
+                   <td style="width: 10%;"></td>
+                     <td><img style="filter:saturate(1.5)" src="image/ff-broadcast.gif" alt="broadcast gps"></td>
+                 </tr>
+               </table>
+               <table style="margin-top:20px;">
+                 <tr>
+                   <td style="width: 60%;">
+                     <p style="font-size: 20px; font-weight: 600;">4. Texting</p>
+                     <p>Users can send text messages and can quickly switch to sharing their location via the "Broadcast" button.</p>
+                   </td>
+                   <td style="width: 10%;"></td>
+                     <td><img style="filter:saturate(1.5)" src="image/ff-text.gif" alt="text"></td>
+                 </tr>
+               </table>
+               <p style="font-size: 20px; font-weight: 600; margin-top: 30px; color: #FF8E09">User: Tourist/ Business Traveler</p>
+               <table style="margin-top:20px;">
+                 <tr>
+                   <td style="width: 60%;">
+                     <p style="font-size: 20px; font-weight: 600;">1. Planning a route</p>
+                     <p>Places which are open (as shown in colored dots) are updated according to the method of travel and the time of the day.</p>
+                   </td>
+                   <td style="width: 10%;"></td>
+                     <td><img style="filter:saturate(1.3)" src="image/ff-routelight.gif" alt="search route light"></td>
+                 </tr>
+               </table>
+               <table style="margin-top:20px;">
+                 <tr>
+                   <td style="width: 45%;">
+                     <p style="font-size: 20px; font-weight: 600;">2. Setting notification reminders</p>
+                     <p>Users can set notification reminders on when to leave in order to arrive at the destination on time.</p>
+                   </td>
+                   <td style="width: 5%;"></td>
+                     <td><img style="filter:saturate(1.3)" src="image/ff-not1.gif" alt="notification"></td>
+                     <td style=" padding-top:20%;"><img style="width: 80%;" src="image/ff-laterarr.png" alt="later"></td>
+                     <td><img style="filter:saturate(1)" src="image/ff-not2.gif" alt="reminder"></td>
+                 </tr>
+               </table>
+               <table style="margin-top:20px;">
+                 <tr>
+                   <td style="width: 60%;">
+                     <p style="font-size: 20px; font-weight: 600;">3. Switch between mode</p>
+                     <p>Finally, users can switch to dark mode whenever they like.</p>
+                   </td>
+                   <td style="width: 10%;"></td>
+                  <td><img style="filter:saturate(1.5)" src="image/ff-lighttodark.gif" alt="light to dark"></td>
+                 </tr>
+               </table>
+               <p>To learn more, click on the prototypes below:</p>
+               <a href="https://www.figma.com/proto/byBbFCJV7wsojEz2PZw3iR/firefly_final_prototype_night?node-id=330%3A57&scaling=contain" target="_blank" class="proto-btn">Dark prototype</a>
+               <a href="https://www.figma.com/proto/CjVNTIX363QFErpyxwXGKf/firefly_final_prototype_tourist?node-id=332%3A52&scaling=contain" target="_blank" class="proto-btn">Light prototype</a>
+
+            </section>
+            <!-- Reflection -->
+            <section id="reflection">
+               <h2>Reflection</h2>
+               <p>As a person who enjoys traveling (and occasionally, solo traveling), I sometimes worried that it is unsafe to explore a city at night. In fact, such concerns also occur among late-night home-goers.</p>
+               <p>When facing danger at night, knowing where you can stay safely (even for just a while) is crucial. That's why I was eager to create an app that can solve these problems, and potentially, fill the gap in the current navigation app market. Together with notification reminders, this app is meant to help both solo travelers and late-night home-goers.</p>
+               <p>If I had time, I would combine "Call" and "Text" into a "Contact" button to save space for a "Record" button. In case the user is being followed, recording the situation (and streaming it people the user trust) may fear the stalker away. Visual evidence can also help identify the stalker.</p>
+            </section>
+         </div>
+      </main>
+      <!-- footer -->
+      <footer>
+         Thanks for visiting! You can find me at:<br>
+         <ul id="footer_icons">
+            <li class="footer-item"><a href="mailto:designwithjc@gmail.com"><img src="logo/email.png" alt="email logo" style="width: 45px; height: 35px;"></a></li>
+            <li class="footer-item"><a href="https://www.linkedin.com/in/juliamchow/" target="_blank"><img src="logo/linkedin_black.png" alt ="linkedin logo" style="width: 35px; height: 35px;"></a></li>
+         </ul>
+         <p id="copyright">Designed and developed by Julia Chow.</p>
+      </footer>
+   </body>
+</html>
