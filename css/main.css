@@ -408,7 +408,7 @@ html {
 /* 2. Make side menu sticky */
 main > nav {
   position: sticky;
-  top: 2rem;
+  top: 1rem;
   align-self: start;
 }
 /* 3. Selected tab*/
@@ -434,7 +434,7 @@ main > nav {
 /* 5. Non-selected tab */
 .section-nav a {
   text-decoration: none;
-  line-height: 25px;
+  line-height: 22px;
   display: block;
   padding: 8px;
   color: #555555;
