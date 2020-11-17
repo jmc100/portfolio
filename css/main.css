@@ -742,108 +742,55 @@ footer #copyright {
   margin:0px;
   color: #FFFFFF;
 }
+/* friendly yellow: used in tangram */
 .deliverable-grp1 {
   line-height: 28px;
   font-size: 17px;
-  background-color: #E2E2E2;
+  background-color: #FFDA57;
   border-radius: 8px;
   padding: 8px;
 }
+/* light cream: used in tangram */
 .deliverable-grp2 {
   line-height: 28px;
   font-size: 17px;
-  background-color: #F5F5F5;
+  background-color: #FFF6E4;
   border-radius: 8px;
   padding: 8px;
 }
-.deliverable-grp3 {
-  line-height: 28px;
-  font-size: 17px;
-  color: #333333;
-  background-color: #FFD600;
-  border-radius: 8px;
-  padding: 8px;
-}
+/* charcoal grey: used in firefly */
 .deliverable-grp4 {
   line-height: 28px;
   font-size: 17px;
-  color: #333333;
-  background-color: #FFC759;
+  color: #FFFFFF;
+  background-color: #5B5B5B;
   border-radius: 8px;
   padding: 8px;
 }
+/* brighter yellow: used in firefly */
 .deliverable-grp5 {
   line-height: 28px;
   font-size: 17px;
-  color: #FFFFFF;
-  background-color: #5C5C5C;
-  border-radius: 8px;
-  padding: 8px;
-}
-.deliverable-grp6 {
-  line-height: 28px;
-  font-size: 17px;
-  background-color: #FAF7E6;
-  border-radius: 8px;
-  padding: 8px;
-}
-.deliverable-grp7 {
-  line-height: 28px;
-  font-size: 17px;
-  background-color: #F3BE00;
-  border-radius: 8px;
-  padding: 8px;
-}
-.deliverable-grp8 {
-  line-height: 28px;
-  font-size: 17px;
-  color: #FFFFFF;
-  background-color: #325300;
-  border-radius: 8px;
-  padding: 8px;
-}
-.deliverable-grp9 {
-  line-height: 28px;
-  font-size: 17px;
-  color: #FFFFFF;
-  background-color: #60801A;
-  border-radius: 8px;
-  padding: 8px;
-}
-.deliverable-grp10 {
-  line-height: 28px;
-  font-size: 17px;
-  color: #FFFFFF;
-  background-color: #303030;
-  border-radius: 8px;
-  padding: 8px;
-}
-.deliverable-grp11 {
-  line-height: 28px;
-  font-size: 17px;
+  color: #333333;
   background-color: #FFD43D;
   border-radius: 8px;
   padding: 8px;
 }
-.deliverable-grp12 {
+/* dark green: used in unwrap */
+.deliverable-grp8 {
   line-height: 28px;
   font-size: 17px;
   color: #FFFFFF;
-  background-color: #4E4E4E;
+  background-color: #62760C;
   border-radius: 8px;
   padding: 8px;
 }
-.deliverable-grp13 {
+/* muted yellow: used in unwrap */
+.deliverable-grp6 {
   line-height: 28px;
   font-size: 17px;
-  background-color: #EEEBEB;
-  border-radius: 8px;
-  padding: 8px;
-}
-.deliverable-grp14 {
-  line-height: 28px;
-  font-size: 17px;
-  background-color: #FFF4DE;
+  color: #333333;
+  background-color: #F4D614;
   border-radius: 8px;
   padding: 8px;
 }
