@@ -2,7 +2,7 @@
 <html lang="en">
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Julia Chow | Tangram</title>
+      <title>Julia Chow | Fun: Fineliner</title>
       <link rel="shortcut icon" type="image/png" href="logo/favicon.png">
       <meta charset="utf-8">
       <!-- to avoid inconsistencies between browsers -->
@@ -12,9 +12,6 @@
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
       <!-- put "index.css" after "reset.css" to avoid the style being reset to plain -->
       <link rel="stylesheet" type="text/css" href="css/main.css">
-      <!-- for Chart JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-      <script type="text/javascript" src="project_menu.js"></script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168681972-1"></script>
       <script>
@@ -24,7 +21,7 @@
 
          gtag('config', 'UA-168681972-1');
       </script>
-   </head>
+    </head>
    <body>
       <header>
          <!-- toggle menu -->
@@ -36,922 +33,122 @@
          </label>
          <nav class="toggle_menu">
             <ul>
-               <li><a href="index.html">Work</a></li>
+               <li><a href="index.html" style="color: #BDBDBD">Work</a></li>
                <li><a href="about.html" style="color: #BDBDBD">About</a></li>
-               <li><a href="https://drive.google.com/file/d/1CzPnHpsAsporPSa0DNIZIGgN90PIRvEP/view?usp=sharing" target="_blank" style="color: #BDBDBD">Resume</a></li>
-               <li><a href="fun.html" style="color: #BDBDBD">Art</a></li>
+               <li><a href="https://drive.google.com/file/d/18rRNLvpZBXWXlu_YiE9oSus2r1KoEvaY/view?usp=sharing" target="_blank" style="color: #BDBDBD">Resume</a></li>
+               <li><a href="fun.html">Art</a></li>
                <li><a href="contact.html" style="color: #BDBDBD">Contact</a></li>
             </ul>
          </nav>
          <!-- End of toggle menu -->
          <!-- nav bar -->
          <ul id="nav_bar">
-            <li class="nav_item"><a href="index.html">Work</a></li>
+            <li class="nav_item"><a href="index.html" style="color: #ABABAB">Work</a></li>
             <li class="nav_item"><a href="about.html" style="color: #ABABAB">About</a></li>
-            <li class="nav_item"><a href="https://drive.google.com/file/d/1CzPnHpsAsporPSa0DNIZIGgN90PIRvEP/view?usp=sharing" target="_blank" style="color: #ABABAB">Resume</a></li>
-            <li class="nav_item"><a href="fun.html" style="color: #ABABAB">Art</a></li>
+            <li class="nav_item"><a href="https://drive.google.com/file/d/18rRNLvpZBXWXlu_YiE9oSus2r1KoEvaY/view?usp=sharing" target="_blank" style="color: #ABABAB">Resume</a></li>
+            <li class="nav_item"><a href="fun.html">Art</a></li>
             <li class="nav_item"><a href="contact.html" style="color: #ABABAB">Contact</a></li>
          </ul>
          <!-- End of nav bar -->
       </header>
-      <main class="proj-tangram-main">
+      <main class="fineliner-main">
          <!-- Side Menu Bar -->
          <nav class="section-nav" style="letter-spacing: 1px;">
             <ol>
                <li id="home-btn"><a href="index.html"><img id="case-stud-personal-logo" src="logo/final_logo_large.png" alt="personal logo"></a></li>
-               <li><a href="#summary">OVERVIEW</a></li>
-               <li><a href="#prob-solut">PROBLEMS &amp; SOLUTIONS</a></li>
-               <li><a href="#user-research">USER RESEARCH</a></li>
-               <li>
-                  <ul class="sub-sect">
-                     <li><a href="#survey">Survey</a></li>
-                     <li><a href="#personas">Personas</a></li>
-                     <li><a href="#user-stories">User Stories</a></li>
-                  </ul>
-               </li>
-               <li><a href="#comp-analysis">COMPETITIVE ANALYSIS</a></li>
-               <li><a href="#wireframe">SKETCHES, WIREFRAMES &amp; TESTING</a></li>
-               <li><a href="#mockup">MOCKUPS &amp; TESTING</a></li>
-               <li><a href="#branding">BRANDING</a></li>
-               <li>
-                  <ul class="sub-sect">
-                     <li><a href="#b-logo">Name & Logo</a></li>
-                     <li><a href="#b-color">Color & Typography</a></li>
-                  </ul>
-               </li>
-               <li><a href="#prototype">PROTOTYPE</a></li>
-               <li><a href="#reflection">REFLECTION</a></li>
             </ol>
          </nav>
          <!-- Content-->
-         <div class ="content">
-            <!-- Summary -->
-            <section id="summary">
-               <h2 class="main-head">Tangram</h2>
-               <img style="width: 100%; height: auto;" id ="cover-image" src="image/Tangram_main_cover.png" alt="cover image">
-               <a href="https://www.figma.com/proto/ASVKq2IpJ2koWS4fc8wMnt/Tangram_landing_final?node-id=2166%3A2&scaling=min-zoom" target="_blank" class="proto-btn">landing page</a>
-               <a href="https://www.figma.com/proto/tQi1jVIpyq27SawuxkpwlH/Tangram_web_final?node-id=1890%3A468&scaling=min-zoom" target="_blank" class="proto-btn">web prototype</a>
-               <a href="https://www.figma.com/proto/xQVbpM4Z6AcUrRk48BFaH0/Tangram_mobile_final?node-id=2122%3A5&scaling=scale-down" target="_blank" class="proto-btn">mobile prototype</a>
-               <h2>Overview</h2>
-               <p>The two main functions of a cloud storage are data back-up and instant file sharing.</p>
-               <p>However, regular users may find themselves struggling with storage space, missing a few new comments on files, experiencing occasional crashes when transferring large files, and trying to declutter their storage — only to find that there are very limited options to how they can align their files.</p>
-               <p>To tackle these problems, I created a cloud storage prototype that provides flexibility in the organization of files, and can show all new comments at the top of the dashboard. I also include a native tool that can convert and edit videos. Converting videos to native files can free up space. Native files can also be shared instantly without crashes. Since a video-editing app is not commonly found in most of the cloud storages (as of June 2020), this feature may propose a novel method to saving storage space and boosting work productivity.</p>
-               <table class="deliver-table">
-                  <tr>
-                     <td>
-                        <h2 class="deliver-header">My roles</h2>
-                     </td>
-                     <td>
-                        <h2 class="deliver-header">Deliverables</h2>
-                     </td>
-                     <td>
-                        <h2 class="deliver-header">Methods/ Tools</h2>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td style="vertical-align: middle;">
-                        <p class="deliverable-grp1">UX research</p>
-                     </td>
-                     <td style="vertical-align: middle;">
-                        <ul class="deliverable-grp1" style="list-style: none;">
-                           <li>
-                              <p class="deliver-txt">User surveys</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">User stories</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">User flow</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">Personas</p>
-                           </li>
-                        </ul>
-                     </td>
-                     <td style="vertical-align: middle;">
-                        <ul class="deliverable-grp1" style="list-style: none;">
-                           <li>
-                              <p class="deliver-txt">Google Form</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">research, reviews</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">Whimsical</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">interviews</p>
-                           </li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td style="vertical-align: middle;">
-                        <p class="deliverable-grp2">UX/UI design</p>
-                     </td>
-                     <td style="vertical-align: middle;">
-                        <ul class="deliverable-grp2" style="list-style: none;">
-                           <li>
-                              <p class="deliver-txt">Sketches & Wireframes</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">Usability tests</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">Mockups</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">Prototypes</p>
-                           </li>
-                        </ul>
-                     </td>
-                     <td style="vertical-align: middle;">
-                        <ul class="deliverable-grp2" style="list-style: none;">
-                           <li>
-                              <p class="deliver-txt">pencil sketches, Figma</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">A/B testing, Google Form</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">Figma, Illustrator, Photoshop</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">Figma, Illustrator</p>
-                           </li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td style="vertical-align: middle;">
-                        <p class="deliverable-grp1">Visual design</p>
-                     </td>
-                     <td style="vertical-align: middle;">
-                        <ul class="deliverable-grp1" style="list-style: none;">
-                           <li>
-                              <p class="deliver-txt">Color & Typography</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">Graphic design</p>
-                           </li>
-                        </ul>
-                     </td>
-                     <td style="vertical-align: middle;">
-                        <ul class="deliverable-grp1" style="list-style: none;">
-                           <li>
-                              <p class="deliver-txt">Figma, Illustrator</p>
-                           </li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td style="vertical-align: middle;">
-                        <p class="deliverable-grp2">Market research</p>
-                     </td>
-                     <td style="vertical-align: middle;">
-                        <ul class="deliverable-grp2" style="list-style: none;">
-                           <li>
-                              <p class="deliver-txt">Competitive analysis</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">SWOT analysis</p>
-                           </li>
-                        </ul>
-                     </td>
-                     <td style="vertical-align: middle;">
-                        <ul class="deliverable-grp2" style="list-style: none;">
-                           <li>
-                              <p class="deliver-txt">research, reviews</p>
-                           </li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td style="vertical-align: middle;">
-                        <p class="deliverable-grp1">Branding</p>
-                     </td>
-                     <td style="vertical-align: middle;">
-                        <ul class="deliverable-grp1" style="list-style: none;">
-                           <li>
-                              <p class="deliver-txt">Brand story</p>
-                           </li>
-                           <li>
-                              <p class="deliver-txt">Brand logo</p>
-                           </li>
-                        </ul>
-                     </td>
-                     <td style="vertical-align: middle;">
-                        <ul class="deliverable-grp1" style="list-style: none;">
-                           <li>
-                              <p class="deliver-txt">Figma, Illustrator, Photoshop</p>
-                           </li>
-                        </ul>
-                     </td>
-                  </tr>
-               </table>
-               <!-- ==== end of deliverables ==== -->
-            </section>
-            <!-- Problem & Solutions -->
-            <section id="prob-solut">
-               <!-- Problems -->
-               <h2>Problems</h2>
-               <table class="problem-list">
-                  <tr>
-                     <th>
-                        <p class="prob-bullet" style="background-color: #FFDA57;">A</p>
-                     </th>
-                     <td>
-                        <p>The transferral of files takes a long time and occasionally crashes.</p>
-                     </td>
-                  </tr>
-                  <tr>
-                     <th>
-                        <p class="prob-bullet" style="background-color: #FFDA57;">B</p>
-                     </th>
-                     <td>
-                        <p>Most of the cloud storages do not have native apps to support video editing and commenting by timestamp</p>
-                     </td>
-                  </tr>
-                  <tr>
-                     <th>
-                        <p class="prob-bullet" style="background-color: #FFDA57;">C</p>
-                     </th>
-                     <td>
-                        <p>Users cannot skim through all new comments from different files in the same location from the dashboard. </p>
-                     </td>
-                  </tr>
-                  <tr>
-                     <th>
-                        <p class="prob-bullet" style="background-color: #FFDA57;">D</p>
-                     </th>
-                     <td>
-                        <p>Most of the cloud storages do not allow users to customize the organization of their files.</p>
-                     </td>
-                  </tr>
-                  <tr>
-                     <th class="prob-special">Concern</th>
-                     <td>
-                        <p>Files stored online may not be as safe as those stored on a USB drive.</p>
-                     </td>
-                  </tr>
-               </table>
-               <!-- Solutions -->
-               <h2 style="padding-bottom: 0px;">Solutions</h2>
-               <!-- Press type carousel -->
-               <div class="press-container">
-                  <div class="carousel_press">
-                     <input type="radio" id="carousel_press-1" name="carousel_press[]" checked>
-                     <input type="radio" id="carousel_press-2" name="carousel_press[]">
-                     <input type="radio" id="carousel_press-3" name="carousel_press[]">
-                     <input type="radio" id="carousel_press-4" name="carousel_press[]">
-                     <ul class="carousel_press__items">
-                        <!-- solution page 1 -->
-                        <li class="carousel_press__item">
-                           <h3 class="solut-hd">Solution to <span class="prob-bullet" style="text-align: center; margin-left: 10px; margin-right: 10px; background-color: #FFDA57;">A</span>&<span class="prob-bullet" style="text-align: center; margin-left: 10px; background-color: #FFDA57;">B</span>
-                           </h3>
-                           <p class="solut-txt" style="text-align: left; ">Incorporate a video conversion and editing tool within the cloud storage.</p>
-                           <img class="solut-img" style="width: 60%; border: 1px solid #E0E0E0;" src="image/web_video_still.png"  alt="video-editing">
-                           <p class="solut-txt" style="text-align: left; margin-bottom: 10px;">Why is this a solution?</p>
-                           <p class="solut-txt" style="text-align: left; margin-bottom: 20px;">Video files usually take up a significant amount of space. Converting videos to the cloud's native format can free up space. These files can also be shared instantly without crashes.
-                           </p>
-                        </li>
-                        <!-- solution page 2 -->
-                        <li class="carousel_press__item">
-                           <h3 class="solut-hd">Solution to <span class="prob-bullet" style="text-align: center; margin-left: 10px; background-color: #FFDA57;">C</span></h3>
-                           <p class="solut-txt" style="text-align: left;">Prioritize unread comments.</p>
-                           <table>
-                              <tr>
-                                 <td style="width: 70%">
-                                    <img class="solut-img" style="width: 85%; border: 1px solid #E0E0E0;" src="image/web-final-open.png"  alt="web dashboard">
-                                 </td>
-                                 <td>
-                                    <img style="width: 65%;" src="image/mobile_dash.gif"  alt="mobile dashboard">
-                                 </td>
-                              </tr>
-                           </table>
-                        </li>
-                        <!-- solution page 3 -->
-                        <li class="carousel_press__item">
-                           <h3 class="solut-hd">Solution to <span class="prob-bullet" style="text-align: center; margin-left: 10px; background-color: #FFDA57;">D</span></h3>
-                           <p class="solut-txt" style="text-align: left;">Provide a flexible way to organize and align files.</p>
-                           <img class="solut-img" style="margin-top: 30px; width: 85%;border: 1px solid #E0E0E0;" src="image/sol_organize.gif" alt="organize files">
-                        </li>
-                        <!-- solution page 4 -->
-                        <li class="carousel_press__item">
-                           <h3 class="solut-hd">Solution to the <span class="prob-special" style="text-align: center; margin-left: 10px;">Concern</span></h3>
-                           <p class="solut-txt" style="text-align: left;">Create private folders that are password-protected.
-                           </p>
-                           <img class="solut-img" style="margin-left: 70px; margin-top: 30px; width: 200px; height: 200px;" src="image/sol_privacy.png"  alt="additional privacy">
-                        </li>
+         <div style="padding-top: 20px; padding-bottom: 20px;" class="content">
+            <p>These are some of my recent fineliner illustrations. </p>
+            <p style="font-size: 15px;">(If it's loading for a long time, please refresh the page.)</p>
+         <!-- new carousel -->
+         <section>
+             <div class="car-container">
+                 <div class="new-car">
+                     <input type="radio" name="slides" checked="checked" id="slide-1">
+                     <input type="radio" name="slides" id="slide-2">
+                     <input type="radio" name="slides" id="slide-3">
+                     <input type="radio" name="slides" id="slide-4">
+                     <input type="radio" name="slides" id="slide-5">
+                     <ul class="carousel__slides">
+                         <li class="carousel__slide">
+                             <figure>
+                                 <div>
+                                     <img src="fun/fine-unmasked.jpeg" alt="unmasked">
+                                 </div>
+                                 <figcaption>
+                                     <p>Unmasked</p>
+                                     <span class="credit"><p>July 2018</p></span>
+                                 </figcaption>
+                             </figure>
+                         </li>
+                         <li class="carousel__slide">
+                             <figure>
+                                 <div>
+                                     <img src="fun/fine-heart.jpeg"  alt="heart">
+                                 </div>
+                                 <figcaption>
+                                     <p>Heart</p>
+                                     <span class="credit"><p>Dec 2018</p></span>
+                                 </figcaption>
+                             </figure>
+                         </li>
+                         <li class="carousel__slide">
+                             <figure>
+                                 <div>
+                                     <img src="fun/fine-house.jpeg"  alt="house">
+                                 </div>
+                                 <figcaption>
+                                     <p>House</p>
+                                     <span class="credit"><p>Apr 2019</p></span>
+                                 </figcaption>
+                             </figure>
+                         </li>
+                         <li class="carousel__slide">
+                             <figure>
+                                 <div>
+                                     <img src="fun/fine-vision.jpeg"  alt="vision">
+                                 </div>
+                                 <figcaption>
+                                     <p>Vision</p>
+                                     <span class="credit"><p>Aug 2019</p></span>
+                                 </figcaption>
+                             </figure>
+                         </li>
+                         <li class="carousel__slide">
+                             <figure>
+                                 <div>
+                                     <img src="fun/fine-surveillance.jpeg"  alt="surveillance">
+                                 </div>
+                                 <figcaption>
+                                     <p>Surveillance</p>
+                                     <span class="credit"><p>Dec 2019</p></span>
+                                 </figcaption>
+                             </figure>
+                         </li>
                      </ul>
-                     <div class="carousel_press__prev">
-                        <label for="carousel_press-1"></label>
-                        <label for="carousel_press-2"></label>
-                        <label for="carousel_press-3"></label>
-                        <label for="carousel_press-4"></label>
-                     </div>
-                     <div class="carousel_press__next">
-                        <label for="carousel_press-1"></label>
-                        <label for="carousel_press-2"></label>
-                        <label for="carousel_press-3"></label>
-                        <label for="carousel_press-4"></label>
-                     </div>
-                     <div class="carousel_press__nav">
-                        <label for="carousel_press-1"></label>
-                        <label for="carousel_press-2"></label>
-                        <label for="carousel_press-3"></label>
-                        <label for="carousel_press-4"></label>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- User Research -->
-            <section id="user-research">
-               <h2>User research</h2>
-               <!-- Survey -->
-               <section id="survey">
-                  <h2>Survey</h2>
-                  <p>To understand how users and non-users think about cloud storage products, I conducted a survey over 41 people across different countries and age groups.</p>
-                  <h3 style="text-align: center; font-family: 'Nunito Sans';">Frequency of Using Cloud Storage</h3>
-                  <canvas id="myChart" style="width: 60%; height: 60%; display: flex;"></canvas>
-                  <script>
-                     var ctx = document.getElementById('myChart').getContext('2d');
-                     var chart = new Chart(ctx, {
-                       // The type of chart we want to create
-                       type: 'pie',
-                       // The data for our dataset
-                       data: {
-                         labels: ['Daily', 'A few times a week', 'A few times a month', 'A few times a year'],
-                         datasets: [{
-                           label: "Usage Frequency",
-                           backgroundColor: [
-                             "#FECE1C",
-                             "#F37373",
-                             "#FF9021",
-                             "#CA8D3F",
-                           ],
-                           borderColor: "#FFFFFF",
-                           data: [24, 11, 3, 2]
-                         }]
-                       },
-                     });
-                  </script>
-                  <p>87.5% of the respondents use cloud storage at least a few times a week. Among them, 60% of them use cloud storage daily.</p>
-                  <p style="margin-bottom: 10px;">The main purposes of using cloud storage are:</p>
-                  <table class="research">
-                     <tr>
-                        <td class="result-num">92.7%</td>
-                        <td>
-                           <p style="margin: 10px;">store files</p>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="result-num">85.4%</td>
-                        <td>
-                           <p style="margin: 10px;">transfer files</p>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="result-num">53.7%</td>
-                        <td>
-                           <p style="margin: 10px;">real-time collaboration</p>
-                        </td>
-                     </tr>
-                  </table>
-                  <p>Users are primarily concerned about what counts towards storage space, and how fast and easy it is to transfer files.</p>
-                  <p>I also looked at what users like and dislike about their cloud storages.</p>
-                  <!-- Appreciation -->
-                  <p style="font-weight: 600; margin-top: 30px;">Appreciation&nbsp;&nbsp;<img src="image/happy.png" style="width:70px; height: 70px;" alt="happy icon"></p>
-                  <h3 style="text-align: center; font-family: 'Nunito Sans';">Most Appreciated Features</h3>
-                  <canvas id="myChart2" style="width: 40%; height: 40%;"></canvas>
-                  <script>
-                     var ctx = document.getElementById('myChart2').getContext('2d');
-                     var chart = new Chart(ctx, {
-                       // The type of chart we want to create
-                       type: 'bar',
-                       // The data for our dataset
-                       data: {
-                         labels: ['automatic saving', 'accessible anywhere with Wifi', 'save money from external storages','real-time collaboration'],
-                         datasets: [{
-                           label: "respondents",
-                           backgroundColor: "#F1A631",
-                           barThickness: 60,
-                           borderColor: "#FFFFFF",
-                           data: [35, 36, 21, 30],
-                         }]
-                       },
-                       options: {
-                         scales: {
-                           yAxes: [{
-                             ticks: {
-                               beginAtZero: true
-                             }
-                           }]
-                         }
-                       }
-                     });
-                  </script>
-                  <!-- Frustration -->
-                  <p style="font-weight: 600; margin-top: 30px;">Frustration&nbsp;&nbsp;<img src="image/sad.png" style="width:70px; height: 70px;" alt="sad icon"></p>
-                  <h3 style="text-align: center; font-family: 'Nunito Sans';">Most Frustrating Issues</h3>
-                  <canvas id="myChart3" style="width: 40%; height: 40%;"></canvas>
-                  <script>
-                     var ctx = document.getElementById('myChart3').getContext('2d');
-                     var chart = new Chart(ctx, {
-                       // The type of chart we want to create
-                       type: 'bar',
-                       // The data for our dataset
-                       data: {
-                         labels: ['not enough storage', 'occasional crashes when trasferring large files','security and privacy issues', 'requires Wifi'],
-                         datasets: [{
-                           label: "respondents",
-                           backgroundColor: "30475E",
-                           barThickness: 60,
-                           borderColor: "#FFFFFF",
-                           data: [20, 7, 21, 13],
-                         }]
-                       },
-                       options: {
-                         scales: {
-                           yAxes: [{
-                             ticks: {
-                               beginAtZero: true
-                             }
-                           }]
-                         }
-                       }
-                     });
-                  </script>
-                  <!-- Concerns -->
-                  <p style="font-weight: 600; margin-top: 30px;">Concerns&nbsp;&nbsp;<img src="image/confused.png" style="width:70px; height: 70px;" alt="confused icon"></p>
-                  <p>Among the respondents, one of them did not use cloud storage. The main concern of the non-user is data leakage. It is worried that sensitive information will be leaked onto the Internet.</p>
-                  <!-- Takeaways -->
-                  <p style="font-weight: 600; margin-top: 30px; color: #DF5656">Takeaways</p>
-                  <ol style="list-style-type: decimal; padding-left: 50px; margin-bottom: 10px;">
-                     <li>
-                        <p>Users are mainly concerned about privacy and security issues.</p>
-                     </li>
-                     <li>
-                        <p>Some people prefer using USB to cloud drive when transferring sensitive files or large files.</p>
-                     </li>
-                  </ol>
-                  <!-- Potential Trends -->
-                  <p style="font-weight: 600; margin-top: 30px;">Potential Trends</p>
-                  <p>In the survey, I also looked at what other functions people want to have in their cloud storage. Many of them mentioned “video-editing tools”, “saving videos”, and “video conference”.</p>
-                  <img src="image/prod-trend.gif" style="border: 1px solid #C4C4C4" alt="producttrend">
-               </section>
-               <!-- Personas -->
-               <section id="personas">
-                  <h2>Personas</h2>
-                  <p>Based on the demographic information of my respondents, I created 2 personas.</p>
-                  <table>
-                     <tr>
-                        <td style="padding-right: 10px; width: 30%">
-                           <img style="border-radius: 10px; width: 90%" src="image/per-john.png" alt="persona John">
-                           <p class="per-text" style="font-weight: 600;text-transform: uppercase; letter-spacing: 0.5px;">John<br>Student, 23</p>
-                           <p style="font-weight: 700;">Lifestyle:</p>
-                           <p class="per-text">He is a dedicated student. On a daily basis, he needs to rely on cloud storage to store and transfer documents, images and videos for his assignments and his internship. He also enjoys using cloud products to collaborate in group projects.</p>
-                           <p style="font-weight: 700;">Frustrations:</p>
-                           <ul>
-                              <li>
-                                 <p class="per-text">The speed of uploading and transferring large files (e.g. images and videos) is quite slow as compared to transferring those files via USB.</p>
-                              </li>
-                              <li>
-                                 <p class="per-text">There are occasional crashes on the cloud when uploading large files.</p>
-                              </li>
-                              <li>
-                                 <p class="per-text">I cannot see all the new comments made by my graders and classmates on different files in one-go. If it's possible, it'll save me much time.</p>
-                              </li>
-                           </ul>
-                           <p style="font-weight: 700;">Wishes:</p>
-                           <ul>
-                              <li>
-                                 <p class="per-text">I wish to avoid crashes when transferring large files.</p>
-                              </li>
-                              <li>
-                                 <p class="per-text">If possible, I wish to see all the new comments I received on different files in one-go so I can tell which ones are urgent.</p>
-                              </li>
-                           </ul>
-                           <p class="per-text" style="font-weight: 600;font-style: italic;">“Having an organized management platform is key to balancing studies and internships.”</p>
-                        </td>
-                        <td style="padding-right: 10px; width: 30%;">
-                           <img style="border-radius: 10px; width: 90%" src="image/youtuber.jpg" alt="persona Phoebe">
-                           <p class="per-text" style="font-weight: 600;text-transform: uppercase; letter-spacing: 0.5px;">Phoebe<br>YouTuber/ Content creator, 28</p>
-                           <p style="font-weight: 700;">Lifestyle:</p>
-                           <p class="per-text">She is a curious explorer and she loves to share what she sees and learns in her travel journey with her followers online. To capture and create great video content, she stores all the clips she has filmed on her phone and sync them on her cloud so that she can download and edit them whenever she has time. To avoid forgetting important information, she also needs to jot notes alongside her videos and store them on the cloud.</p>
-                           <p style="font-weight: 700;">Frustrations:</p>
-                           <ul>
-                              <li>
-                                 <p class="per-text">Cannot add notes directly to the videos she filmed using her mobile phone.</p>
-                              </li>
-                              <li>
-                                 <p class="per-text">She is worried that she will run out of free storage space as the videos she uploaded are quite large.</p>
-                              </li>
-                           </ul>
-                           <p style="font-weight: 700;">Wishes:</p>
-                           <ul>
-                              <li>
-                                 <p class="per-text">I want to add notes directly on the video so that later when I edit the videos, I can immediate ly refer to the notes there and this can save me much time.</p>
-                              </li>
-                              <li>
-                                 <p class="per-text">I want to avoid paying for extra storage as I am only an individual content creator without the financial support of a company.</p>
-                              </li>
-                           </ul>
-                           <p class="per-text" style="font-weight: 600;font-style: italic;">“Travelling expands your understanding of the world and enriches your memories. Working on a cloud storage allows me to save these great content quickly and easily.”</p>
-                        </td>
-                     </tr>
-                  </table>
-                  <!-- closing tag of persona sub-section -->
-               </section>
-               <!-- closing tag of user research section -->
-               <!-- User Stories -->
-               <section id="user-stories">
-                  <h2>User Stories</h2>
-                  <p>The goals and frustrations of users can be summarised in the following table:</p>
-                  <table class="user-stories">
-                     <tr>
-                        <th>
-                           <p class="user-bullet">High</p>
-                        </th>
-                        <td>
-                           <p>Store and retrieve files anywhere and anytime.</p>
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>
-                           <p class="user-bullet">High</p>
-                        </th>
-                        <td>
-                           <p>Transfer and edit files from any devices (e.g.mobile, laptop and desktop) by anyone with permission.</p>
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>
-                           <p class="user-bullet">High</p>
-                        </th>
-                        <td>
-                           <p>To have added security for sensitive files.</p>
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>
-                           <p class="user-bullet">High</p>
-                        </th>
-                        <td>
-                           <p>To have a video-editing tool alongside other common tools (e.g. word-processing, slides, spreadsheet).</p>
-                        </td>
-                     </tr>
-                     <tr>
-                        <th>
-                           <p class="user-bullet med">Medium</p>
-                        </th>
-                        <td>
-                           <p>To have the option to customize the organization of files (e.g. by name, by last modified)</p>
-                        </td>
-                     </tr>
-                  </table>
-                  <!-- closing the "user stories" section -->
-               </section>
-               <!-- closing the "user research" section -->
-            </section>
-            <!-- Competitive Analysis -->
-            <section id="comp-analysis">
-               <h2>Competitive Analysis</h2>
-               <p style="font-weight: 700;">1. Cloud Storages</p>
-               <p>I compared the strengths and weaknesses of Google Drive, Dropbox and Microsoft's OneDrive as they are the top players in the cloud storage field.</p>
-               <table class="cloud-compare" style="text-align: center;">
-                  <tr>
-                     <th>
-                        <p style="font-weight: 600;">Free account</p>
-                     </th>
-                     <td><img style="width: 70px" src="logo/gdrive.png" alt="Google Drive logo"><p style="font-weight: 600;">Google Drive</p></td>
-                     <td><img style="width: 70px" src="logo/logo-d.png" alt="Dropbox logo"><p style="font-weight: 600;">Dropbox</p></td>
-                     <td><img style="width: 70px" src="logo/logo-o.png" alt="OneDrive logo"><p style="font-weight: 600;">OneDrive</p></td>
-                  </tr>
-                  <tr>
-                     <th>
-                        <p style="font-weight: 600;">Storage</p>
-                     </th>
-                     <td>15GB</td>
-                     <td>2GB</td>
-                     <td>5GB</td>
-                  </tr>
-                  <tr>
-                     <th>
-                        <p style="font-weight: 600;">Customizable organization</p>
-                     </th>
-                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
-                     <td class="comp-symbol"><img src="image/tick-star.png" alt="special tick"></td>
-                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
-                  <tr>
-                     <th>
-                        <p style="font-weight: 600;">Video-editing</p>
-                     </th>
-                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
-                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
-                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
-                  </tr>
-                  <tr>
-                     <th>
-                        <p style="font-weight: 600;">Private/ secure folders</p>
-                     </th>
-                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
-                     <td class="comp-symbol"><img src="image/cross.png" alt="cross"></td>
-                     <td class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
-                  </tr>
-                  <tr>
-                     <th>
-                        <p style="font-weight: 600;">Real-time collaboration</p>
-                     </th>
-                     <td class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
-                     <td class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
-                     <td class="comp-symbol"><img src="image/tick.png" alt="tick"></td>
-                  </tr>
-               </table>
-               <p>*On Dropbox, users can organize files by "last modified" or "name".</p>
-               <!-- Takeaways -->
-               <p style="font-weight: 600; color: #DF5656">Takeaways</p>
-               <ol style="list-style-type: decimal; padding-left: 50px; margin-bottom: 10px;">
-                  <li>
-                     <p>Since none of these cloud storages can satisfy the user's demand of a video-editing tool, Tangram -- having incorporated one -- can potentially stand out in the market.</p>
-                  </li>
-                  <li>
-                     <p>Maintaining better security is still an issue that many cloud storages have to face.</p>
-                  </li>
-                  <li>
-                     <p>Real-time collaboration has become a basic function for all cloud-based tools.</p>
-                  </li>
-               </ol>
-               <p>An example of real-time collaboration is to repond to unread comments directly on the file. Let's look at how users check unread comments on Google Drive.</p>
-               <p>Open from email:</p>
-               <img src="image/userflow-email.png" alt="open from email">
-               <p>Opening unread comments from email is fast and direct. However, notification emails of unread comments can push important emails down.</p>
-               <p>Open from dashboard:</p>
-               <img src="image/userflow-gdash.png" alt="open from Google's dashboard">
-               <p>This is not ideal. The process is quite involved and users cannot judge in one glance which comments are more urgent.</p>
-               <p>One way to improve the experience is to show all unread comments at the top of the dashboard so that users can immediately view all of them in one go.</p>
-               <p>The goal for Tangram:</p>
-               <img src="image/userflow-tandash.png" alt="open from Tangram's dashboard"><br>
-               <p style="margin-top: 20px; font-weight: 700;">2. Online Video-editing Tools</p>
-               <p>One of the problems my product aims to solve is the lack of a cloud-based video-editing tool incorporated <i>in the cloud drive</i> alongside other tools. To understand this market, I compared two popular online video-editing platforms:</p>
-               <table class="video-compare">
-                  <tr>
-                     <td style="width: 40%; padding-right: 10px;"><img src="image/wevid-new.png" alt="We Video plan"></td>
-                     <td style="width: 40%;"><img src="image/clipchamp-new.png" alt="Clip Champ plan"></td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <p style="margin-top: 50px;" class="vid-heading">Pros:</p>
-                        <ul>
-                           <li>
-                              <p class="vid-content">Various framing options</p>
-                           </li>
-                           <li>
-                              <p class="vid-content">Resolution: up to 480p</p>
-                           </li>
-                        </ul>
-                     </td>
-                     <td>
-                        <p style="margin-top: 50px;" class="vid-heading">Pros:</p>
-                        <ul>
-                           <li>
-                              <p class="vid-content">Resolution: up to 480p</p>
-                           </li>
-                           <li>
-                              <p class="vid-content">Unlimited video exports</p>
-                           </li>
-                        </ul>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <p class="vid-heading">Cons:</p>
-                        <ul>
-                           <li>
-                              <p class="vid-content">Storage size: 1GB</p>
-                           </li>
-                           <li>
-                              <p class="vid-content">One 5-min video/ month</p>
-                           </li>
-                        </ul>
-                     </td>
-                     <td>
-                        <p class="vid-heading">Cons:</p>
-                        <ul>
-                           <li>
-                              <p class="vid-content">Need to pay to stock videos and audio files.</p>
-                           </li>
-                        </ul>
-                     </td>
-                  </tr>
-               </table>
-               <p>(To conduct a fair comparison, I focused on the free account of the two service providers).</p>
-               <!-- Takeaways -->
-               <p style="font-weight: 600; color: #DF5656">Takeaways</p>
-               <p>While these options can provide a decent video-editing experience (and even unlimited exports), they require users to store the videos somewhere online or offline. Also, users cannot jot notes or add comments to the videos by time stamps.</p>
-               <p>Taking these factors into consideration, I created a bunch of sketches and wireframes.</p>
-            </section>
-            <!-- Sketches, Wireframes & Testing -->
-            <section id="wireframe">
-               <h2>Sketches & Wireframes</h2>
-               <p>Sketches</p>
-               <img style="width: 830px;" src="image/sketches.png" alt="sketches">
-               <p>Wireframes</p>
-               <img style="width: 825px;" src="image/wireframes.png" alt="wireframes"><br>
-               <h2 style="margin-top: 25px;">User Testing of Wireframes</h2>
-               <p>In the test, I asked participants to describe what they thought the pages were about and explained how to navigate to different pages.</p>
-               <p style="font-size: 20px; font-weight: 700; margin-top: 30px;">Here is what surprised me:</p>
-               <img src="image/wireframe-pointout.png" alt="wireframe problems">
-               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">1. Labels may not be helpful</p>
-               <p style="margin: 0px;">Although using pattern labels is visually more accessible than color labels, it is not always easy to remember. Besides, some files may take more than one label. For example, an image that was took on a vacation but is used for work-related content can fit under "images", "personal", and "work".
-                  Although we can allow a file to carry multiple tags, this design will defeat the purpose of tagging: which is to identify one specific group of files quickly.
-               </p>
-               <br>
-               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">2. Systematic but cluttered</p>
-               <p style="margin: 0px;">Listing out the latest files in each category is systematic but the dashboard looks cluttered.</p>
-               <p style="font-size: 20px; font-weight: 700; margin-top: 30px;">Here is what I've learned:</p>
-               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">Attempt to show everything is to show nothing</p>
-               <p>My attempt to show all the latest files in each category was to speed up the file-location process. But it makes the dashboard looks cluttered and it is even harder to locate a file.</p>
-               <table>
-                  <tr>
-                     <td style="width: 30%;">
-                        <img src="image/webdash-wf-old.png" alt="attention-seeking error">
-                        <p style="text-align: center; font-weight: 700;">BEFORE</p>
-                     </td>
-                     <td style="width: 10%;">
-                        <img style="margin-top:90%; padding-left: 10%; padding-right: 10%;" src="image/arrow-lr.png" alt="arrow left to right">
-                     </td>
-                     <td style="width: 30%;">
-                        <img src="image/webdash-wf-revised.png" alt="revised wireframe">
-                        <p style="text-align: center; font-weight: 700;">AFTER</p>
-                     </td>
-                  </tr>
-               </table>
-               <p>I learned to show only files which are recently opened.</p>
-            </section>
-            <!-- Mockups & Testing -->
-            <section id="mockup">
-               <h2>Mockups</h2>
-               <p>After revising the wireframes, I created a mockup of the product. Here are some of the pages:</p>
-               <img src="image/mockups.png" alt="mockups">
-               <h2 style="margin-top: 25px;">User Testing of Mockups</h2>
-               <p>In the test, I asked participants to comment on the visual and functional aspects of the product.</p>
-               <p style="font-size: 20px; font-weight: 700; margin-top: 30px;">Here is what surprised me:</p>
-               <img src="image/mockup-pointout.png" alt="mockup problems">
-               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">Framing content: Lines V.S. Colors</p>
-               <p>While the layout is clean, using borders to organise content can make a website look archiac.</p>
-               <table>
-                  <tr>
-                     <td>
-                        <img src="image/apple-july1997.png" alt="apple-1997">
-                     </td>
-                     <td style="width: 50px;"></td>
-                     <td>
-                        <img style="border: 1px solid #C4C4C4;" src="image/apple-july2020.gif" alt="apple-2020">
-                     </td>
-                  </tr>
-                  <tr>
-                     <td>
-                        <p>Apple.com in July 1997 (Credit:CNN)</p>
-                     </td>
-                     <td></td>
-                     <td>
-                        <p>Apple.com in July 2020</p>
-                     </td>
-                  </tr>
-               </table>
-               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">Color Combination</p>
-               <p style="margin: 0px;">Color combinations that blend well in the nature do not always translate to the same effect on screen.</p>
-               <img src="image/color-combination2.png" alt="color combination error">
-               <p style="font-size: 20px; font-weight: 700; margin-top: 30px;">What I've also learned:</p>
-               <p style="margin-bottom: 15px; font-weight: 600; color: #DF5656">Web Design V.S. Poster Design</p>
-               <p>Although the intial design contains buttons, it looks more like a poster than an interactive website.</p>
-               <table>
-                  <tr>
-                     <td style="width: 30%;">
-                        <img src="image/landing-old.png" alt="old mockup">
-                        <p style="text-align: center; font-weight: 700;">BEFORE</p>
-                     </td>
-                     <td style="width: 10%;">
-                        <img style="margin-top: 90%; padding-left: 10%; padding-right: 10%;" src="image/arrow-lr.png" alt="arrow left to right">
-                     </td>
-                     <td style="width: 30%;">
-                        <img src="image/new-land.png" alt="revised mockup">
-                        <p style="text-align: center; font-weight: 700;">AFTER</p>
-                     </td>
-                  </tr>
-               </table>
-               <p>I learned that it is crucial to add visual cues which can trigger users to click the interactive elements to explore the page.</p>
-            </section>
-            <!-- Branding -->
-            <section id="branding">
-               <h2>Branding</h2>
-               <section id="b-logo">
-               <h2>Name</h2>
-               <table>
-                  <tr>
-                     <td style="width: 60%; vertical-align: text-top; padding-right: 10px;">
-                        <p>To highlight the diverse tools available on this cloud platform, I chose the name ‘Tangram’. A tangram is a puzzle of 7 pieces which can be grouped together to create different objects.</p>
-                        <p>Similar to a Tangram puzzle, our cloud storage platform aims to provide different tools for users to achieve different project goals. In short, Tangram values creativity, logical organisation, and collaboration.</p>
-                     </td>
-                     <td style="width: 25px;"></td>
-                     <td>
-                        <img style ="width: 50%;" src="image/tangram-puzzle.png" alt="a tangram puzzle">
-                        <p style="font-size: 14px;">Photo credit: <a href="https://www.amazon.com/Newcreativetop-Children-Educational-Colorful-Training/dp/B0189HHEY0">Amazon</a></p>
-                     </td>
-                  </tr>
-               </table>
-               <h2>Logo</h2>
-               <img src="image/tangram-logo.png" alt="tangram logo">
-               <p>Among the sketches, I chose the one with an abstract "T" shape surrounded by a circle. The "T" shape is composed of four tangram pieces. The design is meant to reinforce the idea of collaboration and creativity.</p>
-             </section>
-             <section id="b-color">
-               <h2>Colors</h2>
-               <table>
-                  <tr>
-                     <td style="width: 60%; vertical-align: text-top; padding-right: 10px;">
-                        <p>In the user survey, those who frequently use cloud storages are between 20 and 40 years old. The chosen set of warm colors is meant to show friendliness and acceptance to new ideas, which is generally embraced by the target group.</p>
-                     </td>
-                     <td style="width: 25px;"></td>
-                     <td>
-                        <img src="image/tan-colors.png" alt="brand colors">
-                     </td>
-                  </tr>
-               </table>
-               <h2>Typography</h2>
-               <table>
-                  <tr>
-                     <td style="width: 60%; vertical-align: text-top; padding-right: 15px;">
-                        <p>I chose “Futura” as the brand’s typeface. Its geometric style is modern and legible. A round typeface can also suggest friendliness.</p>
-                        <p>I chose “Roboto” as the complementary typeface as it is highly legible across large and small prints.</p>
-                     </td>
-                     <td style="width: 25px;"></td>
-                     <td>
-                        <img  style="width: 60%;" src="image/tangram-typeface.png" alt="typeface">
-                     </td>
-                  </tr>
-               </table>
-               <!-- closing the "sub-sect" -->
-             </section>
-             <!-- closing the "branding" sect -->
-            </section>
-            <!-- Prototype -->
-            <section id="prototype">
-               <h2>Interactive Prototype</h2>
-               <p>Based on the respondents’ feedback, I revised the design and created the following prototypes:</p>
-               <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">1. Landing Page</p>
-               <table>
-                  <tr>
-                     <td>
-                        <img style="width: 500px; height: auto; border: 1px solid #C4C4C4;" src="image/new-land.png" alt="landing page">
-                     </td>
-                     <td style ="vertical-align: text-top;">
-                        <p style="padding-left: 25px; padding-top: 55px;">I enlarged the caption in the hero image to draw the user’s attention to the brand.</p>
-                     </td>
-                  </tr>
-               </table>
-               <br>
-               <p>I also added a carousel at the top of the page to display the product’s features:</p>
-               <img style="border:1px solid #C4C4C4" src="image/car-new.gif" alt="carousel">
-               <p>Deep down, we know that not every user has time to skim through the entire page. The carousel is meant to showcase the unique features of this product in one go.</p>
-               <p>The clickable post-it notes aim to pique the users’ curiosity to explore different features. When the user clicks on the post-it (or the arrows), the hero image will morph into the next one. This animation adds a little reward to every click.</p>
-               <br>
-               <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">2. Dashboard</p>
-               <table>
-                  <tr>
-                     <td style="width: 75%">
-                        <img style="border: 1px solid #E0E0E0; margin-top: 10px;" src="image/web-final-open.png" alt="web dashboard">
-                     </td>
-                     <td style="width: 25%">
-                        <img src="image/mobile_dash.gif" alt="mobile dashboard">
-                     </td>
-                  </tr>
-               </table>
-               <p>After removing the borders and refined the color scheme, the product appears more modern. I also applied a bright red to highlight the number of unread comments.</p>
-               <br>
-               <p style="font-size: 20px; font-weight: 600; margin-top: 30px;">3. Video-editing Page</p>
-             <table>
-                  <tr>
-                     <td style="width: 70%">
-                        <img style="border: 1px solid #E0E0E0;" src="image/tg-playclip.gif" alt="video">
-                     </td>
-                  </tr>
-               </table>
-               <p>This platform provides basic functions for editing and exporting video clips. Users can jot notes or add comments to the video precisely by timestamps:</p>
-               <img style="border: 1px solid #E0E0E0;" src="image/tg-cm.png" alt="video commenting">
-               <p>This makes collaboration easier.</p>
-               <p>To learn more, click on the prototypes below:</p>
-               <a href="https://www.figma.com/proto/ASVKq2IpJ2koWS4fc8wMnt/Tangram_landing_final?node-id=2166%3A2&scaling=min-zoom" target="_blank" class="proto-btn">landing page</a>
-               <a href="https://www.figma.com/proto/tQi1jVIpyq27SawuxkpwlH/Tangram_web_final?node-id=1890%3A468&scaling=min-zoom" target="_blank" class="proto-btn">web prototype</a>
-               <a href="https://www.figma.com/proto/xQVbpM4Z6AcUrRk48BFaH0/Tangram_mobile_final?node-id=2122%3A5&scaling=scale-down" target="_blank" class="proto-btn">mobile prototype</a>
-            </section>
-            <!-- Reflection -->
-            <section id="reflection">
-               <h2>Reflection</h2>
-               <p>Despite the growing number of products that provide online storage (e.g. Instagram, Slack, etc.), rarely do they market themselves as cloud storages. Being able to store data online has gradually become an expected function for web-based products or apps. To make Tangram stand out, I added a video-editing tool and introduced a more flexible way to customize file-organization. But to remain relevant in the market, I must constantly update my understanding of the trend and the user's needs (as shown the user testings above).</p>
-               <p> If I can push it further, I would incorporate a checkbox and a search bar above each column on the dashboard. This can allow users to perform quick searches or mass edit files (e.g. to share or to delete them). I would also add a dark mode to my cloud storage. This can soothe the eyes of users who prefer to (or have to) work in darker environment.</p>
-            </section>
-         </div>
+                     <ul class="carousel__thumbnails">
+                         <li>
+                             <label for="slide-1"><img src="fun/fine-unmasked.jpeg" alt="unmasked"></label>
+                         </li>
+                         <li>
+                             <label for="slide-2"><img src="fun/fine-heart.jpeg"  alt="heart"></label>
+                         </li>
+                         <li>
+                             <label for="slide-3"><img src="fun/fine-house.jpeg"  alt="house"></label>
+                         </li>
+                         <li>
+                             <label for="slide-4"><img src="fun/fine-vision.jpeg"  alt="vision"></label>
+                         </li>
+                         <li>
+                             <label for="slide-5"><img src="fun/fine-surveillance.jpeg"  alt="surveillance"></label>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </section>
+         <!-- End of new carousel -->
       </main>
       <!-- footer -->
       <footer>
