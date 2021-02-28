@@ -8,21 +8,21 @@
       <!-- to avoid inconsistencies between browsers -->
       <link rel="stylesheet" href="css/reset.css">
       <!-- Google font-->
-      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
-         rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
       <!-- put "index.css" after "reset.css" to avoid the style being reset to plain -->
       <link rel="stylesheet" type="text/css" href="css/main.css">
       <!-- link to "animate.css" -->
       <link rel="stylesheet" type="text/css" href="css/animate.css">
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168681972-1"></script>
-      <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-168681972-1');
-</script>
+         <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-168681972-1');
+         </script>
    </head>
    <body>
       <header>
@@ -48,43 +48,78 @@
             <!-- nav bar -->
             <ul id="nav_bar">
                <li class="nav_item"><a href="index.html">Work</a></li>
-               <li class="nav_item"><a href="about.html" style="color: #BDBDBD">About</a></li>
-               <li class="nav_item"><a href="https://drive.google.com/file/d/1CzPnHpsAsporPSa0DNIZIGgN90PIRvEP/view?usp=sharing" target="_blank" style="color: #BDBDBD">Resume</a></li>
-               <li class="nav_item"><a href="fun.html" style="color: #BDBDBD">Art</a></li>
-               <li class="nav_item"><a href="contact.html" style="color: #BDBDBD">Contact</a></li>
+               <li class="nav_item"><a href="about.html" style="color: #ABABAB">About</a></li>
+               <li class="nav_item"><a href="https://drive.google.com/file/d/1CzPnHpsAsporPSa0DNIZIGgN90PIRvEP/view?usp=sharing" target="_blank" style="color: #ABABAB">Resume</a></li>
+               <li class="nav_item"><a href="fun.html" style="color: #ABABAB">Art</a></li>
+               <li class="nav_item"><a href="contact.html" style="color: #ABABAB">Contact</a></li>
             </ul>
          </div>
          <!-- End of nav bar -->
          <img id="index_logo" src="logo/final_logo_large.png" alt="index logo">
-         <h1 id="intro-left">Hi, I am<br>Julia.</h1>
          <div id="hero-yellow"></div>
-         <h1 class="animated fadeInLeft" id="intro-right">a UX designer.</h1>
-         <h3 class="animated fadeInLeft slow" id="index-statement">I dive deep into learning the “why” in a user’s problem<br> in order to find the “how” to a solution.</h3>
+         <h1 id="greet">Hi, I am Julia Chow.</h1>
+         <p class="animated fadeIn" id="index-statement">I am passionate about creating products that help people <br>protect and support what matters to them.</p>
       </header>
       <!-- container for the projects -->
-     <table>
+      <table>
          <!-- project 1: Firefly -->
-         <tr><td><img style="margin-left: auto; margin-right: auto; margin-top: 50px; width: 80%; display: block;" src="image/ff-indexcover.png" alt="firefly cover"></td></tr>
-         <tr><td><h2 style="text-align: center;">Firefly</h2></td></tr>
-         <tr><td><p style="margin-left:20px; margin-right: 20px; margin-top:0px; text-align: center; font-weight: 200;">An app that helps users make efficient and safe travel plans no matter day or night.</p></td></tr>
-         <tr><td><a style="margin-left: auto; margin-right: auto; margin-bottom: 50px;display: block;" href="project_firefly.html" class="proto-btn">View Case Study</a></td></tr>
+         <tr>
+            <td><img style="margin-left: auto; margin-right: auto; margin-top: 50px; width: 60%; display: block;" src="image/ff_index3.png" alt="firefly cover"></td>
+         </tr>
+         <tr>
+            <td>
+               <h2 style="text-align: center;">Firefly</h2>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p style="margin-left:20px; margin-right: 20px; margin-top:0px; text-align: center;">An app that helps users make efficient and safe travel plans no matter day or night.</p>
+            </td>
+         </tr>
+         <tr>
+            <td><a style="margin-left: auto; margin-right: auto; margin-bottom: 50px;display: block;" href="project_firefly.html" class="proto-btn">View Case Study</a></td>
+         </tr>
          <!-- project 2: Unwrap -->
-         <tr><td><img style="margin-left: auto; margin-right: auto; margin-top: 50px; width: 80%; display: block;" src="image/uw-index.png" alt="unwrap cover"></td></tr>
-         <tr><td><h2 style="text-align: center;">Unwrap</h2></td></tr>
-         <tr><td><p style="margin-left:20px; margin-right: 20px; margin-top:0px; text-align: center; font-weight: 200;">A mobile app that helps consumers find zero-waste stores and store owners retain customers through a loyalty program.</p></td></tr>
-         <tr><td><a style="margin-left: auto; margin-right: auto; margin-bottom: 50px; display: block;" href="project_unwrap.html" class="proto-btn">View Case Study</a></td></tr>
+         <tr>
+            <td><img style="margin-left: auto; margin-right: auto; margin-top: 50px; width: 60%; display: block;" src="image/uw_index3.png" alt="unwrap cover"></td>
+         </tr>
+         <tr>
+            <td>
+               <h2 style="text-align: center;">Unwrap</h2>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p style="margin-left:20px; margin-right: 20px; margin-top:0px; text-align: center;">A mobile app that helps consumers find zero-waste stores and store owners retain customers through a loyalty program.</p>
+            </td>
+         </tr>
+         <tr>
+            <td><a style="margin-left: auto; margin-right: auto; margin-bottom: 50px; display: block;" href="project_unwrap.html" class="proto-btn">View Case Study</a></td>
+         </tr>
          <!-- project 3: Tangram -->
-         <tr><td><img style="margin-left: auto; margin-right: auto; margin-top: 50px; width: 60%; display: block;" src="image/tg-index.png" alt="tangram cover"></td></tr>
-         <tr><td><h2 style="text-align: center;">Tangram</h2></td></tr>
-         <tr><td><p style="margin-left:20px; margin-right: 20px; margin-top:0px; text-align: center; font-weight: 200;">A cloud storage that facilitates creative expression and promotes effective collaboration.</p></td></tr>
-         <tr><td><a style="margin-left: auto; margin-right: auto; margin-bottom: 50px;display: block;" href="project_tangram.html" class="proto-btn">View Case Study</a></td></tr>
+         <tr>
+            <td><img style="margin-left: auto; margin-right: auto; margin-top: 50px; width: 60%; display: block;" src="image/tg-index.png" alt="tangram cover"></td>
+         </tr>
+         <tr>
+            <td>
+               <h2 style="text-align: center;">Tangram</h2>
+            </td>
+         </tr>
+         <tr>
+            <td>
+               <p style="margin-left:20px; margin-right: 20px; margin-top:0px; text-align: center;">A cloud storage that facilitates creative expression and promotes effective collaboration.</p>
+            </td>
+         </tr>
+         <tr>
+            <td><a style="margin-left: auto; margin-right: auto; margin-bottom: 50px;display: block;" href="project_tangram.html" class="proto-btn">View Case Study</a></td>
+         </tr>
       </table>
       <!-- footer -->
       <footer>
          Thanks for visiting! You can find me at:<br>
          <ul id="footer_icons">
-            <li class="footer-item"><a href="mailto:designwithjc@gmail.com"><img src="logo/email.png" alt="email logo" style="width: 45px; height: 35px;"></a></li>
-            <li class="footer-item"><a href="https://www.linkedin.com/in/juliamchow/" target="_blank"><img src="logo/linkedin_black.png" alt ="linkedin logo" style="width: 35px; height: 35px;"></a></li>
+            <li class="footer-item"><a href="mailto:designwithjc@gmail.com"><img src="logo/footer_email.png" alt="email logo" style="width: 40px; height: 40px;"></a></li>
+            <li class="footer-item"><a href="https://www.linkedin.com/in/juliamchow/" target="_blank"><img src="logo/footer_linkedin.png" alt ="linkedin logo" style="width: 40px; height: 40px;"></a></li>
          </ul>
          <p id="copyright">Designed and developed by Julia Chow.</p>
       </footer>
