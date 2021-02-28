@@ -2,24 +2,28 @@
 <html lang="en">
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Julia Chow | Fun: Digital</title>
+      <title>Julia Chow | Firefly</title>
       <link rel="shortcut icon" type="image/png" href="logo/favicon.png">
       <meta charset="utf-8">
       <!-- to avoid inconsistencies between browsers -->
       <link rel="stylesheet" href="css/reset.css">
       <!-- Google font-->
-      <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
       <!-- put "index.css" after "reset.css" to avoid the style being reset to plain -->
-      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" type="text/css" href="css/main3.css">
+      <!-- for Chart JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+      <script type="text/javascript" src="project_menu.js"></script>
       <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168681972-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168681972-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
 
-  gtag('config', 'UA-168681972-1');
-</script>
+         gtag('config', 'UA-168681972-1');
+      </script>
    </head>
    <body>
       <header>
@@ -32,21 +36,21 @@
          </label>
          <nav class="toggle_menu">
             <ul>
-               <li><a href="index.html">Work</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="https://drive.google.com/file/d/1CzPnHpsAsporPSa0DNIZIGgN90PIRvEP/view?usp=sharing" target="_blank">Resume</a></li>
+               <li><a href="index.html" style="color: #BDBDBD">Work</a></li>
+               <li><a href="about.html" style="color: #BDBDBD">About</a></li>
+               <li><a href="https://drive.google.com/file/d/1CzPnHpsAsporPSa0DNIZIGgN90PIRvEP/view?usp=sharing" target="_blank" style="color: #BDBDBD">Resume</a></li>
                <li><a href="fun.html">Art</a></li>
-               <li><a href="contact.html">Contact</a></li>
+               <li><a href="contact.html" style="color: #BDBDBD">Contact</a></li>
             </ul>
          </nav>
          <!-- End of toggle menu -->
          <!-- nav bar -->
          <ul id="nav_bar">
-            <li class="nav_item"><a href="index.html" style="color: #BDBDBD">Work</a></li>
-            <li class="nav_item"><a href="about.html" style="color: #BDBDBD">About</a></li>
-            <li class="nav_item"><a href="https://drive.google.com/file/d/1CzPnHpsAsporPSa0DNIZIGgN90PIRvEP/view?usp=sharing" target="_blank" style="color: #BDBDBD">Resume</a></li>
+            <li class="nav_item"><a href="index.html" style="color: #ABABAB">Work</a></li>
+            <li class="nav_item"><a href="about.html" style="color: #ABABAB">About</a></li>
+            <li class="nav_item"><a href="https://drive.google.com/file/d/1CzPnHpsAsporPSa0DNIZIGgN90PIRvEP/view?usp=sharing" target="_blank" style="color: #ABABAB">Resume</a></li>
             <li class="nav_item"><a href="fun.html">Art</a></li>
-            <li class="nav_item"><a href="contact.html" style="color: #BDBDBD">Contact</a></li>
+            <li class="nav_item"><a href="contact.html" style="color: #ABABAB">Contact</a></li>
          </ul>
          <!-- End of nav bar -->
       </header>
@@ -62,59 +66,59 @@
             <h3 id="digital-heading" style="font-weight: 600;">A can of home (2019)</h3>
             <!-- new carousel -->
             <section>
-                <div class="car-container">
-                    <div class="new-car">
-                        <input type="radio" name="slides" checked="checked" id="slide-1">
-                        <input type="radio" name="slides" id="slide-2">
-                        <input type="radio" name="slides" id="slide-3">
-                        <ul class="carousel__slides">
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <img src="fun/can-bathroom.png"  alt="Bathroom">
-                                    </div>
-                                    <figcaption>
-                                        <p>Bathroom</p>
-                                        <p class="credit">(front and rear)</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <img src="fun/can-kitchen.png" alt="Kitchen">
-                                    </div>
-                                    <figcaption>
-                                        <p>Kitchen</p>
-                                        <p class="credit">(front and rear)</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <li class="carousel__slide">
-                                <figure>
-                                    <div>
-                                        <img src="fun/can-bedroom.png"  alt="Bedroom">
-                                    </div>
-                                    <figcaption>
-                                        <p>Bedroom</p>
-                                        <p class="credit">(front and rear)</p>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                        </ul>
-                        <ul class="carousel__thumbnails">
-                            <li>
-                                <label for="slide-1"><img src="fun/can-bathroom.png"  alt="Bathroom"></label>
-                            </li>
-                            <li>
-                                <label for="slide-2"><img src="fun/can-kitchen.png" alt="Kitchen"></label>
-                            </li>
-                            <li>
-                                <label for="slide-3"><img src="fun/can-bedroom.png"  alt="Bedroom"></label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+               <div class="car-container">
+                  <div class="new-car">
+                     <input type="radio" name="slides" checked="checked" id="slide-1">
+                     <input type="radio" name="slides" id="slide-2">
+                     <input type="radio" name="slides" id="slide-3">
+                     <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                           <figure>
+                              <div>
+                                 <img src="fun/can-bathroom.png"  alt="Bathroom">
+                              </div>
+                              <figcaption>
+                                 <p>Bathroom</p>
+                                 <p class="credit">(front and rear)</p>
+                              </figcaption>
+                           </figure>
+                        </li>
+                        <li class="carousel__slide">
+                           <figure>
+                              <div>
+                                 <img src="fun/can-kitchen.png" alt="Kitchen">
+                              </div>
+                              <figcaption>
+                                 <p>Kitchen</p>
+                                 <p class="credit">(front and rear)</p>
+                              </figcaption>
+                           </figure>
+                        </li>
+                        <li class="carousel__slide">
+                           <figure>
+                              <div>
+                                 <img src="fun/can-bedroom.png"  alt="Bedroom">
+                              </div>
+                              <figcaption>
+                                 <p>Bedroom</p>
+                                 <p class="credit">(front and rear)</p>
+                              </figcaption>
+                           </figure>
+                        </li>
+                     </ul>
+                     <ul class="carousel__thumbnails">
+                        <li>
+                           <label for="slide-1"><img src="fun/can-bathroom.png"  alt="Bathroom"></label>
+                        </li>
+                        <li>
+                           <label for="slide-2"><img src="fun/can-kitchen.png" alt="Kitchen"></label>
+                        </li>
+                        <li>
+                           <label for="slide-3"><img src="fun/can-bedroom.png"  alt="Bedroom"></label>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </section>
             <!-- End of new carousel -->
             <p>In this series, I imagined what it would be like to build a home out of cans. In Hong Kong, the price of housing is so high that it is common for locals to live in crammed homes. This series is meant to be a light-hearted capture of the bitter situation.</p>
@@ -125,8 +129,8 @@
       <footer>
          Thanks for visiting! You can find me at:<br>
          <ul id="footer_icons">
-            <li class="footer-item"><a href="mailto:designwithjc@gmail.com"><img src="logo/email.png" alt="email logo" style="width: 45px; height: 35px;"></a></li>
-            <li class="footer-item"><a href="https://www.linkedin.com/in/juliamchow/" target="_blank"><img src="logo/linkedin_black.png" alt ="linkedin logo" style="width: 35px; height: 35px;"></a></li>
+            <li class="footer-item"><a href="mailto:designwithjc@gmail.com"><img src="logo/footer_email.png" alt="email logo" style="width: 40px; height: 40px;"></a></li>
+            <li class="footer-item"><a href="https://www.linkedin.com/in/juliamchow/" target="_blank"><img src="logo/footer_linkedin.png" alt ="linkedin logo" style="width: 40px; height: 40px;"></a></li>
          </ul>
          <p id="copyright">Designed and developed by Julia Chow.</p>
       </footer>
